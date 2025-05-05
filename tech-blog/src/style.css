@@ -1,0 +1,237 @@
+
+   
+  body{
+    color: rgb(37, 37, 37);
+    background: linear-gradient(-225deg, rgb(255, 231, 253) 0%, #d7d4ff 56%, #fdd0e7 100%);
+  }
+   
+  .menu-item {
+    list-style: none;
+    display: inline-block;
+    padding: 10px;
+  }
+
+   /* HOME ※いつかsectionTitleLineと統合する！*/ 
+  .homeSubTitleFont{
+    color: rgb(241, 165, 254);
+    border-bottom: solid 3px rgb(240, 197, 247);
+  }
+  .homeSubTitleFontNotLine{
+    color: rgb(241, 165, 254);
+  }
+
+  /* 全体 */
+  h3{margin: 0;}
+  h4{margin: 0;}
+  p{font-size: 20px;}
+  ul{font-size: 20px;}
+  ol{font-size: 20px;}
+  table{font-size: 20px;}
+  .right {
+    text-align: right;
+  }
+
+  .sectionTitleLine{
+    border-bottom: solid 3px ;
+    color: rgb(241, 165, 254);
+  }
+  .sectionTitleLineSmall{
+    border-bottom: solid 2px ;
+    color: rgb(162, 162, 162);
+    padding-bottom: 5px;
+  }
+  .sectionTitleLineDashed{
+    border-bottom: solid 2px ;
+    color: rgb(162, 162, 162);
+    padding-bottom: 5px;
+    border-bottom: dashed 2px;
+  }
+
+  .box {
+    padding: 10px 5%;
+    margin: 5px 10% 10% 10%;
+    background: #f9f0f5;
+    border-radius: 30px;
+    opacity: 0.7;
+  }
+
+  .btnArticleLink{
+    padding: 5px;
+    margin: 5px;
+    border-radius: 10px;
+    transition: .4s;
+
+    border: solid 2px #6d6d6d;
+    color: #6d6d6d;
+
+    display: inline-block;
+    text-decoration: none;
+  }
+
+  .btnArticleLink:hover {
+    background: #6d6d6d;
+    color: #ffffff;
+  }
+
+  /* 文中リンクボタン */
+  .btnArticleLinkInText{
+    padding: 3px;
+    border-radius: 10px;
+    transition: .4s;
+
+    border: solid 2px #6d6d6d;
+    color: #6d6d6d;
+
+    display: inline-block;
+    text-decoration: none;
+  }
+
+  .btnArticleLinkInText:hover {
+    background: #6d6d6d;
+    color: #ffffff;
+  }
+
+  /* ナビゲーションバー */
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: rgba(247, 130, 229, 0.203);
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+  }
+  .header-box {
+    height: 80px;
+  }
+  
+  .header-ul {
+    width: 100%;
+    display: flex;
+    list-style: none;
+    padding: 10px;
+    margin: 5px;
+  }
+  
+  .header-a{
+    color: rgb(241, 165, 254);
+    font-size: 25px;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  .header-a:hover{
+    background-color:rgb(255, 231, 253);
+    color: rgb(241, 165, 254);
+  }
+  
+  /* 画像クラス */
+  .imgSize_100{width:100%;margin: 0px;padding: 0px;}
+  .imgSize_90{width:90%;margin: 0px;padding: 0px;}
+  .imgSize_80{width:80%;margin: 0px;padding: 0px;}
+  .imgSize_70{width:70%;margin: 0px;padding: 0px;}
+  .imgSize_60{width:60%;margin: 0px;padding: 0px;}
+  .imgSize_50{width:50%;margin: 0px;padding: 0px;}
+  .imgSize_40{width:40%;}
+  .imgSize_30{width:30%;}
+  .imgSize_20{width:20%;}
+  .imgSize_10{width:10%;}
+
+/* 引用文 */
+blockquote{
+  position:relative;
+  border-left:3px solid rgb(240, 197, 247);
+  padding-left:10px;
+}
+blockquote:before{
+  position:absolute;
+  font-family:'FontAwesome';
+  content:'\f10d';
+  font-size: 20px;
+  color:rgb(240, 164, 252);
+}
+blockquote p{
+  position:relative;
+  padding-left:30px;
+  font-size: 18px;
+}
+blockquote cite{
+  display: block;
+  font-size:0.8rem;
+  color:rgb(221, 68, 248);
+  text-align:right;
+}
+/* コードブロック */
+.codeBlock {
+  background-color: #f7dffe;
+  border: 2px solid rgb(240, 197, 247);
+  border-radius: 10px;
+  font-size: 15px;
+  width: 100%;
+  padding: 15px;
+  margin: 0px ;
+  Display: block;
+}
+
+/* PC用UI */
+@media only all and (min-width:600px) {   
+  .imgBigSize{width: 90%;}
+  #articleTitle{ font-size: 32px; }
+  table {
+    th {
+      background-color: rgb(239, 177, 250);
+      color: rgb(105, 105, 105);
+      padding: 5px 5px;
+    }
+  
+    td {
+      background-color: rgb(248, 221, 252);
+      padding: 5px 5px;
+    }
+  }
+}
+/* スマホ用UI */
+@media screen and (max-width: 600px){
+
+	/*　画面サイズが600px以下の場合ここの記述が適用される　*/
+    .box {
+        padding: 3% 5%;
+        margin: 2%;
+        padding:0px;
+        margin:0px;
+        opacity: 0.7;
+    }
+    .header-a{
+      color: rgb(241, 165, 254);
+      font-size: 22px;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    body{
+      background: #f9f0f5;
+    }
+    #articleTitle{font-size: 30px;    }
+     
+    p{font-size: 18px;}
+    ul{font-size: 18px;}
+    ol{font-size: 18px;}
+    table {
+      border-collapse: collapse;
+      border: solid 2px rgb(239, 177, 250);/*表全体を線で囲う*/
+    }
+    table th, table td {
+      border: solid 1px rgb(239, 177, 250);
+      font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 525px){
+    .imgBigSize{width: 100%;}
+}
+@media screen and (max-width: 415px){
+    #articleTitle{font-size: 28px;    }
+}
+
