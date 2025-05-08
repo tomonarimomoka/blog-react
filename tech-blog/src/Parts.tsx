@@ -2,7 +2,7 @@ import React, { FC } from "react";
 import './style.css'
 
 export const ArticalList: FC<{ title: string , fileName:string , explain:string }> = ({ title , fileName , explain }) => {
-  let url = "./artical" + fileName
+  let url = "/" + fileName
   return (
     <>
       <h3 className="sectionTitleLineDashed">
@@ -60,14 +60,11 @@ export const HeaderNav: FC = () => {
   );
 }
 
-
-
 export const ReadBtn: FC<{ url: string , msg:string }> = ({ url , msg }) => {
   return(
     <a href={url} className="btnArticleLinkInText">{msg}↗</a>
   )
 }
-
 
 export const SubTitle: FC<{ subTitle: string }> = ({ subTitle }) => {
   return(
@@ -76,11 +73,44 @@ export const SubTitle: FC<{ subTitle: string }> = ({ subTitle }) => {
   )
 }
 
-
 export const CodeBlock: FC<{ code: string }> = ({ code }) => {
   return(
     <pre><code className="codeBlock">
       {code}
     </code></pre>
+  )
+}
+
+export const References: FC<{contens:string[][]}> = ({contens}) => {
+  return(
+    <>
+      <h4>参考</h4>
+      {contens.map((content) => (
+          <>
+          {content[0]} , <a href={content[1]}>{content[2]}</a><br />
+          </>
+        ))
+      }
+    </>
+  );
+}
+
+export const LastUpdate: FC<{}> =() => {
+  return(
+    <div className="right">
+      🕓本記事の最終更新日は
+      <time id="modify"></time>
+      です。
+      <script>
+        /* 更新日の取得 */
+        const last = new Date(document.lastModified);
+        const year = last.getFullYear();
+        const month = last.getMonth() + 1;
+        const date = last.getDate();
+        /* 日付を書き換える */
+        const target = document.getElementById('modify');
+        target.textContent = year + '-' + month + '-' + date;
+      </script>
+    </div>
   )
 }

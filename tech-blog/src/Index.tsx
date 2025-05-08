@@ -42,8 +42,7 @@ export const Index: FC = () => {
         <a href="/src/jobHuntting.html" >一浪日大でもホワイト企業に就職する方法</a>
         をご覧ください✨
       </p>
-      <p>
-        <table >
+      <table >
         <tbody>
           <tr><th>いつ</th><th>どうした</th></tr>
           <tr><td>2018年3月</td><td>高校卒業</td></tr>
@@ -62,7 +61,6 @@ export const Index: FC = () => {
           <tr><td>2025年4月</td><td>AI専門の企業にソフトウェアエンジニアとして転職する</td></tr>
         </tbody>
       </table>
-      </p>
       <h3>■保有資格・試験</h3>
       <ul>
         <li>ITパスポート試験</li>
