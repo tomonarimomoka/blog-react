@@ -103,7 +103,7 @@ export const GitForBeginner: FC = () => {
       </p>
       <p>
         他にもgitの便利なコマンドが知りたい！という方はこちらをご参照下さい！
-        <a href="./gitForTeam.html" className="btnArticleLink">読む"/>
+        <ReadBtn url="gitForTeam" msg="読む"/>
         Gitを使いこなして、楽しい開発ライフを送りましょー！
       </p>
   </main>
