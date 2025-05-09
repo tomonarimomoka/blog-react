@@ -57,7 +57,7 @@ export const GoogleColab: FC = () => {
     <p>
       GPUをもっと使うには<b>課金するしかない</b>ようです。
     </p>
-    <img src="../素材/Google Colabの使用量.png" className="imgSize_60" alt="Google Colabの使用量">
+    <img src="../素材/Google Colabの使用量.png" className="imgSize_60" alt="Google Colabの使用量" />
    
     <p>
       Google Colabでは以下の料金プランがあるようです。
