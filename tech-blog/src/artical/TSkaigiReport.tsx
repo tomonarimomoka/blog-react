@@ -55,7 +55,6 @@ export const TSkaigiReport: FC = () => {
       <tr><th>会社名</th><td>LINEヤフー株式会社</td></tr>
       <tr><th>題名</th><td>大規模なコードベースの改修のために自作TypeScriptツールを作るメリット</td></tr>
     </table>
-    <table> 
     <h3>発表概要</h3>
     <p>この方は、自作ツールの紹介でした。</p>
     
@@ -246,7 +245,7 @@ export const TSkaigiReport: FC = () => {
   </p>
   
   <p>
-    聞くだけでなく、発表してみたい！という方は<ReadBtn url="firstLTparty.html" >【発表】LT会参加レポート</a>
+    聞くだけでなく、発表してみたい！という方は<ReadBtn url="firstLTparty.html" msg="【発表】LT会参加レポート" />
     をぜひご覧ください！
   </p>
   <p>

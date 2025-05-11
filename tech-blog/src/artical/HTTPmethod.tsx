@@ -46,7 +46,7 @@ export const HTTPmethod: FC = () => {
     </p>
     <pre>
       <code className="codeBlock">
-http://examole.jp/search?q={リクエストパラメータ}
+http://examole.jp/search?q=＜リクエストパラメータ＞
       </code>
     </pre>
     <h3>GETは危険？</h3>
