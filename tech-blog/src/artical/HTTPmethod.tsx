@@ -4,6 +4,12 @@ import './style.css'
 
 export const HTTPmethod: FC = () => {
   var ref:string[][] = [[] ,[] ,[] ] 
+  const codeEx = `http://examole.jp/search
+content_type = "text/html; charset=UTF-8"
+{
+  user_id:1234;
+  content:これはTESTです。
+}`
   return(
     <>
 
@@ -81,12 +87,7 @@ http://examole.jp/search?q=＜リクエストパラメータ＞
     </p>
     {/* <!-- code blockだからここから触らないこと --> */}
     <pre>
-      <code className="codeBlock">http://examole.jp/search
-content_type = "text/html; charset=UTF-8"
-{
-  user_id:1234;
-  content:これはTESTです。
-}</code>
+      <code className="codeBlock">{codeEx}</code>
     </pre>
     {/* <!-- code blockここまで --> */}
     <p>

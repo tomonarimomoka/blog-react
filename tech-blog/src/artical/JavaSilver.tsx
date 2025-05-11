@@ -65,7 +65,7 @@ export const JavaSilver: FC = () => {
       <br/>
       以下に得点の推移を載せるのでご参考までにどうぞ(*'▽')<br/>
       <table>
-        <tr><th></th><th colspan="5">得点率</th></tr>
+        <tr><th></th><th colSpan={5}>得点率</th></tr>
         <tr><th>章</th><th>1回目</th><th>2回目</th><th>3回目</th><th>4回目</th><th>5回目</th></tr>
         <tr><td>1</td><td>50</td><td>87</td><td>75</td><td></td><td></td></tr>
         <tr><td>2</td><td>22</td><td>77</td><td>77</td><td></td><td></td></tr>

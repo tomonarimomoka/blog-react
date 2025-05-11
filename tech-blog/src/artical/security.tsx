@@ -204,7 +204,7 @@ export const Security: FC = () => {
       <li>秘密鍵と現在時刻からハッシュ値を求め、これを6桁程度の数値列に変換してパスワードとする</li>
     </ul>
     <h4>参考リンク</h4>
-    (株)インセプト , 2023 , <a herf="https://e-words.jp/w/TOTP.html">TOTP</a>
+    (株)インセプト , 2023 , <a href="https://e-words.jp/w/TOTP.html">TOTP</a>
     2020 , <a href="https://blog.apar.jp/program/12741/">PHP + Google Authenticator（TOTP）２段階認証の実装方法</a>
 
     <SubTitle subTitle="おわりに" />

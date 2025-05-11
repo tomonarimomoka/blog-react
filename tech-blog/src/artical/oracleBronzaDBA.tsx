@@ -57,15 +57,17 @@ export const OracleBronzaDBA: FC = () => {
     <ol>
       <li>
         黒本ではLinuxで解説されるので、
-      <a href="https://xtech.nikkei.com/atcl/nxt/column/18/01937/020100001/">Windows 11の標準機能でLinuxを動かす方法</a>
-      を参照て自分のPCでもLinuxを使えるようにしました。
-      <a href="https://hazuki--blog.com/linux-ubuntu-install-windowspc/">Ubuntuのインストール方法</a>
-      も参考にしました。</br>
+        <a href="https://xtech.nikkei.com/atcl/nxt/column/18/01937/020100001/">Windows 11の標準機能でLinuxを動かす方法</a>
+        を参照て自分のPCでもLinuxを使えるようにしました。
+        <a href="https://hazuki--blog.com/linux-ubuntu-install-windowspc/">Ubuntuのインストール方法</a>
+        も参考にしました。
+      </li>
       <li><a href="https://www.oracle.com/jp/database/free/get-started/">無料版Oracle Databaseダウンロードページ</a>
           よりダウンロードURLをコピー
       </li>
       <li><a href="https://weblabo.oscasierra.net/linux-file-download/">LinuxコマンドでWEBからファイルをダウンロードする方法 </a>
-        を見てLinux環境に手順2でコピーした無料版Oracle Databaseをインストール</li>
+        を見てLinux環境に手順2でコピーした無料版Oracle Databaseをインストール
+      </li>
     </ol>
     
     <h4>Windows環境にOracle環境構築する方法</h4>
