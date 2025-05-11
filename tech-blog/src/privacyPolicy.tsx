@@ -6,6 +6,7 @@ export const PlivacyPolicy: FC = () => {
 
     return(
         <>
+            <main className="box">
             <HeaderNav/>
             <h2>当サイトが使用しているアクセス解析ツールについて</h2>
             <p>
@@ -23,6 +24,7 @@ export const PlivacyPolicy: FC = () => {
             <p>
             詳しくは、<a href="https://marketingplatform.google.com/about/analytics/terms/jp/">Google アナリティクス利用規約</a>をご確認ください。
             </p>
+            </main>
         </>
 
     );
