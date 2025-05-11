@@ -57,7 +57,7 @@ export const GoogleColab: FC = () => {
     <p>
       GPUをもっと使うには<b>課金するしかない</b>ようです。
     </p>
-    <img src="../素材/Google Colabの使用量.png" className="imgSize_60" alt="Google Colabの使用量" />
+    <img src="/assets/Google Colabの使用量.png" className="imgSize_60" alt="Google Colabの使用量" />
    
     <p>
       Google Colabでは以下の料金プランがあるようです。
@@ -97,7 +97,7 @@ export const GoogleColab: FC = () => {
       デフォルトの設定ではスリープ時間が設定されているはずです。その設定を「なし」変更して、PCへの動作が何もなくても画面がスリープしなくします。
     </p>
     <h4>▼スリープ時間の設定</h4>
-    <img src="../素材/スリープ設定.png" className="imgSize_60" alt="スリープ時間の設定" />
+    <img src="/assets/スリープ設定.png" className="imgSize_60" alt="スリープ時間の設定" />
         
     <p>
       <b>②PCを閉じてもスリープしない設定にする<br/></b>   
@@ -107,9 +107,9 @@ export const GoogleColab: FC = () => {
       以下の画面に移動して設定を変更できます。<br/>
       コントロールパネル＞ハードウェアとサウンド＞電源ボタンの動作の変更  
     </p>
-      <img src="../素材/電源動作_1.png" className="imgSize_60" alt="電源動作_1" />
-      <img src="../素材/電源動作_2.png" className="imgSize_60" alt="電源動作_2" />    
-      <img src="../素材/電源動作_3.png" className="imgSize_60" alt="電源動作_3" />
+      <img src="/assets/電源動作_1.png" className="imgSize_60" alt="電源動作_1" />
+      <img src="/assets/電源動作_2.png" className="imgSize_60" alt="電源動作_2" />    
+      <img src="/assets/電源動作_3.png" className="imgSize_60" alt="電源動作_3" />
     <p>
       <b>③「おーとくりっかー」というツールをインストールする<br/></b>
     

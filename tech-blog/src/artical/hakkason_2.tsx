@@ -142,7 +142,7 @@ st.write("Hello world")</code></pre>
     <p>
       テキストボックスやプルダウン、ボタンなども1行で実装できました！！渾身のプロンプトのおかげでちゃんとニュース記事がポジティブになっております✨
     </p>    
-    <img src="../素材/ポジティブニュース.jpeg" className="imgSize_100" alt="生成されたLP" />
+    <img src="/assets/ポジティブニュース.jpeg" className="imgSize_100" alt="生成されたLP" />
    
     <SubTitle subTitle="おわりに" />
     <p>

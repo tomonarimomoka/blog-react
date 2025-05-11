@@ -105,7 +105,7 @@ export const OracleBronzaDBA: FC = () => {
       合格(((o(*ﾟ▽ﾟ*)o)))<br/>
       65%が合格ラインで、正答率78%でした✨✨
     </p>
-    <img src="../素材/BRZDBA19CJPN.jpg" className="imgSize_30" alt="認定バッチ" />
+    <img src="/assets/BRZDBA19CJPN.jpg" className="imgSize_30" alt="認定バッチ" />
     <SubTitle subTitle="おわりに" />
     <p>
       最後まで読んでいただき、ありがとうございました。<br/>

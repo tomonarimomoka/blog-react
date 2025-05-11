@@ -114,7 +114,7 @@ export const JavaSilver: FC = () => {
       受験結果は正答率76％でした✨<br/>
     </p>
     
-    <img src="../素材/SILVSE11JPN.jpg" className="imgSize_30" alt="認定バッチ" />
+    <img src="/assets/SILVSE11JPN.jpg" className="imgSize_30" alt="認定バッチ" />
     <SubTitle subTitle="おわりに" />
     <p>
       最後まで読んでいただき、ありがとうございました。
