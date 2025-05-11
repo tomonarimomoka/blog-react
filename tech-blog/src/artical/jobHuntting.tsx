@@ -1,6 +1,6 @@
 import { FC } from "react";
 import {HeaderNav , SubTitle , ReadBtn ,References , LastUpdate} from '../Parts';
-import './style.css'
+import '../style.css'
 
 export const JobHuntting: FC = () => {
   var ref:string[][] = [[] ,[] ,[] ] 

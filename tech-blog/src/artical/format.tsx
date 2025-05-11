@@ -1,6 +1,6 @@
 import { FC } from "react";
 import {HeaderNav , SubTitle , ReadBtn ,References} from '../Parts';
-import './style.css'
+import '../style.css'
 
 export const Index: FC = () => {
   var ref:string[][] = [[] ,[] ,[] ] 
