@@ -61,7 +61,7 @@ export const Hakkason_2: FC = () => {
       <li>
         ソース管理<br/>
         ソース管理はほとんどの場合がGitHubなので、使ったことない人は練習しておきましょう。<br/>
-        <ReadBtn url="gitForBeginner.html">はじめてのGit</a>でGitの使い方を解説していますので、確認しておきましょう！
+        <ReadBtn url="gitForBeginner.html" msg="はじめてのGit" />でGitの使い方を解説していますので、確認しておきましょう！
       </li>
     </ul>
     
@@ -136,13 +136,13 @@ st.write("Hello world")</code></pre>
    
     <SubTitle subTitle="成果物" />
     <p>
-      ソースコードが気になる方はこちら
-      <a href="https://github.com/tomonarimomoka/makePositiveNews-public" className="btnArticleLink">GitHub"/>
+      ソースコードが気になる方はこちら      
+      <ReadBtn url="https://github.com/tomonarimomoka/makePositiveNews-public" msg="GitHub"/>
     </p>
     <p>
       テキストボックスやプルダウン、ボタンなども1行で実装できました！！渾身のプロンプトのおかげでちゃんとニュース記事がポジティブになっております✨
     </p>    
-    <img src="../素材/ポジティブニュース.jpeg" className="imgSize_100" alt="生成されたLP">
+    <img src="../素材/ポジティブニュース.jpeg" className="imgSize_100" alt="生成されたLP" />
    
     <SubTitle subTitle="おわりに" />
     <p>

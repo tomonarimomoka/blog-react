@@ -40,13 +40,14 @@ export const GoogleColab: FC = () => {
     <p>
       ■動作確認環境<br/>
       筆者が動作確認した環境は以下です。
-      <table >
-        <tbody>
-          <tr><th>OS</th><td>Windws 11</td></tr>
-          <tr><th>Google Colab</th><td>Colab Pro+</td></tr>
-          <tr><th>LLM</th><td>RoLA</td></tr>
-        </tbody>
-            </table>
+    </p>
+    <table >
+      <tbody>
+        <tr><th>OS</th><td>Windws 11</td></tr>
+        <tr><th>Google Colab</th><td>Colab Pro+</td></tr>
+        <tr><th>LLM</th><td>RoLA</td></tr>
+      </tbody>
+    </table>
     
     <SubTitle subTitle="Google ColabでGPUを利用する" />
     <p>
@@ -56,7 +57,7 @@ export const GoogleColab: FC = () => {
     <p>
       GPUをもっと使うには<b>課金するしかない</b>ようです。
     </p>
-    <img src="../素材/Google Colabの使用量.png" className="imgSize_60" alt="Google Colabの使用量">
+    <img src="../素材/Google Colabの使用量.png" className="imgSize_60" alt="Google Colabの使用量" />
    
     <p>
       Google Colabでは以下の料金プランがあるようです。

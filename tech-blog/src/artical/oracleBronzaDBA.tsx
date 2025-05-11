@@ -75,8 +75,6 @@ export const OracleBronzaDBA: FC = () => {
       <li><a href="https://www.workaholic-blog.com/index.php/2021/10/05/027/">Oracle Database 21c でデータベース作成</a>や黒本を参考にDBを構築したのですが、どうしても出来ず諦めました( ；∀；)</li>
 
     </ol>
-      
-    </p>
     <SubTitle subTitle="黒本での対策" />
     <h4>模擬試験を通して黒本を読む（5日間）</h4>
     <p>
@@ -105,7 +103,7 @@ export const OracleBronzaDBA: FC = () => {
       合格(((o(*ﾟ▽ﾟ*)o)))<br/>
       65%が合格ラインで、正答率78%でした✨✨
     </p>
-    <img src="../素材/BRZDBA19CJPN.jpg" className="imgSize_30" alt="認定バッチ">
+    <img src="../素材/BRZDBA19CJPN.jpg" className="imgSize_30" alt="認定バッチ" />
     <SubTitle subTitle="おわりに" />
     <p>
       最後まで読んでいただき、ありがとうございました。<br/>
@@ -113,7 +111,7 @@ export const OracleBronzaDBA: FC = () => {
     </p>
     
   <p>
-    Oracleのベンダー資格にご興味があれば、<ReadBtn url="JavaSilver.html">Java Silver合格体験記</a>
+    Oracleのベンダー資格にご興味があれば、<ReadBtn url="JavaSilver.html" msg="Java Silver合格体験記" />
     もぜひご覧ください！
   </p>
   </main>

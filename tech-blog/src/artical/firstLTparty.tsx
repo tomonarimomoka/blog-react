@@ -124,7 +124,7 @@ export const FirstLTparty: FC = () => {
       LT会に参加して、知らない世界を見ることができて面白かったです。LT会は時間も結構取られるので、毎月とは言いませんが年に何回かは継続的に参加したいと考えています。
     </p>
     <p>
-      まずは、聞くだけで様子を見たい！という方は<ReadBtn url="TSkaigiReport.html">【聞き専】TSkaigi参加レポート</a>
+      まずは、聞くだけで様子を見たい！という方は<ReadBtn url="TSkaigiReport.html" msg="【聞き専】TSkaigi参加レポート" />
       をぜひご覧ください！
     </p>
     <p>

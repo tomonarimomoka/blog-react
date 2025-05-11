@@ -50,7 +50,7 @@ export const GitForBeginner: FC = () => {
       このいくつかのファイル置き場をうまく使い分けて、Gitは動きます。
     </p>
     <p>クラウドにデータを置くとは、誰かの所有物で利用者はどこにあるか分からないサーバーにファイルを記憶させるということです。</p>
-    <img src="../素材/Gitの説明.jpeg" className="imgSize_60">
+    <img src="../素材/Gitの説明.jpeg" className="imgSize_60" />
     <p>まず、画像の一番下の「ローカル」とは皆さんのパソコンなどのことです。パソコンにファイルを保存しますよね？これのことです。</p>
     <p>
       次に下から二番目の「インデックス」はもう一つ上の「ローカルリポジトリ」に必要なファイルだけを置くための言わば踏み台です。
@@ -71,10 +71,10 @@ export const GitForBeginner: FC = () => {
       <pre><code className="codeBlock">git add --all</code></pre>
 
       <p>■特定のファイルの変更をステージしたいとき</p>
-      <pre><code className="codeBlock">git add <相対パス></code></pre>
+      <pre><code className="codeBlock">git add ＜相対パス＞</code></pre>
       
       <p>■コメント付きでコミットするとき</p>
-      <pre><code className="codeBlock">git commit -m '<任意のコミットメッセージ>'</code></pre>
+      <pre><code className="codeBlock">git commit -m '＜任意のコミットメッセージ＞'</code></pre>
 
       <p>■gi commitをオプションなしで実行した後</p>
       <p>コメントオプションを付けずにcommitコマンドを実行すると、VIMに入ります。</p>

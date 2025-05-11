@@ -55,7 +55,7 @@ export const Hakkason_1: FC = () => {
     <p>■ソース管理</p>
     <p>
       ソース管理はほとんどの場合がGitHubなので、使ったことない人は練習しておきましょう。<br/>
-      <ReadBtn url="gitForBeginner.html">はじめてのGit</a>でGitの使い方を解説していますので、確認しておきましょう！
+      <ReadBtn url="gitForBeginner.html" msg="はじめてのGit" />でGitの使い方を解説していますので、確認しておきましょう！
     </p>
     
     <SubTitle subTitle="私たちのチームが作ったもの" />
@@ -144,7 +144,7 @@ def makepromptForLP(referenceUrl,businessType,target,personasGender,age,imageCol
     <SubTitle subTitle="成果物" />
     <h3>ペルソナ入力ページ</h3>
     <p>このページでペルソナの情報を入力させます。</p>
-    <img src="../素材/ペルソナ入力ページ.png" className="imgSize_30" alt="ペルソナ入力ページ">
+    <img src="../素材/ペルソナ入力ページ.png" className="imgSize_30" alt="ペルソナ入力ページ" />
     <h3>生成されたLP</h3>
     <p>
       ジャーン！！！いかがでしょうか？
@@ -153,7 +153,7 @@ def makepromptForLP(referenceUrl,businessType,target,personasGender,age,imageCol
       もちろん、手直しは必要だと思いますが、ボタン一つでこれが生成されるのです。 とても面白いですよね！！！！
       生成AIの可能性を感じます。プロンプトを作るところもシステムで持てば、エンドユーザーはプロンプトエンジニアリングの知識すら必要ありません。
     </p>
-    <img src="../素材/生成されたLP.png" className="imgSize_100" alt="生成されたLP">
+    <img src="../素材/生成されたLP.png" className="imgSize_100" alt="生成されたLP" />
 
     <SubTitle subTitle="おわりに" />
     <p>
