@@ -3,7 +3,6 @@ import {
   Route,
   Routes
 } from "react-router-dom";
-import './App.css'
 import {Index} from './Index.tsx'
 import { ListTech } from "./ListTech.tsx";
 import { PlivacyPolicy } from "./privacyPolicy.tsx";
