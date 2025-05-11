@@ -4,10 +4,9 @@ import './style.css'
 
 export const Index: FC = () => {
   return(
-    <>    
-      <main className="box">
-
+    <>
       <HeaderNav />
+      <main className="box">
       <SubTitle subTitle="♥このブログについて" />
       <p>
         このブログはエンジニア役に立つことを目指しています。
@@ -75,8 +74,7 @@ export const Index: FC = () => {
       <img src="./assets/SILVSE11JPN.jpg" className="imgSize_30" alt="認定バッチ" />
       <img src="./assets/BRZDBA19CJPN.jpg" className="imgSize_30" alt="認定バッチ" />
       <img src="./assets/generative-ai-passport-logo.png" className="imgSize_20" alt="認定バッチ" />
-      
-  </main>
+      </main>
     </>
   );
 }

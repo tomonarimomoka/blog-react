@@ -6,8 +6,8 @@ export const PlivacyPolicy: FC = () => {
 
     return(
         <>
-            <main className="box">
             <HeaderNav/>
+            <main className="box">
             <h2>当サイトが使用しているアクセス解析ツールについて</h2>
             <p>
             当サイトでは、Googleによるアクセス解析ツール「Googleアナリティクス」を利用しています。
