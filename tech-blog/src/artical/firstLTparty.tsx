@@ -34,16 +34,14 @@ export const FirstLTparty: FC = () => {
       <li>LT会は初めて</li>
     </ul>
     <SubTitle subTitle="参加したイベント" />
-    <p>
-      <table > 
+          <table> 
         <tbody>
           <tr><th>イベント名</th><td>神田・秋葉原 ゆるLT会</td></tr>
-          <tr><th>URL</th><td><a href="https://fffff.connpass.com/event/320062/">神田・秋葉原 ゆるLT会</a></td></tr></tr>
-          <tr><th>主催</th><td><a href="https://reload.co.jp">株式会社リロード</a></td></tr></tr>
+          <tr><th>URL</th><td><a href="https://fffff.connpass.com/event/320062/">神田・秋葉原 ゆるLT会</a></td></tr>
+          <tr><th>主催</th><td><a href="https://reload.co.jp">株式会社リロード</a></td></tr>
           <tr><th>参加対象者</th><td>「ソフトウェアエンジニアの参加者が多いですが、どなたでも参加可能です。」</td></tr>
         </tbody>
-      </table>
-    </p>
+            </table>
     <SubTitle subTitle="発表内容" />
     <p>■選んだトピック<br/>
       私は生成AIについて発表しました。

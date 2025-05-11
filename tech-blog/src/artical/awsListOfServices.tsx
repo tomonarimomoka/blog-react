@@ -70,8 +70,7 @@ export const AwsListOfServices: FC = () => {
           <tr><td>Amazon Connect</td><td>ソフトフォン（PC上で動く電話）を提供するサービス</td><td></td></tr>
         
         </tbody>
-      </table>
-    </p>
+            </table>
     <h4>参考</h4>
     山下 光洋 and 海老原 寛之 , AWS認定資格試験テキスト　AWS認定 クラウドプラクティショナー, 2021
     <br/>

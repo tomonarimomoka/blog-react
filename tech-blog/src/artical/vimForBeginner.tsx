@@ -51,7 +51,7 @@ export const VimForBeginner: FC = () => {
       <b>insertモードに入るには「i」を入力する</b>だけです。
       insertモードのときは、ターミナルの下の方に「-- INSERT --」と表示されます。
     </p>
-    <img src="../素材/vim-insert.png" className="imgSize_90" alt="insertモード" />
+    <img src="../素材/vim-insert.png" className="imgSize_90" alt="insertモード">
 
 
     <SubTitle subTitle="ファイルを編集する" />

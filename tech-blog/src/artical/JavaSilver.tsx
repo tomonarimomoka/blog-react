@@ -114,7 +114,7 @@ export const JavaSilver: FC = () => {
       受験結果は正答率76％でした✨<br/>
     </p>
     
-    <img src="../素材/SILVSE11JPN.jpg" className="imgSize_30" alt="認定バッチ" />
+    <img src="../素材/SILVSE11JPN.jpg" className="imgSize_30" alt="認定バッチ">
     <SubTitle subTitle="おわりに" />
     <p>
       最後まで読んでいただき、ありがとうございました。
@@ -123,7 +123,7 @@ export const JavaSilver: FC = () => {
     </p>
     
   <p>
-    Oracleのベンダー資格にご興味があれば、<ReadBtn url="oracleBronzaDBA.html" msg="Oracle Master Bronze合格体験記" />
+    Oracleのベンダー資格にご興味があれば、<ReadBtn url="oracleBronzaDBA.html">Oracle Master Bronze合格体験記</a>
     もぜひご覧ください！
   </p>
   </main>

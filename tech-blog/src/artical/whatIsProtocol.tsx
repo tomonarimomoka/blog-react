@@ -150,6 +150,8 @@ export const WhatIsProtocol: FC = () => {
         プロトコルについて理解できましたか？皆様のお役に立てていれば幸いです。
       </p>
   </main>
+</body>
+
     </>
   );
 }

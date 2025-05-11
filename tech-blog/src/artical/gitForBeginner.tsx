@@ -86,7 +86,7 @@ export const GitForBeginner: FC = () => {
       <p>vimの使い方はこちら ⇒ </p>
       
       <p>■特定のブランチからソースコードを取得したいとき</p>
-      <pre><code className="codeBlock">git clone <リポジトリのURL> -b <欲しいブランチの名前></code></pre>
+      <pre><code className="codeBlock">git clone ＜リポジトリのURL＞ -b ＜欲しいブランチの名前＞</code></pre>
 
 
       <h4>参考</h4>

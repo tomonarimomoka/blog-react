@@ -34,12 +34,11 @@ export const TSkaigiReport: FC = () => {
     </ul>
 
     <SubTitle subTitle="参加したイベント" />
-    <p>
-      <table > 
+          <table> 
         <tbody>
           <tr><th>イベント名</th><td>TSKaigi Mashup #1 フロントエンド</td></tr>
-          <tr><th>URL</th><td><a href="https://typescript-jpc.connpass.com/event/325001/">TSKaigi Mashup #1 フロントエンド</a></td></tr></tr>
-          <tr><th>主催</th><td><a href="https://association.tskaigi.org/">一般社団法人TSKaigi Association</a></td></tr></tr>
+          <tr><th>URL</th><td><a href="https://typescript-jpc.connpass.com/event/325001/">TSKaigi Mashup #1 フロントエンド</a></td></tr>
+          <tr><th>主催</th><td><a href="https://association.tskaigi.org/">一般社団法人TSKaigi Association</a></td></tr>
           <tr><th>参加対象者</th><td>
             <ul>
               <li>フロントエンドに興味のある方</li>
@@ -47,8 +46,7 @@ export const TSkaigiReport: FC = () => {
             </ul>
           </td></tr>
         </tbody>
-      </table>
-    </p>
+            </table>
 
     <SubTitle subTitle="発表：1人目" />
     <h3>基本情報</h3>

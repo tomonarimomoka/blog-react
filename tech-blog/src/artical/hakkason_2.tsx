@@ -36,16 +36,14 @@ export const Hakkason_2: FC = () => {
     </ul>
 
     <SubTitle subTitle="参加したイベント" />
-    <p>
-      <table >
+          <table>
         <tbody>
           <tr><th>イベント名</th><td>シンプルな生成 AI ハッカソン #4</td></tr>
-          <tr><th>URL</th><td><a href="https://simpleform.connpass.com/event/321475/">シンプルな生成 AI ハッカソン #4</a></td></tr></tr>
-          <tr><th>主催</th><td><a href="https://www.simpleform.co.jp/">SimpleForm</a></td></tr></tr>
+          <tr><th>URL</th><td><a href="https://simpleform.connpass.com/event/321475/">シンプルな生成 AI ハッカソン #4</a></td></tr>
+          <tr><th>主催</th><td><a href="https://www.simpleform.co.jp/">SimpleForm</a></td></tr>
           <tr><th>参加対象者</th><td>「プログラマもしくはデザイナであればどなたでも参加いただけます！」</td></tr>
         </tbody>
-      </table>
-    </p>
+            </table>
 
     <SubTitle subTitle="技術選定" />
     <p>我々はPython × Streamlitで作りました。ソース管理はGitHubです。</p>

@@ -37,11 +37,11 @@ export const GitForTeam: FC = () => {
     </p>
     <SubTitle subTitle="クローン" />
     以下コマンドを実行すると、特定のブランチからソースコードを取得することができます
-    <pre><code className="codeBlock">git clone <リポジトリのURL> -b <欲しいブランチの名前></code></pre>
+    <pre><code className="codeBlock">git clone ＜リポジトリのURL＞ -b ＜欲しいブランチの名前＞</code></pre>
 
     <SubTitle subTitle="チェックアウト" />
       <pre><code className="codeBlock">
-        git checkout <新しいブランチ名>
+        git checkout ＜新しいブランチ名＞
       </code></pre>
     
     <SubTitle subTitle="新しくブランチを作る" />
@@ -49,7 +49,7 @@ export const GitForTeam: FC = () => {
       以下のコマンドを実行すると、今いるブランチから新しいブランチが切られます。
     </p>
     <pre><code className="codeBlock">
-      git branch <新しいブランチ名>
+      git branch ＜新しいブランチ名＞
     </code></pre>
 
     <SubTitle subTitle="リモート登録" />
@@ -57,7 +57,7 @@ export const GitForTeam: FC = () => {
         ブランチを切ったら、リモート登録をしないとpushできないことがあります。そんな時は以下のコマンドを実行しましょう！
       </p>
       <pre><code className="codeBlock">
-        git push -u origin <ブランチ名>
+        git push -u origin ＜ブランチ名＞
       </code></pre>    　
 
     <SubTitle subTitle="フェッチ" />
@@ -73,7 +73,7 @@ export const GitForTeam: FC = () => {
         ブランチを移動するときはswitchコマンドを使います。ローカルリポジトリがまだないときも自動でローカルリポジトリを作ってくれます。
       </p>
       <pre><code className="codeBlock">
-        git switch <ブランチ名>
+        git switch ＜ブランチ名＞
       </code></pre>
 
     <SubTitle subTitle="マージ" />
@@ -81,7 +81,7 @@ export const GitForTeam: FC = () => {
       gitのマージとはブランチを統合してすることです。以下コマンド実行後はaddまでされるので、pushだけでOKです。
     </p>
     <pre><code className="codeBlock">
-      git merge <ブランチ名>
+      git merge ＜ブランチ名＞
     </code></pre>　    
 ​
     <h4>参考</h4>

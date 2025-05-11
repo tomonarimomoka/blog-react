@@ -46,8 +46,7 @@ export const GoogleColab: FC = () => {
           <tr><th>Google Colab</th><td>Colab Pro+</td></tr>
           <tr><th>LLM</th><td>RoLA</td></tr>
         </tbody>
-      </table>
-    </p>
+            </table>
     
     <SubTitle subTitle="Google ColabでGPUを利用する" />
     <p>
@@ -57,7 +56,7 @@ export const GoogleColab: FC = () => {
     <p>
       GPUをもっと使うには<b>課金するしかない</b>ようです。
     </p>
-    <img src="../素材/Google Colabの使用量.png" className="imgSize_60" alt="Google Colabの使用量" />
+    <img src="../素材/Google Colabの使用量.png" className="imgSize_60" alt="Google Colabの使用量">
    
     <p>
       Google Colabでは以下の料金プランがあるようです。
