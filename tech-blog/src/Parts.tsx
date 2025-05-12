@@ -31,25 +31,19 @@ export const ArticalListBox: FC<{ title: string , fileName:string , explain:stri
   );
 }
 // export const Head : FC<{title:string}> = (title) => {
+//   // 時間を取得  
+//   // window.dataLayer = window.dataLayer || [];
+//   // function gtag(){dataLayer.push(arguments);}
+//   // gtag('js', new Date());
+//   // gtag('config', 'G-LG6VXEVGW8');
 //   return(
 //     <>
 //       <head>
 //         <title>{title}</title>
-//         <link rel="icon" href="../素材/favicon.ico">
 //         {/* <!-- Google tag (gtag.js) --> */}
 //         <script async src="https://www.googletagmanager.com/gtag/js?id=G-LG6VXEVGW8"></script>
-//         <script>
-//           window.dataLayer = window.dataLayer || [];
-//           function gtag(){dataLayer.push(arguments);}
-//           gtag('js', new Date());
-
-//           gtag('config', 'G-LG6VXEVGW8');
-//         </script>
 //         {/* <!-- Google AdSense --> */}
 //         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2761899560206236" crossorigin="anonymous"></script>
-        
-//         <meta charset="UTF-8">
-//         <link rel="stylesheet" href="../style.css">
 //         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 //       </head>
 //     </>
@@ -110,21 +104,19 @@ export const References: FC<{contens:string[][]}> = ({contens}) => {
 }
 
 export const LastUpdate: FC<{}> =() => {
+  
+  /* 更新日の取得 */
+  const last = new Date(document.lastModified);
+  const year = last.getFullYear();
+  const month = last.getMonth() + 1;
+  const date = last.getDate();
+
+  const dateString :string =  year + '/' + month + '/' + date;
   return(
     <div className="right">
       🕓本記事の最終更新日は
-      <time id="modify"></time>
+      <time>{dateString}</time>
       です。
-      <script>
-        /* 更新日の取得 */
-        const last = new Date(document.lastModified);
-        const year = last.getFullYear();
-        const month = last.getMonth() + 1;
-        const date = last.getDate();
-        /* 日付を書き換える */
-        const target = document.getElementById('modify');
-        target.textContent = year + '-' + month + '-' + date;
-      </script>
     </div>
   )
 }
