@@ -109,7 +109,7 @@ export const Hakkason_3: FC = () => {
       最後まで読んでくださり、ありがとうございました。
     </p>
   </main>
-  <script>hljs.highlightAll();</script>
+  
     </>
   );
 }

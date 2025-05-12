@@ -86,7 +86,7 @@ export const GitForTeam: FC = () => {
         gitを使いこなして、楽しい開発ライフを送りましょー！
       </p>
   </main>
-  <script>hljs.highlightAll();</script>
+  
     </>
   );
 }

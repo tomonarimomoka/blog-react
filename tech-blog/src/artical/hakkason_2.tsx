@@ -145,7 +145,7 @@ st.write("Hello world")</code></pre>
       最後まで読んでくださり、ありがとうございました。
     </p>
   </main>
-  <script>hljs.highlightAll();</script>
+  
     </>
   );
 }

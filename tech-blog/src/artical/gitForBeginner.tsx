@@ -92,7 +92,6 @@ export const GitForBeginner: FC = () => {
         Gitを使いこなして、楽しい開発ライフを送りましょー！
       </p>
   </main>
-  <script>hljs.highlightAll();</script>
     </>
   );
 }

@@ -94,7 +94,7 @@ http://examole.jp/search?q=＜リクエストパラメータ＞
         普段とりあえずPOSTを使っている人も、なぜPOSTを使うか理解できましたか？お役に立てていれば幸いです。
       </p>
     </main>
-    <script>hljs.highlightAll();</script>
+    
     </>
   );
 }

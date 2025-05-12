@@ -160,7 +160,7 @@ def makepromptForLP(referenceUrl,businessType,target,personasGender,age,imageCol
       最後まで読んでくださり、ありがとうございました。
     </p>
   </main>
-  <script>hljs.highlightAll();</script>
+  
     </>
   );
 }
