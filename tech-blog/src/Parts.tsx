@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import { FC } from "react";
 import './style.css'
 
 export const ArticalList: FC<{ title: string , fileName:string , explain:string }> = ({ title , fileName , explain }) => {
@@ -15,7 +15,21 @@ export const ArticalList: FC<{ title: string , fileName:string , explain:string 
     </>
   );
 }
-
+export const ArticalListBox: FC<{ title: string , fileName:string , explain:string }> = ({ title , fileName , explain }) => {
+  let url = "/" + fileName
+  return (
+    <>      
+      <a href={url} className="articalBox">
+        <h3>
+          {title}
+        </h3>
+        <p>
+          {explain}
+        </p>        
+      </a>
+    </>
+  );
+}
 // export const Head : FC<{title:string}> = (title) => {
 //   return(
 //     <>
