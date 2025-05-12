@@ -10,22 +10,7 @@ export const Security: FC = () => {
 <HeaderNav />
   <main className="box">
     <h1 id="articleTitle">ASVS用語集</h1>
-    <div className="right">
-      <LastUpdate/>
-      <time id="modify"></time>
-      です。
-      <script>
-        /* 更新日の取得 */
-        const last = new Date(document.lastModified);
-        const year = last.getFullYear();
-        const month = last.getMonth() + 1;
-        const date = last.getDate();
-        /* 日付を書き換える */
-        const target = document.getElementById('modify');
-        target.textContent = year + '-' + month + '-' + date;
-      </script>
-    </div>
-        
+    <LastUpdate/>
     <SubTitle subTitle="本記事について" />
     <p>
       本記事ではセキュリティ標準として知られているASVSの中の認証に関する用語を解説します。<br/>

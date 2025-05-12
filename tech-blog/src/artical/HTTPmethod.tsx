@@ -16,21 +16,7 @@ content_type = "text/html; charset=UTF-8"
 <HeaderNav />
   <main className="box">    
     <h1 id="articleTitle">HTTPメソッドとは？</h1>
-    <div className="right">
-      <LastUpdate/>
-      <time id="modify"></time>
-      です。
-      <script>
-        /* 更新日の取得 */
-        const last = new Date(document.lastModified);
-        const year = last.getFullYear();
-        const month = last.getMonth() + 1;
-        const date = last.getDate();
-        /* 日付を書き換える */
-        const target = document.getElementById('modify');
-        target.textContent = year + '-' + month + '-' + date;
-      </script>
-    </div>
+    <LastUpdate/>
     
     <SubTitle subTitle="８つのメソッド" />
     <p>HTTPには8つしかメソッドがありません。今回はよく使うGETとPOSTについて詳しく説明します。</p>

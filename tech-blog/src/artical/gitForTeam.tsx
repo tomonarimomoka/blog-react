@@ -10,22 +10,7 @@ export const GitForTeam: FC = () => {
 <HeaderNav />  
   <main className="box">    
     <h1 id="articleTitle">仕事で使えるGitコマンド集</h1>
-    <div className="right">
-      <LastUpdate/>
-      <time id="modify"></time>
-      です。
-      <script>
-        /* 更新日の取得 */
-        const last = new Date(document.lastModified);
-        const year = last.getFullYear();
-        const month = last.getMonth() + 1;
-        const date = last.getDate();
-        /* 日付を書き換える */
-        const target = document.getElementById('modify');
-        target.textContent = year + '-' + month + '-' + date;
-      </script>
-    </div>
-    
+    <LastUpdate/>
     <SubTitle subTitle="本記事の対象者" />
     <ul>      
       <li>仕事でGitを使う人</li>

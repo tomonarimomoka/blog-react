@@ -12,21 +12,7 @@ export const HowToUseStreamlit: FC = () => {
   <main className="box">
     
     <h1 id="articleTitle">はじめてのStreamlit</h1>
-    <div className="right">
-      <LastUpdate/>
-      <time id="modify"></time>
-      です。
-      <script>
-        /* 更新日の取得 */
-        const last = new Date(document.lastModified);
-        const year = last.getFullYear();
-        const month = last.getMonth() + 1;
-        const date = last.getDate();
-        /* 日付を書き換える */
-        const target = document.getElementById('modify');
-        target.textContent = year + '-' + month + '-' + date;
-      </script>
-    </div>
+    <LastUpdate/>
     <SubTitle subTitle="Streamlitとは？" />
     <p>StreamlitとはPythonで簡単にWebアプリケーションを作れるフレームワークです。</p>
     <p>簡単に作れるので、ハッカソンにおすすめです。

@@ -12,21 +12,7 @@ export const AwsListOfServices: FC = () => {
   <main className="box">
     
     <h1 id="articleTitle">AWS主要サービス一覧</h1>
-    <div className="right">
-      <LastUpdate/>
-      <time id="modify"></time>
-      です。
-      <script>
-        /* 更新日の取得 */
-        const last = new Date(document.lastModified);
-        const year = last.getFullYear();
-        const month = last.getMonth() + 1;
-        const date = last.getDate();
-        /* 日付を書き換える */
-        const target = document.getElementById('modify');
-        target.textContent = year + '-' + month + '-' + date;
-      </script>
-    </div>
+    <LastUpdate/>
     <SubTitle subTitle="筆者のスペック" />
     <ul>      
       <li>プログラミングはほぼ独学</li>
