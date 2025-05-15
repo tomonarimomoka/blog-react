@@ -1,5 +1,5 @@
 import { FC } from "react";
-import {HeaderNav , SubTitle , ReadBtn ,References , LastUpdate} from '../Parts';
+import {HeaderNav , SubTitle , ReadBtn ,References , SourceCode , LastUpdate} from '../Parts';
 import '../style.css'
 
 export const Hakkason_1: FC = () => {
@@ -75,7 +75,7 @@ export const Hakkason_1: FC = () => {
     <SubTitle subTitle="動的にプロンプトを作る" />
     <p>私は以下のようにして動的にプロンプトを作りました。</p>
 
-      <pre><code className="codeBlock">
+    <SourceCode code='
 def addCondition(prompt,conditonType,condition):
   if(len(condition) != 0):
       prompt += "\n" + "・"
@@ -118,8 +118,7 @@ def makepromptForLP(referenceUrl,businessType,target,personasGender,age,imageCol
   prompt += "・下記ページを参照すること\n"
   prompt += referenceUrl
   
-  return prompt
-    </code></pre>
+  return prompt' />
     <p> 工夫した点としては、入力値がからでもプロンプトが崩れずに正しく作れるようにしたことです。
       それから、ほかのメンバーにもmakePromptForCatchcopy関数を基に関数を作ってもらうようにしたので、読みやすさには気を付けました。
     </p>

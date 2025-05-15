@@ -1,4 +1,5 @@
 import { FC } from "react";
+// import ReactMarkdown from "react-markdown";
 import './style.css'
 
 export const ArticalList: FC<{ title: string , fileName:string , explain:string }> = ({ title , fileName , explain }) => {
@@ -30,16 +31,17 @@ export const ArticalListBox: FC<{ title: string , fileName:string , explain:stri
     </>
   );
 }
-// export const Head : FC<{title:string}> = (title) => {
-//   // 時間を取得  
-//   // window.dataLayer = window.dataLayer || [];
-//   // function gtag(){dataLayer.push(arguments);}
-//   // gtag('js', new Date());
-//   // gtag('config', 'G-LG6VXEVGW8');
+// export const Head : FC<{title:string}> = ({title}) => {
 //   return(
 //     <>
 //       <head>
-//         <title>{title}</title>
+//         <title>{title}</title>    
+//         <script>
+//           window.dataLayer = window.dataLayer || [];
+//           function gtag(){dataLayer.push(arguments);}
+//           gtag('js', new Date());
+//           gtag('config', 'G-LG6VXEVGW8');
+//         </script>
 //         {/* <!-- Google tag (gtag.js) --> */}
 //         <script async src="https://www.googletagmanager.com/gtag/js?id=G-LG6VXEVGW8"></script>
 //         {/* <!-- Google AdSense --> */}
@@ -119,4 +121,16 @@ export const LastUpdate: FC<{}> =() => {
       です。
     </div>
   )
+}
+
+export const SourceCode:FC<{code:string}> =(code) => {
+  return(
+    <>
+      {/* <ReactMarkdown> */}
+        ```
+{code}
+        ```
+      {/* </ReactMarkdown> */}
+    </>
+  );
 }
