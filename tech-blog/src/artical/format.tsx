@@ -1,5 +1,5 @@
 import { FC } from "react";
-import {HeaderNav , SubTitle , ReadBtn ,References} from '../Parts';
+import {HeaderNav , SubTitle , ReadBtn ,LastUpdate ,References} from '../Parts';
 import '../style.css'
 
 export const Index: FC = () => {
@@ -7,6 +7,8 @@ export const Index: FC = () => {
   return(
     <>    
       <HeaderNav />
+      <LastUpdate/>
+      <h1 id="articleTitle"></h1>
 
       <SubTitle subTitle="test" />
       <p></p>
