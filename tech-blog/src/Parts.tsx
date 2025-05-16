@@ -1,6 +1,7 @@
-import { FC } from "react";
-// import ReactMarkdown from "react-markdown";
-import './style.css'
+import { FC } from "react"
+import Markdown from 'react-markdown'
+// import remarkGfm from 'remark-gfm'
+
 
 export const ArticalList: FC<{ title: string , fileName:string , explain:string }> = ({ title , fileName , explain }) => {
   let url = "/" + fileName
@@ -16,6 +17,7 @@ export const ArticalList: FC<{ title: string , fileName:string , explain:string 
     </>
   );
 }
+
 export const ArticalListBox: FC<{ title: string , fileName:string , explain:string }> = ({ title , fileName , explain }) => {
   let url = "/" + fileName
   return (
@@ -123,14 +125,19 @@ export const LastUpdate: FC<{}> =() => {
   )
 }
 
-export const SourceCode:FC<{code:string}> =(code) => {
+export type SourceCodeProps = {
+  code: string;
+  language?: string;
+};
+export const SourceCode:FC<SourceCodeProps> =({code, language='python'}) => {
+  const markdown = `\`\`\`${language}
+${code}
+\`\`\``;
   return(
     <>
-      {/* <ReactMarkdown> */}
-        ```
-{code}
-        ```
-      {/* </ReactMarkdown> */}
+      <Markdown >
+{markdown}
+      </Markdown>
     </>
   );
 }
