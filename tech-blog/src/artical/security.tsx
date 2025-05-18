@@ -102,34 +102,31 @@ export const Security: FC = () => {
     (株)インセプト , 2019 , <a href="https://e-words.jp/w/OpenID.html">OpenIDとは</a>
 
     <SubTitle subTitle="SAML" />
-    <p>
-        <ul>
-          <li>Security Assertion Markup Languageの略 ※Assertion(アサーション) : 断言、断定、主張</li>
-          <li>SAMLの読み方は「サムル」</li>
-          <li>XMLベースのマークアップ言語の一つ</li>
-          <li>ユーザの認証情報をを伝達するためのもの</li>
-          <li>SSO(シングルサインオン)のための仕組み</li>
-          <li>標準化団体のOASISによって策定された</li>
-        </ul>
 
-        <h4>参考リンク</h4>
-        佐々木　真 , 2022 , <a href="https://wa3.i-3-i.info/word13374.html">SAML（読：サムル）とは</a>
-        <br/>
-        2018 , <a href="https://qiita.com/pasta_kun/items/4a57bd3b71ac8bf5d736">やさしい言葉で理解するSAML認証のまとめ</a>
-        <br/>     
-        2023 , <a href="https://milestone-of-se.nesuke.com/product/oss/saml/">分かりやすいSAML認証の仕組みとシーケンス,メリット</a>
-        <br/>
-        (株)インセプト , 2019 , <a href="https://e-words.jp/w/SAML.html">SAMLとは</a>        
-    </p>
+    <ul>
+      <li>Security Assertion Markup Languageの略 ※Assertion(アサーション) : 断言、断定、主張</li>
+      <li>SAMLの読み方は「サムル」</li>
+      <li>XMLベースのマークアップ言語の一つ</li>
+      <li>ユーザの認証情報をを伝達するためのもの</li>
+      <li>SSO(シングルサインオン)のための仕組み</li>
+      <li>標準化団体のOASISによって策定された</li>
+    </ul>
+
+    <h4>参考リンク</h4>
+    佐々木　真 , 2022 , <a href="https://wa3.i-3-i.info/word13374.html">SAML（読：サムル）とは</a>
+    <br/>
+    2018 , <a href="https://qiita.com/pasta_kun/items/4a57bd3b71ac8bf5d736">やさしい言葉で理解するSAML認証のまとめ</a>
+    <br/>     
+    2023 , <a href="https://milestone-of-se.nesuke.com/product/oss/saml/">分かりやすいSAML認証の仕組みとシーケンス,メリット</a>
+    <br/>
+    (株)インセプト , 2019 , <a href="https://e-words.jp/w/SAML.html">SAMLとは</a>        
 
     <SubTitle subTitle="SHA-256" />
-    <p>
-      <ul>
-        <li>入力されたデータをもとにして作った適当な値を返してくれる関数（ハッシュ関数）のひとつ</li>
-      </ul>
-      <h4>参考リンク</h4>
-      佐々木　真 , 2022 , <a href="https://wa3.i-3-i.info/word15997.html">SHA-256とは</a>
-    </p>
+    <ul>
+      <li>入力されたデータをもとにして作った適当な値を返してくれる関数（ハッシュ関数）のひとつ</li>
+    </ul>
+    <h4>参考リンク</h4>
+    佐々木　真 , 2022 , <a href="https://wa3.i-3-i.info/word15997.html">SHA-256とは</a>
 
     <SubTitle subTitle="CSRFとXSS" />
     <p>

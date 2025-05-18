@@ -63,8 +63,7 @@ export const WhatIsProtocol: FC = () => {
           <li>HTTPのベースになっている</li>
           <li>以下のような階層構造になっている</li>
         </ul>
-        <CustomTable>
-          <caption>TCP/IPモデルの階層構造</caption>
+        <CustomTable cap="TCP/IPモデルの階層構造">
           <tr><th>名前</th><th>何をする</th><th>プロトコル例</th></tr>
           <tr><td>アプリケーション層</td><td></td><td>HTTP</td></tr>
           <tr><td>トランスポート層</td><td>データの転送を保証</td><td>TCP</td></tr>
@@ -86,14 +85,12 @@ export const WhatIsProtocol: FC = () => {
           <li>接続先にコネクションを張る</li>
           <li>データの到達を保証</li>
         </ul>
-        <p>
-          <h4>参考</h4>
-          山本陽平. "第6章　HTTPの基本". Webを支える技術.技術評論社, 2010, 68-70
-          <br/>
-          佐々木　真 , 2022 , <a href="https://wa3.i-3-i.info/word11091.html">ネットワークインターフェイス層とは</a>
-          <br/>
-          佐々木　真 , 2022 , <a href="https://wa3.i-3-i.info/word11090.html">TCP/IPモデルとは</a>
-        </p>
+        <h4>参考</h4>
+        山本陽平. "第6章　HTTPの基本". Webを支える技術.技術評論社, 2010, 68-70
+        <br/>
+        佐々木　真 , 2022 , <a href="https://wa3.i-3-i.info/word11091.html">ネットワークインターフェイス層とは</a>
+        <br/>
+        佐々木　真 , 2022 , <a href="https://wa3.i-3-i.info/word11090.html">TCP/IPモデルとは</a>
         
         <SubTitle subTitle="OSI参照モデル" />
         <ul>
