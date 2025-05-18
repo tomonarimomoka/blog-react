@@ -1,5 +1,5 @@
 import { FC } from "react";
-import {HeaderNav , SubTitle , ReadBtn ,References , LastUpdate} from '../Parts';
+import {HeaderNav , SubTitle , ReadBtn ,References , SourceCode ,LastUpdate} from '../Parts';
 import '../style.css'
 
 export const GitForBeginner: FC = () => {
@@ -53,25 +53,25 @@ export const GitForBeginner: FC = () => {
       2010 , <a href="https://maku77.github.io/p/6qp26ez/">Git でファイルの変更をステージする（コミットの印をつける）</a><br/>
       <SubTitle subTitle="便利なコマンド" />
       <p>■全ての変更をステージしたいとき</p>
-      <pre><code className="codeBlock">git add --all</code></pre>
+      <SourceCode code='git add --all'/>
 
       <p>■特定のファイルの変更をステージしたいとき</p>
-      <pre><code className="codeBlock">git add ＜相対パス＞</code></pre>
+      <SourceCode code='git add ＜相対パス＞'/>
       
       <p>■コメント付きでコミットするとき</p>
-      <pre><code className="codeBlock">git commit -m '＜任意のコミットメッセージ＞'</code></pre>
+      <SourceCode code="git commit -m '＜任意のコミットメッセージ＞'"/>
 
       <p>■gi commitをオプションなしで実行した後</p>
       <p>コメントオプションを付けずにcommitコマンドを実行すると、VIMに入ります。</p>
       <ol>
         <li>Eacキーを押す</li>
-        <li><pre><code className="codeBlock">:q</code></pre>を入力 </li>
+        <li><SourceCode code=':q'/>を入力 </li>
         <li>Enterキーを押す</li>
       </ol>
       <p>vimの使い方はこちら ⇒ </p>
       
       <p>■特定のブランチからソースコードを取得したいとき</p>
-      <pre><code className="codeBlock">git clone ＜リポジトリのURL＞ -b ＜欲しいブランチの名前＞</code></pre>
+      <SourceCode code='git clone ＜リポジトリのURL＞ -b ＜欲しいブランチの名前＞'/>
 
 
       <h4>参考</h4>

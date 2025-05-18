@@ -1,5 +1,5 @@
 import { FC } from "react";
-import {HeaderNav , SubTitle , ReadBtn ,References , LastUpdate} from '../Parts';
+import {HeaderNav , SubTitle , ReadBtn ,References , SourceCode , LastUpdate} from '../Parts';
 import '../style.css'
 
 export const VimForBeginner: FC = () => {
@@ -45,21 +45,21 @@ export const VimForBeginner: FC = () => {
       <li>「i」を押して、insertモードに入る</li>
       <li>ファイルを編集する</li>
       <li>Escキーを押して、insertモードから抜け、normalモードに戻る</li>
-      <li>保存するため、<pre><code className="codeBlock">:wq</code></pre>を入力 </li>
+      <li>保存するため、<SourceCode code=':wq'/>を入力 </li>
       <li>Enterキーを押す</li>
     </ol>
 
     <SubTitle subTitle="保存してvimモードから抜ける" />
     <ol>
       <li>Eacキーを押す</li>
-      <li><pre><code className="codeBlock">:wq</code></pre>を入力 </li>
+      <li><SourceCode code=':wq'/>を入力 </li>
       <li>Enterキーを押す</li>
     </ol>
     
     <SubTitle subTitle="保存せずにvimモードから抜ける" />
     <ol>
       <li>Eacキーを押す</li>
-      <li><pre><code className="codeBlock">:q</code></pre>を入力 </li>
+      <li><SourceCode code=':wq'/>を入力 </li>
       <li>Enterキーを押す</li>
     </ol>
     

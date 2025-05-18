@@ -85,14 +85,6 @@ export const SubTitle: FC<{ subTitle: string }> = ({ subTitle }) => {
   )
 }
 
-export const CodeBlock: FC<{ code: string }> = ({ code }) => {
-  return(
-    <pre><code className="codeBlock">
-      {code}
-    </code></pre>
-  )
-}
-
 export const References: FC<{contens:string[][]}> = ({contens}) => {
   return(
     <>
@@ -135,9 +127,13 @@ ${code}
 \`\`\``;
   return(
     <>
+    <div className="codeBlock">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
       <Markdown >
 {markdown}
       </Markdown>
+
+    </div>
     </>
   );
 }

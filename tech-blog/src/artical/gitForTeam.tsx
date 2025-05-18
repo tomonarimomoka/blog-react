@@ -1,5 +1,5 @@
 import { FC } from "react";
-import {HeaderNav , SubTitle , ReadBtn ,References , LastUpdate} from '../Parts';
+import {HeaderNav , SubTitle , ReadBtn ,References , SourceCode , LastUpdate} from '../Parts';
 import '../style.css'
 
 export const GitForTeam: FC = () => {
@@ -22,52 +22,40 @@ export const GitForTeam: FC = () => {
     </p>
     <SubTitle subTitle="クローン" />
     以下コマンドを実行すると、特定のブランチからソースコードを取得することができます
-    <pre><code className="codeBlock">git clone ＜リポジトリのURL＞ -b ＜欲しいブランチの名前＞</code></pre>
+    <SourceCode code='git clone ＜リポジトリのURL＞ -b ＜欲しいブランチの名前＞'/>
 
     <SubTitle subTitle="チェックアウト" />
-      <pre><code className="codeBlock">
-        git checkout ＜新しいブランチ名＞
-      </code></pre>
+      <SourceCode code='git checkout ＜新しいブランチ名＞'/>
     
     <SubTitle subTitle="新しくブランチを作る" />
     <p>
       以下のコマンドを実行すると、今いるブランチから新しいブランチが切られます。
     </p>
-    <pre><code className="codeBlock">
-      git branch ＜新しいブランチ名＞
-    </code></pre>
+    <SourceCode code='git branch ＜新しいブランチ名＞'/>
 
     <SubTitle subTitle="リモート登録" />
       <p>
         ブランチを切ったら、リモート登録をしないとpushできないことがあります。そんな時は以下のコマンドを実行しましょう！
       </p>
-      <pre><code className="codeBlock">
-        git push -u origin ＜ブランチ名＞
-      </code></pre>    　
+      <SourceCode code='git push -u origin ＜ブランチ名＞'/>    　
 
     <SubTitle subTitle="フェッチ" />
       <p>
         fetchとは、リモートリポジトリに更新があった際にローカルブランチにその更新を反映させるための操作です。
       </p>
-      <pre><code className="codeBlock">
-        git fetch
-      </code></pre>
+      <SourceCode code='git fetch'/>
 
     <SubTitle subTitle="ブランチ移動" />
       <p>
         ブランチを移動するときはswitchコマンドを使います。ローカルリポジトリがまだないときも自動でローカルリポジトリを作ってくれます。
       </p>
-      <pre><code className="codeBlock">
-        git switch ＜ブランチ名＞
-      </code></pre>
+      <SourceCode code='git switch ＜ブランチ名＞'/>
 
     <SubTitle subTitle="マージ" />
     <p>
       gitのマージとはブランチを統合してすることです。以下コマンド実行後はaddまでされるので、pushだけでOKです。
     </p>
-    <pre><code className="codeBlock">
-      git merge ＜ブランチ名＞
-    </code></pre>　    
+      <SourceCode code='git merge ＜ブランチ名＞'/>　    
 ​
     <h4>参考</h4>
     株式会社ヌーラボ , <a href="https://backlog.com/ja/git-tutorial/">サル先生のGit入門</a><br/>

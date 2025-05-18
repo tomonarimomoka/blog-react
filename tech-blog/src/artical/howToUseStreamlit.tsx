@@ -1,5 +1,5 @@
 import { FC } from "react";
-import {HeaderNav , SubTitle , ReadBtn ,References , LastUpdate} from '../Parts';
+import {HeaderNav , SubTitle , ReadBtn ,References , SourceCode , LastUpdate} from '../Parts';
 import '../style.css'
 
 export const HowToUseStreamlit: FC = () => {
@@ -23,20 +23,16 @@ export const HowToUseStreamlit: FC = () => {
     <ol>
       <li>
         streamlitのインストール<br/>
-        <code className="codeBlock">
-          pip install streamlit
-        </code>
+        <SourceCode code='pip install streamlit' />
       </li>
       <li>
         Pythonで、Hello world!を書く
-        <pre><code className="codeBlock">import streamlit as st
-st.write("Hello world")</code></pre>
+        <SourceCode code='import streamlit as st
+st.write("Hello world")'/>
       </li>
       <li>
         Pythonプログラムの実行<br/>
-        <code className="codeBlock">
-          streamlit run app.py
-        </code>
+        <SourceCode code='streamlit run app.py' />
       </li>
     </ol>
     <h4>参考リンク</h4>
