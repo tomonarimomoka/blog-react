@@ -22,40 +22,40 @@ export const GitForTeam: FC = () => {
     </p>
     <SubTitle subTitle="クローン" />
     以下コマンドを実行すると、特定のブランチからソースコードを取得することができます
-    <SourceCode code='git clone ＜リポジトリのURL＞ -b ＜欲しいブランチの名前＞'/>
+    <SourceCode>git clone ＜リポジトリのURL＞ -b ＜欲しいブランチの名前＞</SourceCode>
 
     <SubTitle subTitle="チェックアウト" />
-      <SourceCode code='git checkout ＜新しいブランチ名＞'/>
+      <SourceCode>git checkout ＜新しいブランチ名＞</SourceCode>
     
     <SubTitle subTitle="新しくブランチを作る" />
     <p>
       以下のコマンドを実行すると、今いるブランチから新しいブランチが切られます。
     </p>
-    <SourceCode code='git branch ＜新しいブランチ名＞'/>
+    <SourceCode>git branch ＜新しいブランチ名＞</SourceCode>
 
     <SubTitle subTitle="リモート登録" />
       <p>
         ブランチを切ったら、リモート登録をしないとpushできないことがあります。そんな時は以下のコマンドを実行しましょう！
       </p>
-      <SourceCode code='git push -u origin ＜ブランチ名＞'/>    　
+      <SourceCode>git push -u origin ＜ブランチ名＞</SourceCode>   　
 
     <SubTitle subTitle="フェッチ" />
       <p>
         fetchとは、リモートリポジトリに更新があった際にローカルブランチにその更新を反映させるための操作です。
       </p>
-      <SourceCode code='git fetch'/>
+      <SourceCode>git fetch</SourceCode>
 
     <SubTitle subTitle="ブランチ移動" />
       <p>
         ブランチを移動するときはswitchコマンドを使います。ローカルリポジトリがまだないときも自動でローカルリポジトリを作ってくれます。
       </p>
-      <SourceCode code='git switch ＜ブランチ名＞'/>
+      <SourceCode>git switch ＜ブランチ名＞</SourceCode>
 
     <SubTitle subTitle="マージ" />
     <p>
       gitのマージとはブランチを統合してすることです。以下コマンド実行後はaddまでされるので、pushだけでOKです。
     </p>
-      <SourceCode code='git merge ＜ブランチ名＞'/>　    
+      <SourceCode>git merge ＜ブランチ名＞'</SourceCode>    
 ​
     <h4>参考</h4>
     株式会社ヌーラボ , <a href="https://backlog.com/ja/git-tutorial/">サル先生のGit入門</a><br/>

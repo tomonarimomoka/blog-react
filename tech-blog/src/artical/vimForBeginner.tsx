@@ -45,21 +45,21 @@ export const VimForBeginner: FC = () => {
       <li>「i」を押して、insertモードに入る</li>
       <li>ファイルを編集する</li>
       <li>Escキーを押して、insertモードから抜け、normalモードに戻る</li>
-      <li>保存するため、<SourceCode code=':wq'/>を入力 </li>
+      <li>保存するため、<SourceCode>:wq</SourceCode>を入力 </li>
       <li>Enterキーを押す</li>
     </ol>
 
     <SubTitle subTitle="保存してvimモードから抜ける" />
     <ol>
       <li>Eacキーを押す</li>
-      <li><SourceCode code=':wq'/>を入力 </li>
+      <li><SourceCode>:wq</SourceCode>を入力 </li>
       <li>Enterキーを押す</li>
     </ol>
     
     <SubTitle subTitle="保存せずにvimモードから抜ける" />
     <ol>
       <li>Eacキーを押す</li>
-      <li><SourceCode code=':wq'/>を入力 </li>
+      <li><SourceCode>:wq</SourceCode>を入力 </li>
       <li>Enterキーを押す</li>
     </ol>
     

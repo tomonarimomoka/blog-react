@@ -117,13 +117,9 @@ export const LastUpdate: FC<{}> =() => {
   )
 }
 
-export type SourceCodeProps = {
-  code: string;
-  language?: string;
-};
-export const SourceCode:FC<SourceCodeProps> =({code, language='python'}) => {
+export const SourceCode:FC<{children:ReactNode ,language?: string}> =({children, language='python'}) => {
   const markdown = `\`\`\`${language}
-${code}
+${children}
 \`\`\``;
   return(
     <>

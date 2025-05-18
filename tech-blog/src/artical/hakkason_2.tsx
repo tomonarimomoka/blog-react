@@ -63,12 +63,12 @@ export const Hakkason_2: FC = () => {
     <ol>
       <li>
         streamlitのインストール<br/>
-        <SourceCode code='pip install streamlit' />
+        <SourceCode>pip install streamlit</SourceCode>
       </li>
       <li>
         Pythonで、Hello world!を書く
-        <SourceCode code='import streamlit as st
-st.write("Hello world")'/>
+        <SourceCode>import streamlit as st
+st.write("Hello world")</SourceCode>
       </li>
       <li>
         Pythonプログラムの実行<br/>
@@ -83,7 +83,7 @@ st.write("Hello world")'/>
     
     <SubTitle subTitle="プロンプト" />
     <p>私は以下のようなプロンプトを投げました。（実際には動的にプロンプトを生成しています）</p>
-    <SourceCode code="以下の手順で、記事の内容をポジティブにしてください。記事の内容を要約してはいけません。Let's think step by step.
+    <SourceCode>"以下の手順で、記事の内容をポジティブにしてください。記事の内容を要約してはいけません。Let's think step by step.
   【手順1】
   例えば、以下の様にポジティブな表現に変えてください。この時に、引用された発言は書き換えてはいけません。また、文章は要約せずに忠実に変換してください。
   ・「積極性に欠ける」は「控えめな性格」
@@ -106,7 +106,8 @@ st.write("Hello world")'/>
   ・記事の内容を要約せずにポジティブにして表示してください
   ・日本語に直して表示してください。
 記事は以下です。
-～～～～～～～～"/>
+～～～～～～～～
+</SourceCode>
     <p> 
       工夫した点としては、LLMの指示で思考のプロセスを与えたことです。
       順を追って考えさせることで、LLMの性能が劇的に改善すると知られています。

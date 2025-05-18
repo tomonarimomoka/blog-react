@@ -23,16 +23,16 @@ export const HowToUseStreamlit: FC = () => {
     <ol>
       <li>
         streamlitのインストール<br/>
-        <SourceCode code='pip install streamlit' />
+        <SourceCode>pip install streamlit</SourceCode>
       </li>
       <li>
         Pythonで、Hello world!を書く
-        <SourceCode code='import streamlit as st
-st.write("Hello world")'/>
+        <SourceCode>import streamlit as st
+st.write("Hello world")</SourceCode>
       </li>
       <li>
         Pythonプログラムの実行<br/>
-        <SourceCode code='streamlit run app.py' />
+        <SourceCode>streamlit run app.py</SourceCode>
       </li>
     </ol>
     <h4>参考リンク</h4>

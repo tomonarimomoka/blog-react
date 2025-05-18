@@ -73,7 +73,7 @@ export const Hakkason_1: FC = () => {
     <SubTitle subTitle="動的にプロンプトを作る" />
     <p>私は以下のようにして動的にプロンプトを作りました。</p>
 
-    <SourceCode code='
+    <SourceCode>
 def addCondition(prompt,conditonType,condition):
   if(len(condition) != 0):
       prompt += "\n" + "・"
@@ -116,7 +116,8 @@ def makepromptForLP(referenceUrl,businessType,target,personasGender,age,imageCol
   prompt += "・下記ページを参照すること\n"
   prompt += referenceUrl
   
-  return prompt' />
+  return prompt
+  </SourceCode>
     <p> 工夫した点としては、入力値がからでもプロンプトが崩れずに正しく作れるようにしたことです。
       それから、ほかのメンバーにもmakePromptForCatchcopy関数を基に関数を作ってもらうようにしたので、読みやすさには気を付けました。
     </p>
