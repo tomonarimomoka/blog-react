@@ -231,7 +231,7 @@ export const TSkaigiReport: FC = () => {
   </p>
   
   <p>
-    聞くだけでなく、発表してみたい！という方は<ReadBtn url="firstLTparty.html" msg="【発表】LT会参加レポート" />
+    聞くだけでなく、発表してみたい！という方は<ReadBtn url="FirstLTparty" msg="【発表】LT会参加レポート" />
     をぜひご覧ください！
   </p>
   <p>

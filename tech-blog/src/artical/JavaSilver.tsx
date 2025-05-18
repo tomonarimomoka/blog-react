@@ -109,7 +109,7 @@ export const JavaSilver: FC = () => {
     </p>
     
   <p>
-    Oracleのベンダー資格にご興味があれば、<ReadBtn url="oracleBronzaDBA.html" msg="Oracle Master Bronze合格体験記" />
+    Oracleのベンダー資格にご興味があれば、<ReadBtn url="/OracleBronzaDBA" msg="Oracle Master Bronze合格体験記" />
     もぜひご覧ください！
   </p>
   </main>

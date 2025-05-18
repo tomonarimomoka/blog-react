@@ -46,7 +46,7 @@ export const Hakkason_2: FC = () => {
       <li>
         ソース管理<br/>
         ソース管理はほとんどの場合がGitHubなので、使ったことない人は練習しておきましょう。<br/>
-        <ReadBtn url="gitForBeginner.html" msg="はじめてのGit" />でGitの使い方を解説していますので、確認しておきましょう！
+        <ReadBtn url="/GitForBeginner" msg="はじめてのGit" />でGitの使い方を解説していますので、確認しておきましょう！
       </li>
     </ul>
     
