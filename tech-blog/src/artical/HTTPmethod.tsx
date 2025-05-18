@@ -1,5 +1,5 @@
 import { FC } from "react";
-import {HeaderNav , SubTitle , ReadBtn ,References , LastUpdate} from '../Parts';
+import {HeaderNav , SubTitle , ReadBtn ,References , CustomTable , LastUpdate} from '../Parts';
 import '../style.css'
 
 export const HTTPmethod: FC = () => {
@@ -20,7 +20,7 @@ content_type = "text/html; charset=UTF-8"
     
     <SubTitle subTitle="８つのメソッド" />
     <p>HTTPには8つしかメソッドがありません。今回はよく使うGETとPOSTについて詳しく説明します。</p>
-    <table>
+    <CustomTable>
       <tr><th> メソッド名</th><th> 何ができる</th></tr>
       <tr><td> GET</td><td>リソースの取得</td></tr>
       <tr><td>POST</td><td>リソースの取得、追加、子リソースの作成</td></tr>
@@ -30,7 +30,7 @@ content_type = "text/html; charset=UTF-8"
       <tr><td>OPTIONS</td><td>サポートしているメソッドの取得</td></tr>
       <tr><td>TRACE</td><td>自分宛てにリクエストメッセージを返す</td></tr>
       <tr><td>CONNECT</td><td>プロシキ動作のトンネル接続への変更</td></tr>
-    </table>
+    </CustomTable>
 
     <SubTitle subTitle="GET" />
     <p>

@@ -1,5 +1,5 @@
 import { FC } from "react";
-import {HeaderNav , SubTitle , ReadBtn ,References , LastUpdate} from '../Parts';
+import {HeaderNav , SubTitle , ReadBtn ,References , CustomTable , LastUpdate} from '../Parts';
 import '../style.css'
 
 export const Hakkason_3: FC = () => {
@@ -21,14 +21,12 @@ export const Hakkason_3: FC = () => {
     </ul>
 
     <SubTitle subTitle="参加したイベント" />
-          <table>
-        <tbody>
-          <tr><th>イベント名</th><td>生成AI×旅行ハッカソン！AIによる旅行先提案機能を考え構築しよう</td></tr>
-          <tr><th>URL</th><td><a href="https://ava-intel.connpass.com/event/328529/">Compass</a></td></tr>
-          <tr><th>主催</th><td><a href="https://www.ava-intel.com/">AVA Intelligence</a></td></tr>
-          <tr><th>参加対象者</th><td>「2年以上のエンジニアリング経験をお持ちの方」</td></tr>
-        </tbody>
-            </table>
+    <CustomTable>
+      <tr><th>イベント名</th><td>生成AI×旅行ハッカソン！AIによる旅行先提案機能を考え構築しよう</td></tr>
+      <tr><th>URL</th><td><a href="https://ava-intel.connpass.com/event/328529/">Compass</a></td></tr>
+      <tr><th>主催</th><td><a href="https://www.ava-intel.com/">AVA Intelligence</a></td></tr>
+      <tr><th>参加対象者</th><td>「2年以上のエンジニアリング経験をお持ちの方」</td></tr>
+    </CustomTable>
 
     <SubTitle subTitle="ハッカソンで優勝したい！" />
     <p>

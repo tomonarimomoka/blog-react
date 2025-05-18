@@ -1,5 +1,5 @@
 import { FC } from "react";
-import {HeaderNav , SubTitle , ReadBtn ,References , LastUpdate} from '../Parts';
+import {HeaderNav , SubTitle , ReadBtn ,References , CustomTable , LastUpdate} from '../Parts';
 import '../style.css'
 
 export const WhatIsProtocol: FC = () => {
@@ -63,14 +63,14 @@ export const WhatIsProtocol: FC = () => {
           <li>HTTPのベースになっている</li>
           <li>以下のような階層構造になっている</li>
         </ul>
-        <table>
+        <CustomTable>
           <caption>TCP/IPモデルの階層構造</caption>
           <tr><th>名前</th><th>何をする</th><th>プロトコル例</th></tr>
           <tr><td>アプリケーション層</td><td></td><td>HTTP</td></tr>
           <tr><td>トランスポート層</td><td>データの転送を保証</td><td>TCP</td></tr>
           <tr><td>インターネット層</td><td>ネットワークでデータをやり取りする</td><td>IP</td></tr>
           <tr><td>ネットワークインターフェース層</td><td></td><td>Ethernet</td></tr>
-        </table>
+        </CustomTable>
         
         <h3>■IP</h3>
         <ul style={{margin: '0.2em'}}>
@@ -102,8 +102,7 @@ export const WhatIsProtocol: FC = () => {
           <li>実際はあまり使われていない</li>
           <li>以下のような階層構造になっている</li>
         </ul>
-        <table>
-          <caption>OSI参照モデルの階層構造</caption>
+        <CustomTable cap="OSI参照モデルの階層構造">
           <tr><th>階層</th><th>名称</th></tr>
           <tr><td>第１層</td><td>アプリケーション層</td></tr>
           <tr><td>第２層</td><td>プレゼンテーション層</td></tr>
@@ -112,7 +111,7 @@ export const WhatIsProtocol: FC = () => {
           <tr><td>第５層</td><td>ネットワーク層</td></tr>
           <tr><td>第６層</td><td>データリンク層</td></tr>
           <tr><td>第７層</td><td>物理層</td></tr>
-        </table>
+        </CustomTable>
         <h4>参考</h4>
         佐々木　真 , 2022 , <a href="https://wa3.i-3-i.info/word1783.html">OSI参照モデル（読：オーエスアイサンショウモデル　英：OSI model）とは</a>
         <br/>

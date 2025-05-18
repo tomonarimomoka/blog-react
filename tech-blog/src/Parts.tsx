@@ -1,4 +1,4 @@
-import { FC } from "react"
+import { FC , ReactNode } from "react"
 import Markdown from 'react-markdown'
 // import remarkGfm from 'remark-gfm'
 
@@ -136,4 +136,17 @@ ${code}
     </div>
     </>
   );
+}
+
+export const CustomTable:FC<{children:ReactNode , cap?:string}> = ({children , cap}) => {
+  return(
+    <>      
+      <table>
+        {cap&&<caption>{cap}</caption>}
+        <tbody>
+          {children}
+        </tbody>
+      </table>
+    </>
+  )
 }

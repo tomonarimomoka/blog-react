@@ -1,5 +1,5 @@
 import { FC } from "react";
-import {HeaderNav , SubTitle , ReadBtn ,References , LastUpdate} from '../Parts';
+import {HeaderNav , SubTitle , ReadBtn ,References , CustomTable , LastUpdate} from '../Parts';
 import '../style.css'
 
 export const GoogleColab: FC = () => {
@@ -27,13 +27,11 @@ export const GoogleColab: FC = () => {
       ■動作確認環境<br/>
       筆者が動作確認した環境は以下です。
     </p>
-    <table >
-      <tbody>
-        <tr><th>OS</th><td>Windws 11</td></tr>
-        <tr><th>Google Colab</th><td>Colab Pro+</td></tr>
-        <tr><th>LLM</th><td>RoLA</td></tr>
-      </tbody>
-    </table>
+    <CustomTable>
+      <tr><th>OS</th><td>Windws 11</td></tr>
+      <tr><th>Google Colab</th><td>Colab Pro+</td></tr>
+      <tr><th>LLM</th><td>RoLA</td></tr>
+    </CustomTable>
     
     <SubTitle subTitle="Google ColabでGPUを利用する" />
     <p>
@@ -47,16 +45,14 @@ export const GoogleColab: FC = () => {
    
     <p>
       Google Colabでは以下の料金プランがあるようです。
-      <table >
-        <tbody>
-          <tr><th>プラン</th><th>料金（おそらく為替によって変動）</th><th>どのくらいGPUを使えるか</th></tr>
-          <tr><td>無料枠</td><td>￥0</td><td>非公開</td></tr>
-          <tr><td>Colab Pro</td><td>￥1179</td><td>100コンピューティングユニット</td></tr>
-          <tr><td>Colab Pro+</td><td>￥5767</td><td>500コンピューティングユニット</td></tr>
-        </tbody>
-      </table>      
-      
     </p>
+    <CustomTable >
+      <tr><th>プラン</th><th>料金（おそらく為替によって変動）</th><th>どのくらいGPUを使えるか</th></tr>
+      <tr><td>無料枠</td><td>￥0</td><td>非公開</td></tr>
+      <tr><td>Colab Pro</td><td>￥1179</td><td>100コンピューティングユニット</td></tr>
+      <tr><td>Colab Pro+</td><td>￥5767</td><td>500コンピューティングユニット</td></tr>
+    </CustomTable>      
+    
     <p>
       筆者は、時間を有効活用するためにColab Pro+に課金しました💴
       Colab Pro+は、最大で24時間稼働し続けるので寝ている間に計算を回せるのが魅力ですね。

@@ -1,5 +1,5 @@
 import { FC } from "react";
-import {HeaderNav , SubTitle , ReadBtn ,References , LastUpdate} from '../Parts';
+import {HeaderNav , SubTitle , ReadBtn ,References , CustomTable , LastUpdate} from '../Parts';
 import '../style.css'
 
 export const AwsForBeginner: FC = () => {
@@ -98,8 +98,7 @@ export const AwsForBeginner: FC = () => {
       <li>「ルートフィフティースリー」と読む </li>
       <li>多様なルーティングができる</li>
     </ul>
-    <table>
-      <caption>▼Route 53でできるルーティング（一部抜粋）</caption>
+    <CustomTable cap="▼Route 53でできるルーティング（一部抜粋）">
       <tr><th>名称</th><th>意味</th></tr>
       <tr><th>シンプルルーティング</th>
         <td>
@@ -131,8 +130,7 @@ export const AwsForBeginner: FC = () => {
           </ul>
         </td>
       </tr>
-    </table>
-    
+    </CustomTable>    
     <h3>DNS</h3>
     <ul>      
       <li>Domain Name System の略</li>

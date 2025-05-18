@@ -1,5 +1,5 @@
 import { FC } from "react";
-import {HeaderNav , SubTitle , ReadBtn ,References , LastUpdate} from '../Parts';
+import {HeaderNav , SubTitle , ReadBtn ,References , CustomTable , LastUpdate} from '../Parts';
 import '../style.css'
 
 export const TSkaigiReport: FC = () => {
@@ -20,27 +20,25 @@ export const TSkaigiReport: FC = () => {
     </ul>
 
     <SubTitle subTitle="参加したイベント" />
-          <table> 
-        <tbody>
-          <tr><th>イベント名</th><td>TSKaigi Mashup #1 フロントエンド</td></tr>
-          <tr><th>URL</th><td><a href="https://typescript-jpc.connpass.com/event/325001/">TSKaigi Mashup #1 フロントエンド</a></td></tr>
-          <tr><th>主催</th><td><a href="https://association.tskaigi.org/">一般社団法人TSKaigi Association</a></td></tr>
-          <tr><th>参加対象者</th><td>
-            <ul>
-              <li>フロントエンドに興味のある方</li>
-              <li>TypeScriptに興味のある方</li>
-            </ul>
-          </td></tr>
-        </tbody>
-            </table>
+    <CustomTable>
+      <tr><th>イベント名</th><td>TSKaigi Mashup #1 フロントエンド</td></tr>
+      <tr><th>URL</th><td><a href="https://typescript-jpc.connpass.com/event/325001/">TSKaigi Mashup #1 フロントエンド</a></td></tr>
+      <tr><th>主催</th><td><a href="https://association.tskaigi.org/">一般社団法人TSKaigi Association</a></td></tr>
+      <tr><th>参加対象者</th><td>
+        <ul>
+          <li>フロントエンドに興味のある方</li>
+          <li>TypeScriptに興味のある方</li>
+        </ul>
+      </td></tr>
+    </CustomTable>
 
     <SubTitle subTitle="発表：1人目" />
     <h3>基本情報</h3>
-    <table>
+    <CustomTable>
       <tr><th>氏名</th><td>鴻巣 和司 さん</td></tr>
       <tr><th>会社名</th><td>LINEヤフー株式会社</td></tr>
       <tr><th>題名</th><td>大規模なコードベースの改修のために自作TypeScriptツールを作るメリット</td></tr>
-    </table>
+    </CustomTable>
     <h3>発表概要</h3>
     <p>この方は、自作ツールの紹介でした。</p>
     
@@ -66,11 +64,11 @@ export const TSkaigiReport: FC = () => {
 
     <SubTitle subTitle="発表：２人目" />
     <h3>基本情報</h3>
-    <table>
+    <CustomTable>
       <tr><th>氏名</th><td>Shota Hatadaさん</td></tr>
-        <tr><th>会社名</th><td>株式会社dinii</td></tr>
-        <tr><th>題名</th><td>ReactNative アプリ同士の通信のために型情報をサクッと共有した話</td></tr>
-    </table>
+      <tr><th>会社名</th><td>株式会社dinii</td></tr>
+      <tr><th>題名</th><td>ReactNative アプリ同士の通信のために型情報をサクッと共有した話</td></tr>
+    </CustomTable>
     <h3>発表概要</h3>
     <p>この方は、株式会社diniiのシステム紹介でした。</p>
     <p>■システム概要</p>
@@ -92,11 +90,11 @@ export const TSkaigiReport: FC = () => {
 
     <SubTitle subTitle="発表：３人目" />
     <h3>基本情報</h3>
-    <table>
+    <CustomTable>
       <tr><th>氏名</th><td>Fumiya Konno さん</td></tr>
       <tr><th>会社名</th><td>株式会社ICS</td></tr>
       <tr><th>題名</th><td>私のことは嫌いになってもTypeScriptのことは嫌いにならないでください<br/>〜フロントエンドエンジニアがTypeScriptと仲良くなる方法〜</td></tr>
-    </table>
+    </CustomTable>
     <h3>発表概要</h3> 
     <p>この方は、初心者のための勉強法紹介でした。</p>
     <p>■TypeScriptの良い点</p>
@@ -116,11 +114,11 @@ export const TSkaigiReport: FC = () => {
     
     <SubTitle subTitle="発表：４人目" />
     <h3>基本情報</h3>
-    <table>
+    <CustomTable>
       <tr><th>氏名</th><td>ktmouk  さん</td></tr>
       <tr><th>会社名</th><td>note株式会社</td></tr>
       <tr><th>題名</th><td>テスト用のオブジェクトを簡単につくれるFactoryJSというライブラリを作った</td></tr>
-    </table>
+    </CustomTable>
     <h3>発表概要</h3> 
     <p>この方は、自作ツールの紹介でした。</p>
     <p>■課題</p>
@@ -148,11 +146,11 @@ export const TSkaigiReport: FC = () => {
     
     <SubTitle subTitle="発表：５人目" />
     <h3>基本情報</h3>
-    <table>
+    <CustomTable>
       <tr><th>氏名</th><td>おささ さん</td></tr>
       <tr><th>会社名</th><td>株式会社BLUEISH</td></tr>
       <tr><th>題名</th><td>Zero-Runtimeの理解とvanilla-extractという選択肢</td></tr>
-    </table>
+    </CustomTable>
     <h3>発表概要</h3>
     <p>この方は、vanilla-extractの紹介でした。</p>
     <p>■Zero-Runtime CSS-in-JS</p>
@@ -176,11 +174,11 @@ export const TSkaigiReport: FC = () => {
     
     <SubTitle subTitle="発表：６人目（ゲストセッション）" />
     <h3>基本情報</h3>
-    <table>
+    <CustomTable>
       <tr><th>氏名</th><td>うひょ さん</td></tr>
       <tr><th>会社名</th><td>株式会社カオナビ</td></tr>
       <tr><th>題名</th><td>tsconfig.jsonの設定を見直そう！　 フロントエンド向け　2024夏</td></tr>
-    </table>
+    </CustomTable>
     <h3>発表概要</h3>
     <p>この方は、おすすめのtsconfig.jsonの紹介でした。</p>
       <h3>tsconfig.jsonとは？</h3>

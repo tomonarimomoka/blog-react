@@ -1,5 +1,5 @@
 import { FC } from "react";
-import {HeaderNav , SubTitle , ReadBtn ,References , LastUpdate} from '../Parts';
+import {HeaderNav , SubTitle , ReadBtn ,References , CustomTable , LastUpdate} from '../Parts';
 import '../style.css'
 
 export const SimpleTest: FC = () => {
@@ -140,14 +140,13 @@ export const SimpleTest: FC = () => {
     <p>
       デシジョンテーブルはそのままテスト仕様書としても使うことができる。具体的には以下がデシジョンテーブル。
     </p>
-    <table>
-      <caption>デシジョンテーブル</caption>
+    <CustomTable cap="デシジョンテーブル">
       <tr><th>テストNo</th><th>１</th><th>２</th><th>３</th></tr>
       <tr><th>条件１</th><td>true</td><td>true</td><td>true</td></tr>
       <tr><th>条件２</th><td>true</td><td>false</td><td>false</td></tr>
       <tr><th>条件３</th><td>false</td><td>true</td><td>false</td></tr>
       <tr><th>期待結果</th><td>成功</td><td>エラー</td><td>更新されない</td></tr>
-    </table>
+    </CustomTable>
     <p>
       ■すべての条件の組み合わせを含めよう<br/>
       3つの条件のうち１つがAなら、期待結果は必ずBになる場合は、ほかの2つの条件を変化させてテストする必要は内容に思います。
@@ -197,14 +196,13 @@ export const SimpleTest: FC = () => {
       <li>任意の二列を選ぶと全てのペアを持つ</li>
       <li>全てのペアがテストケースに同じ数だけ現れる（均衡が保たれる）</li>
     </ul>
-    <table>
-      <caption>L_4(2^3)直交表</caption>
+    <CustomTable cap="L_4(2^3)直交表">
       <tr><th></th><th>条件１</th><th>条件２</th><th>条件３</th></tr>
       <tr><th>テストケース１</th><td>true</td><td>true</td><td>true</td></tr>
       <tr><th>テストケース２</th><td>true</td><td>false</td><td>false</td></tr>
       <tr><th>テストケース３</th><td>false</td><td>true</td><td>false</td></tr>
       <tr><th>テストケース４</th><td>false</td><td>false</td><td>true</td></tr>
-    </table>
+    </CustomTable>
 
     <p>■全ペアアルゴリズム</p>
     <ul>

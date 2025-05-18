@@ -1,5 +1,5 @@
 import { FC } from "react";
-import {HeaderNav , SubTitle , ReadBtn ,References , LastUpdate} from '../Parts';
+import {HeaderNav , SubTitle , ReadBtn ,References , CustomTable , LastUpdate} from '../Parts';
 import '../style.css'
 
 export const JavaSilver: FC = () => {
@@ -49,28 +49,27 @@ export const JavaSilver: FC = () => {
       この模試の1回分は3回解きました。2回目は落ちれないと思い、
       間違えた問題の復習や解き直しは全部で5回以上は行いました🔥🔥🔥<br/>
       <br/>
-      以下に得点の推移を載せるのでご参考までにどうぞ(*'▽')<br/>
-      <table>
-        <tr><th></th><th colSpan={5}>得点率</th></tr>
-        <tr><th>章</th><th>1回目</th><th>2回目</th><th>3回目</th><th>4回目</th><th>5回目</th></tr>
-        <tr><td>1</td><td>50</td><td>87</td><td>75</td><td></td><td></td></tr>
-        <tr><td>2</td><td>22</td><td>77</td><td>77</td><td></td><td></td></tr>
-        <tr><td>3</td><td>42</td><td>71</td><td>71</td><td></td><td></td></tr>
-        <tr><td>4</td><td>52</td><td>88</td><td>88</td><td></td><td></td></tr>
-        <tr><td>5</td><td>10</td><td>30</td><td>80</td><td>60</td><td>80</td></tr>
-        <tr><td>6</td><td>46</td><td>66</td><td>70</td><td></td><td></td></tr>
-        <tr><td>7</td><td>47</td><td>57</td><td>61</td><td>66</td><td>85</td></tr>
-        <tr><td>8</td><td>0</td><td>62</td><td>75</td><td></td><td></td></tr>
-        <tr><td>9</td><td>31</td><td>63</td><td>63</td><td>89</td><td></td></tr>
-        <tr><td>10</td><td>29</td><td>70</td><td>52</td><td>82</td><td></td></tr>
-        <tr><td>11</td><td>0</td><td>71</td><td>57</td><td>85</td><td></td></tr>
-        <tr><td>12</td><td>50</td><td>89</td><td>77</td><td></td><td></td></tr>
-        <tr><td>13</td><td>50</td><td></td><td></td><td></td><td></td></tr>
-        <tr><td>本番</td><td>48</td><td>76</td><td></td><td></td><td></td></tr>
-      </table>              
-      <br/>
-      
+      以下に得点の推移を載せるのでご参考までにどうぞ(*'▽')
     </p>
+    <CustomTable>
+      <tr><th></th><th colSpan={5}>得点率</th></tr>
+      <tr><th>章</th><th>1回目</th><th>2回目</th><th>3回目</th><th>4回目</th><th>5回目</th></tr>
+      <tr><td>1</td><td>50</td><td>87</td><td>75</td><td></td><td></td></tr>
+      <tr><td>2</td><td>22</td><td>77</td><td>77</td><td></td><td></td></tr>
+      <tr><td>3</td><td>42</td><td>71</td><td>71</td><td></td><td></td></tr>
+      <tr><td>4</td><td>52</td><td>88</td><td>88</td><td></td><td></td></tr>
+      <tr><td>5</td><td>10</td><td>30</td><td>80</td><td>60</td><td>80</td></tr>
+      <tr><td>6</td><td>46</td><td>66</td><td>70</td><td></td><td></td></tr>
+      <tr><td>7</td><td>47</td><td>57</td><td>61</td><td>66</td><td>85</td></tr>
+      <tr><td>8</td><td>0</td><td>62</td><td>75</td><td></td><td></td></tr>
+      <tr><td>9</td><td>31</td><td>63</td><td>63</td><td>89</td><td></td></tr>
+      <tr><td>10</td><td>29</td><td>70</td><td>52</td><td>82</td><td></td></tr>
+      <tr><td>11</td><td>0</td><td>71</td><td>57</td><td>85</td><td></td></tr>
+      <tr><td>12</td><td>50</td><td>89</td><td>77</td><td></td><td></td></tr>
+      <tr><td>13</td><td>50</td><td></td><td></td><td></td><td></td></tr>
+      <tr><td>本番</td><td>48</td><td>76</td><td></td><td></td><td></td></tr>
+    </CustomTable>
+      
     <SubTitle subTitle="前日と当日" />
     <p>      
       模擬試験の1回分（黒本13章）は実力試しのために残していたので、前日に初めて解きました。<br/>
