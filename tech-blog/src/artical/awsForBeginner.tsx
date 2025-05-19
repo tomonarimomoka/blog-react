@@ -1,9 +1,8 @@
 import { FC } from "react";
-import {HeaderNav , SubTitle , ReadBtn ,References , CustomTable , LastUpdate} from '../Parts';
+import {HeaderNav , SubTitle , ReadBtn , CustomTable , LastUpdate , References_link , References_book} from '../Parts';
 import '../style.css'
 
 export const AwsForBeginner: FC = () => {
-  var ref:string[][] = [[] ,[] ,[] ] 
   return(
     <>
 
@@ -24,11 +23,9 @@ export const AwsForBeginner: FC = () => {
       <li>Amazonが提供する200以上のクラウドサービスの総称</li>
     </ul>
     <h4>参考</h4>
-    NTT東日本 , 2024 , <a href="https://business.ntt-east.co.jp/content/cloudsolution/column-259.html">AWSとは？初心者にもわかりやすく特徴・概要を纏めました</a>
-    <br/>
-    TECH MANIA , 2023 ,<a href="https://techmania.jp/blog/aws0001/">AWSとは【入門】基礎からわかりやすく解説</a>
-    <br/>
-    佐々木　真 , 2022 , <a href="https://wa3.i-3-i.info/word12933.html">AWS（読：エーダブリューエス）とは</a>
+    <References_link author="NTT東日本" lastUpdate="2024" url="https://business.ntt-east.co.jp/content/cloudsolution/column-259.html" articleTitle="AWSとは？初心者にもわかりやすく特徴・概要を纏めました" />
+    <References_link author="TECH MANIA" lastUpdate="2023" url="https://techmania.jp/blog/aws0001/" articleTitle="AWSとは【入門】基礎からわかりやすく解説" />
+    <References_link author="佐々木　真" lastUpdate="2022" url="https://wa3.i-3-i.info/word12933.html" articleTitle="AWS（読：エーダブリューエス）とは" />
 
     <SubTitle subTitle="EC2関連の用語" />
     <h3>EC2</h3>
@@ -74,22 +71,14 @@ export const AwsForBeginner: FC = () => {
     </ul>
     
     <h4>参考</h4>
-    技術評論社, AWSの知識地図, 2022
-    <br/>
-    トレノケート株式会社, AWS認定クラウドプラクティショナー, 2022
-    <br/>
-    2021 , <a href="https://zenn.dev/tomoshimizu/articles/eedb6856df9c90">【AWS】EC2とは？概要から使い方までざっくり解説（実践あり）</a>
-    <br/>
-    weblio<a href="https://ejje.weblio.jp/content/elastic">elasticとは 意味・読み方・使い方</a>
-    <br/>
-    佐々木　真 , 2021 , <a href="https://wa3.i-3-i.info/word1972.html">トラフィック（英：traffic）とは</a>
-    <br/>
-    Amazon , <a href="https://docs.aws.amazon.com/ja_jp/AWSEC2/latest/UserGuide/concepts.html">Amazon EC2 とは</a>
-    <br/>
-    Amazon , <a href="https://docs.aws.amazon.com/ja_jp/AWSEC2/latest/UserGuide/elastic-ip-addresses-eip.html">Elastic IP アドレス</a>
-    <br/>
-    2019 , <a href="https://cloud.oreda.net/aws/ec2/note/eip.html">Elastic IP Address(EIP) を徹底理解</a>
-
+    <References_book author="技術評論社" bookTitle="AWSの知識地図" lastUpdate="2022"/>
+    <References_book author="トレノケート株式会社" bookTitle="AWS認定クラウドプラクティショナー" lastUpdate="2022" />
+    <References_link lastUpdate="2021" url="https://zenn.dev/tomoshimizu/articles/eedb6856df9c90" articleTitle="【AWS】EC2とは？概要から使い方までざっくり解説（実践あり）"/>
+    <References_link author="weblio" url="https://ejje.weblio.jp/content/elastic" articleTitle="elasticとは 意味・読み方・使い方"/>
+    <References_link author="佐々木　真" lastUpdate="2021" url="https://wa3.i-3-i.info/word1972.html" articleTitle="トラフィック（英：traffic）とは"/>
+    <References_link author="Amazon" url="https://docs.aws.amazon.com/ja_jp/AWSEC2/latest/UserGuide/concepts.html" articleTitle="Amazon EC2 とは"/>
+    <References_link author="Amazon" url="https://docs.aws.amazon.com/ja_jp/AWSEC2/latest/UserGuide/elastic-ip-addresses-eip.html" articleTitle="Elastic IP アドレス"/>
+    <References_link lastUpdate="2019" url="https://cloud.oreda.net/aws/ec2/note/eip.html" articleTitle="Elastic IP Address(EIP) を徹底理解"/>
 
     <SubTitle subTitle="ROute53関連の用語" />
     <h3>ROute53</h3>
@@ -137,18 +126,13 @@ export const AwsForBeginner: FC = () => {
       <li>IPアドレスとドメイン名を紐づけるシステム</li>
       ※これは一般的なIT用語
     </ul>
-    <h4>参考</h4>
-    技術評論社, AWSの知識地図, 2022
-    <br/>
-    トレノケート株式会社, AWS認定クラウドプラクティショナー, 2022
-    <br/>
-    2024 , <a href="https://en-junior.com/route53/">【図解AWS】Route53とは？初心者にもわかりやすく解説！</a>
-    <br/>
-    2021 , <a href="https://zenn.dev/seyama/articles/02118b0914183e">Amazon Route 53のルーティングがすごすぎる件</a>
-    <br/>
-    Amazon , <a href="https://docs.aws.amazon.com/ja_jp/Route53/latest/DeveloperGuide/routing-policy.html">ルーティングポリシーの選択</a>
-    <br/>
-    
+    <h4>参考</h4>    
+    <References_link lastUpdate="2024" url="https://en-junior.com/route53/" articleTitle="【図解AWS】Route53とは？初心者にもわかりやすく解説！"/>
+    <References_link lastUpdate="2021" url="https://zenn.dev/seyama/articles/02118b0914183e" articleTitle="Amazon Route 53のルーティングがすごすぎる件"/>
+    <References_link author="Amazon" url="https://docs.aws.amazon.com/ja_jp/Route53/latest/DeveloperGuide/routing-policy.html" articleTitle="ルーティングポリシーの選択"/>
+    <References_book author="技術評論社" bookTitle="AWSの知識地図" lastUpdate="2022"/>
+    <References_book author="トレノケート株式会社" bookTitle="AWS認定クラウドプラクティショナー" lastUpdate="2022"/>
+
   <SubTitle subTitle="おわりに" />
     <p>
       読んでくださりありがとうございました。

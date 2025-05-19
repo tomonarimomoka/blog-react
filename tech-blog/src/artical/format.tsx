@@ -1,9 +1,9 @@
 import { FC } from "react";
-import {HeaderNav , SubTitle , ReadBtn ,LastUpdate ,References} from '../Parts';
+import {HeaderNav , SubTitle , ReadBtn ,LastUpdate , References_link } from '../Parts';
 import '../style.css'
 
 export const Index: FC = () => {
-  var ref:string[][] = [[] ,[] ,[] ] 
+  
   return(
     <>    
       <HeaderNav />
@@ -12,7 +12,7 @@ export const Index: FC = () => {
 
       <SubTitle subTitle="test" />
       <p></p>
-      <References contens={ref}/>
+      <References_link url="" articleTitle=""/>
 
     </>
   );

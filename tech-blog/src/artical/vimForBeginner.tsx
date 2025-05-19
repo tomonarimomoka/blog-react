@@ -1,9 +1,9 @@
 import { FC } from "react";
-import {HeaderNav , SubTitle , ReadBtn ,References , SourceCode , LastUpdate} from '../Parts';
+import {HeaderNav , SubTitle , ReadBtn , References_link , References_book, SourceCode , LastUpdate} from '../Parts';
 import '../style.css'
 
 export const VimForBeginner: FC = () => {
-  var ref:string[][] = [[] ,[] ,[] ] 
+  
   return(
     <>
 
@@ -69,11 +69,9 @@ export const VimForBeginner: FC = () => {
     </p>
   
     <h4>参考</h4>
-    2020 , <a href="https://www.tohoho-web.com/vim/about.html">とほほのVim入門(概要)</a>
-    <br/>
-    vimdoc-ja プロジェクト , 2024 , <a href="https://vim-jp.org/vimdoc-ja/">Vim日本語ドキュメント</a>
-    <br/>
-    Howpon , 2020 , <a href="https://howpon.com/21851">Vim – モードの種類と切り替える方法【モード表示の変更も】</a>
+    <References_link lastUpdate="2020" url="https://www.tohoho-web.com/vim/about.html" articleTitle="とほほのVim入門(概要)" />
+    <References_link author="vimdoc-ja プロジェクト" lastUpdate="2024" url="https://vim-jp.org/vimdoc-ja/" articleTitle="Vim日本語ドキュメント" />
+    <References_link url="https://howpon.com/21851" author="Howpon" lastUpdate="2020" articleTitle="Vim – モードの種類と切り替える方法【モード表示の変更も】" />
 
   </main>
     </>

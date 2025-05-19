@@ -1,9 +1,9 @@
 import { FC } from "react";
-import {HeaderNav , SubTitle , ReadBtn ,References , SourceCode ,LastUpdate} from '../Parts';
+import {HeaderNav , SubTitle , ReadBtn , References_link , References_book , SourceCode ,LastUpdate} from '../Parts';
 import '../style.css'
 
 export const GitForBeginner: FC = () => {
-  var ref:string[][] = [[] ,[] ,[] ] 
+  
   return(
     <>
 
@@ -48,9 +48,10 @@ export const GitForBeginner: FC = () => {
     </p>
 
       <h4>参考</h4>
-      2021 , <a href="https://qiita.com/atsushi101011/items/96054ebbd876e378cac4">git addとcommit、pushの関係をわかりやすく説明する【Gitコマンド解説①】</a><br/>
-      株式会社ヌーラボ , 2021 , <a href="https://backlog.com/ja/git-tutorial/intro/04/">ワークツリーとインデックス</a><br/>
-      2010 , <a href="https://maku77.github.io/p/6qp26ez/">Git でファイルの変更をステージする（コミットの印をつける）</a><br/>
+      <References_link lastUpdate="2021" url="https://qiita.com/atsushi101011/items/96054ebbd876e378cac4" articleTitle="git addとcommit、pushの関係をわかりやすく説明する【Gitコマンド解説①】" /><br/>
+      <References_link author="株式会社ヌーラボ" lastUpdate="2021" url="https://backlog.com/ja/git-tutorial/intro/04/" articleTitle="ワークツリーとインデックス" /><br/>
+      <References_link lastUpdate="2010" url="https://maku77.github.io/p/6qp26ez/" articleTitle="Git でファイルの変更をステージする（コミットの印をつける）" /><br/>
+      
       <SubTitle subTitle="便利なコマンド" />
       <p>■全ての変更をステージしたいとき</p>
       <SourceCode>git add --all'</SourceCode>
@@ -75,9 +76,9 @@ export const GitForBeginner: FC = () => {
 
 
       <h4>参考</h4>
-      2014 , <a href="https://qiita.com/FiNGAHOLiC/items/d68d19ff9fecc59084e2">git addの--allオプション</a><br/>
-      2019 , <a href="https://kaleido01.com/git-commit-solution/">git commitしようとしたら終了できずに戸惑ったので抜け出す方法を書き留めておく</a><br/>
-      2018 , <a href="https://webbibouroku.com/Blog/Article/git-clone-branch">git clone で指定ブランチをクローンする方法</a>
+      <References_link lastUpdate="=2014" url="https://qiita.com/FiNGAHOLiC/items/d68d19ff9fecc59084e2" articleTitle="git addの--allオプション" /><br/>
+      <References_link lastUpdate="2019" url="https://kaleido01.com/git-commit-solution/" articleTitle="git commitしようとしたら終了できずに戸惑ったので抜け出す方法を書き留めておく" /><br/>
+      <References_link lastUpdate="2018" url="https://webbibouroku.com/Blog/Article/git-clone-branch" articleTitle="git clone で指定ブランチをクローンする方法" />
     
     <SubTitle subTitle="おわりに" />
       <p>

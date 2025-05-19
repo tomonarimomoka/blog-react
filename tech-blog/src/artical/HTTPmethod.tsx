@@ -1,9 +1,9 @@
 import { FC } from "react";
-import {HeaderNav , SubTitle , ReadBtn ,References , CustomTable , LastUpdate} from '../Parts';
+import {HeaderNav , SubTitle , ReadBtn , References_link , References_book, CustomTable , LastUpdate} from '../Parts';
 import '../style.css'
 
 export const HTTPmethod: FC = () => {
-  var ref:string[][] = [[] ,[] ,[] ] 
+  
   const codeEx = `http://examole.jp/search
 content_type = "text/html; charset=UTF-8"
 {
@@ -81,13 +81,10 @@ http://examole.jp/search?q=＜リクエストパラメータ＞
     </p>
     <SubTitle subTitle="" />
     <h4>参考</h4>
-      山本陽平. "第6章　HTTPの基本". Webを支える技術.技術評論社, 2010
-      <br/>
-      2020 , <a href="https://qiita.com/kanataxa/items/522efb74421255f0e0a1">GETとPOSTの違いについて</a>
-      <br/>
-      佐々木　真 , 2022 , <a href="https://wa3.i-3-i.info/word1496.html">POSTメソッド【HTTPリクエストメソッド】（読：ポストメソッド　英：POST method）とは</a>
-      <br/>
-      2020 , <a href="https://qiita.com/kanataxa/items/522efb74421255f0e0a1">GETとPOSTの違いについて</a>
+      <References_book author="技術評論社．山本陽平" chapter="第6章　HTTPの基本"　bookTitle="Webを支える技術" lastUpdate="2010"/>
+      <References_link lastUpdate="2020" url="https://qiita.com/kanataxa/items/522efb74421255f0e0a1" articleTitle="GETとPOSTの違いについて" />
+      <References_link author="佐々木　真" lastUpdate="2022" url="https://wa3.i-3-i.info/word1496.html" articleTitle="POSTメソッド【HTTPリクエストメソッド】（読：ポストメソッド　英：POST method）とは" />
+      <References_link lastUpdate="2020" url="https://qiita.com/kanataxa/items/522efb74421255f0e0a1" articleTitle="GETとPOSTの違いについて" />
       <SubTitle subTitle="おわりに" />
       <p>
         最後まで読んでいただき、ありがとうございました。<br/>

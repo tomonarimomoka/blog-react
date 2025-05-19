@@ -1,9 +1,8 @@
 import { FC } from "react";
-import {HeaderNav , SubTitle , ReadBtn ,References , LastUpdate, CustomTable} from '../Parts';
+import {HeaderNav , SubTitle , ReadBtn ,References_link , References_book , LastUpdate, CustomTable} from '../Parts';
 import '../style.css'
 
 export const AwsListOfServices: FC = () => {
-  var ref:string[][] = [[] ,[] ,[] ] 
   return(
     <>
 
@@ -54,24 +53,15 @@ export const AwsListOfServices: FC = () => {
       <tr><td>Amazon Connect</td><td>ソフトフォン（PC上で動く電話）を提供するサービス</td><td></td></tr>
     </CustomTable>
     <h4>参考</h4>
-    山下 光洋 and 海老原 寛之 , AWS認定資格試験テキスト　AWS認定 クラウドプラクティショナー, 2021
-    <br/>
-    大澤 文孝 , AWS Lambda実践ガイド 第2版 , 2023
-    <br/>
-    Shota Yamazaki , 2024 , <a href="https://liginc.co.jp/647119">AWS Amplifyとは？初心者向けにメリットや始め方を紹介</a>
-    <br/>
-    Amazon , <a href="https://docs.aws.amazon.com/ja_jp/glossary/latest/reference/glos-chap.html">AWS 用語集</a>
-    <br/>
-    2024 , <a href="https://dev.classmethod.jp/articles/dynamodb-json-data-type-descriptors/">Amazon DynamoDB独自のJSONデータ型「データ型記述子」についてまとめてみた</a>
-    <br/>
-    AWS , 2024 , <a href="https://aws.amazon.com/jp/cognito/">Amazon Cognito</a>
-    <br/>
-    2019 , <a href="https://qiita.com/UpAllNight/items/ec522da70a6fe86a1d16">【AWS】これだけ見れば理解できるCognito〜認証機能つきサーバレスアーキテクチャの作成〜</a>
-    <br/>
-    2021 , <a href="https://www.skyarch.net/column/aws-kinesis/">Amazon Kinesisとは？ストリーミングデータをスケーラブルに処理する</a>
-    <br/>
-    AWS , 2024 , <a href="https://aws.amazon.com/jp/what-is/sdk/">SDK とは?</a>
-    <br/>
+    <References_book author="山下 光洋 and 海老原 寛之" bookTitle="AWS認定資格試験テキスト　AWS認定 クラウドプラクティショナー" lastUpdate="2021"/>
+    <References_book author="大澤 文孝" bookTitle="AWS Lambda実践ガイド 第2版" lastUpdate="2023"/>
+    <References_link author="Shota Yamazaki" url="https://liginc.co.jp/647119" articleTitle="AWS Amplifyとは？初心者向けにメリットや始め方を紹介" lastUpdate="2024" />
+    <References_link url="https://docs.aws.amazon.com/ja_jp/glossary/latest/reference/glos-chap.html" articleTitle="AWS 用語集" author="Amazon" />
+    <References_link url="https://dev.classmethod.jp/articles/dynamodb-json-data-type-descriptors/" articleTitle="Amazon DynamoDB独自のJSONデータ型「データ型記述子」についてまとめてみた" lastUpdate="2024"/>
+    <References_link url="https://aws.amazon.com/jp/cognito/" articleTitle="Amazon Cognito" author="AWS" lastUpdate="2024"/>
+    <References_link lastUpdate="2019" url="https://qiita.com/UpAllNight/items/ec522da70a6fe86a1d16" articleTitle="【AWS】これだけ見れば理解できるCognito〜認証機能つきサーバレスアーキテクチャの作成〜" />
+    <References_link lastUpdate="2021" url="https://www.skyarch.net/column/aws-kinesis/" articleTitle="Amazon Kinesisとは？ストリーミングデータをスケーラブルに処理する" />
+    <References_link lastUpdate="2024" author="AWS"url="https://aws.amazon.com/jp/what-is/sdk/" articleTitle="SDK とは?" />
     
     <SubTitle subTitle="用語集" />
     <h3>レンテンシー</h3>
@@ -105,12 +95,9 @@ export const AwsListOfServices: FC = () => {
     </p>
 
     <h4>参考</h4>
-    Amazom , <a href="https://aws.amazon.com/jp/what-is/latency/">ネットワークレイテンシーとは何ですか?</a>
-    <br/>
-    佐々木　真 , 2024 , <a href="https://wa3.i-3-i.info/word111153.html">レイテンシ（英：latency）とは</a>
-    <br/>
-    NTT東日本　アベ , 2022 , <a href="https://business.ntt-east.co.jp/content/cloudsolution/column-338.html">RDB（リレーショナルデータベース）とは｜NoSQLとの違いやメリットを紹介</a>
-
+    <References_link author="Amazom" url="https://aws.amazon.com/jp/what-is/latency/" articleTitle="ネットワークレイテンシーとは何ですか?" />
+    <References_link author="佐々木　真" lastUpdate="2024" url="https://wa3.i-3-i.info/word111153.html" articleTitle="レイテンシ（英：latency）とは" />
+    <References_link author="NTT東日本　アベ" lastUpdate="2022" url="https://business.ntt-east.co.jp/content/cloudsolution/column-338.html" articleTitle="RDB（リレーショナルデータベース）とは｜NoSQLとの違いやメリットを紹介" />
 
   <SubTitle subTitle="おわりに" />
     <p>

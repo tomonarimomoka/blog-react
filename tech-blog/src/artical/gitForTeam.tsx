@@ -1,9 +1,9 @@
 import { FC } from "react";
-import {HeaderNav , SubTitle , ReadBtn ,References , SourceCode , LastUpdate} from '../Parts';
+import {HeaderNav , SubTitle , ReadBtn , References_link , References_book , SourceCode , LastUpdate} from '../Parts';
 import '../style.css'
 
 export const GitForTeam: FC = () => {
-  var ref:string[][] = [[] ,[] ,[] ] 
+  
   return(
     <>
 
@@ -58,10 +58,9 @@ export const GitForTeam: FC = () => {
       <SourceCode>git merge ＜ブランチ名＞'</SourceCode>    
 ​
     <h4>参考</h4>
-    株式会社ヌーラボ , <a href="https://backlog.com/ja/git-tutorial/">サル先生のGit入門</a><br/>
-    2021 , OpenGroove , <a href="https://tracpath.com/docs/git-switch/">Git コマンドリファレンス（日本語版）</a><br/>
-    2018 , <a href="https://webbibouroku.com/Blog/Article/git-clone-branch">git clone で指定ブランチをクローンする方法</a>
-
+    <References_link author="株式会社ヌーラボ" url="https://backlog.com/ja/git-tutorial/" articleTitle="サル先生のGit入門" /><br/>
+    <References_link author="OpenGroove" lastUpdate="2021" url="https://tracpath.com/docs/git-switch/" articleTitle="Git コマンドリファレンス（日本語版）" /><br/>
+    <References_link lastUpdate="2018" url="https://webbibouroku.com/Blog/Article/git-clone-branch" articleTitle="git clone で指定ブランチをクローンする方法" />
 
     <SubTitle subTitle="おわりに" />
       <p>

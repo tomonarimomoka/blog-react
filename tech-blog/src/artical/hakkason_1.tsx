@@ -1,9 +1,9 @@
 import { FC } from "react";
-import {HeaderNav , SubTitle , ReadBtn ,References , SourceCode , LastUpdate, CustomTable} from '../Parts';
+import {HeaderNav , SubTitle , ReadBtn , References_link , References_book , SourceCode , LastUpdate, CustomTable} from '../Parts';
 import '../style.css'
 
 export const Hakkason_1: FC = () => {
-  var ref:string[][] = [[] ,[] ,[] ] 
+  
   return(
     <>
 

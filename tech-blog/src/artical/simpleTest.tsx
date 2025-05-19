@@ -1,13 +1,11 @@
 import { FC } from "react";
-import {HeaderNav , SubTitle , ReadBtn ,References , CustomTable , LastUpdate} from '../Parts';
+import {HeaderNav , SubTitle , ReadBtn , References_link , References_book, CustomTable , LastUpdate} from '../Parts';
 import '../style.css'
 
 export const SimpleTest: FC = () => {
-  var ref:string[][] = [[] ,[] ,[] ] 
   return(
     <>
-  
-<HeaderNav />
+      <HeaderNav />
   <main className="box">
     <h1 id="articleTitle">ブラックボックステストのテスト技法</h1>
     <LastUpdate/>
@@ -53,11 +51,9 @@ export const SimpleTest: FC = () => {
       例えばJavaなどのオブジェクト指向言語はクラス単位で単体テストを実施すると定義されていますが、私の会社では機能ごとでのテストです。
     </p>
     <h4>参考</h4>
-    Lee Copeland. "第1章　テストのプロセス". 初めて学ぶソフトフェアテスト技法, 2021
-    <br/>
-    佐々木　真 , 2022 , <a href="https://wa3.i-3-i.info/word15916.html">単体テスト（UT）</a>
-    <br/>
-
+    <References_book author="Lee Copeland" chapter="第1章　テストのプロセス"　bookTitle="初めて学ぶソフトフェアテスト技法" lastUpdate="2021"/>
+    <References_link author="佐々木　真" lastUpdate="2022" url="https://wa3.i-3-i.info/word15916.html" articleTitle="単体テスト（UT）" />
+    
     <SubTitle subTitle="ブラックボックス" />
     <h3>ブラックボックスとは？</h3>
     <p>
@@ -68,7 +64,7 @@ export const SimpleTest: FC = () => {
     </p>
     
     <h4>参考</h4>
-    Lee Copeland. "第1章　テストのプロセス". 初めて学ぶソフトフェアテスト技法, 2021
+    <References_book author="Lee Copeland" chapter="第1章　テストのプロセス"　bookTitle="初めて学ぶソフトフェアテスト技法" lastUpdate="2021"/>
 
     <SubTitle subTitle="同値クラステスト" />
     <h3>同値クラステストとは？</h3>
@@ -109,7 +105,7 @@ export const SimpleTest: FC = () => {
     </blockquote>
 
     <h4>参考</h4>
-    Lee Copeland. "第3章　同値クラステスト". 初めて学ぶソフトフェアテスト技法, 2021
+    <References_book author="Lee Copeland" chapter="第3章　同値クラステスト"　bookTitle="初めて学ぶソフトフェアテスト技法" lastUpdate="2021"/>
 
     <SubTitle subTitle="境界値テスト" />
     <h3>境界値テストとは？</h3>
@@ -130,7 +126,7 @@ export const SimpleTest: FC = () => {
     <p>61点はテストすべきでしょうか？</p>
     <p>上記のように、境界付近の値が別の同値クラスに含まれる場合はテスト実施は必要ないと言われています。</p>
     <h4>参考</h4>
-    Lee Copeland. "第4章　境界値テスト". 初めて学ぶソフトフェアテスト技法, 2021
+    <References_book author="Lee Copeland" chapter="第4章　境界値テスト"　bookTitle="初めて学ぶソフトフェアテスト技法" lastUpdate="2021"/>
 
     <SubTitle subTitle="デシジョンテーブルテスト" />
     <h3>デシジョンテーブルテストとは？</h3>
@@ -153,8 +149,7 @@ export const SimpleTest: FC = () => {
       しかし、デシジョンテーブルの縮小は、間違えると誤ったテストケースを作成してしまうのでやめましょう。
     </p>
     <h4>参考</h4>
-    Lee Copeland. "第5章　デシジョンテーブルテスト". 初めて学ぶソフトフェアテスト技法, 2021
-
+    <References_book author="Lee Copeland" chapter="第5章　デシジョンテーブルテスト"　bookTitle="初めて学ぶソフトフェアテスト技法" lastUpdate="2021"/>
 
     <SubTitle subTitle="ペア構成テスト" />
     <h3>ペア構成テストとは？</h3>
@@ -182,7 +177,7 @@ export const SimpleTest: FC = () => {
       <p>
         戦後日本の製造業発展は直交表の効果と言う人もいるほど効果的な手法
       </p>
-      <cite>引用：<a href="https://www.monodukuri.com/gihou/article_list/47/%e7%9b%b4%e4%ba%a4%e8%a1%a8">直交表とは</a></cite>
+      <cite>引用：<a href="https://www.monodukuri.com/gihou/article_list/47/%e7%9b%b4%e4%ba%a4%e8%a1%a8">直交表とは" </a></cite>
     </blockquote>
 
     <p>
@@ -218,20 +213,13 @@ export const SimpleTest: FC = () => {
     </p>
     
     <h4>参考リンク</h4>
-    Lee Copeland. "第6章 ペア構成テスト". 初めて学ぶソフトフェアテスト技法, 2021
-    <br/>
-    2019.06.16 , <a href="https://sigma-eye.com/2019/06/16/chokkouhyou-reason/">直交表はなぜ使われないのか？【ともかく使ってみるしかない！】</a>
-    <br/>
-    Fumikazu Fujiwara , 2020.05.18 , <a href="https://qiita.com/freddiefujiwara/items/24b7bb07345d93982729">ペアワイズ テストのアルゴリズムを実装して学ぼう</a>
-    <br/>
-    Ryoma Maeda , 2022.10.21 , <a href="https://qiita.com/RyomaMaeda/items/27456cd5f01cdb8f4598">組合せテストの技法: ペアワイズ法(オールペア法)を3分で理解する</a>
-    <br/>
-    SSAITS（サイツ）社 , 2022.06.06 , <a href="https://ssaits.jp/promapedia/method/oat_all-pair.html">直交表（OAT）とオールペア法（ペアワイズ法）の違いとは何か？２つのテストケース作成技法を解説</a>
-    <br/>
-    熊坂 治（ものづくりドットコム社） , 2022 , <a href="https://www.monodukuri.com/gihou/article_list/47/%e7%9b%b4%e4%ba%a4%e8%a1%a8">「直交表」とは</a>
-    <br/>
-    菱祐一（株式会社NTTデータMSE） , 2022 , <a href="https://jasst.jp/archives/jasst09s/pdf/S5-1.pdf#:~:text=%E7%9B%B4%E4%BA%A4%E8%A1%A8%E3%81%AE%E7%89%B9%E5%BE%B4%3D%E5%B0%91,%E5%90%88%E3%82%8F%E3%81%9B%E3%82%8B%E3%81%AE%E3%81%8C%E6%9C%89%E5%8A%B9">直交表の欠点と克服</a>
-    <br/>
+    <References_book author="Lee Copeland" chapter="第6章 ペア構成テスト"　bookTitle="初めて学ぶソフトフェアテスト技法" lastUpdate="2021"/>
+    <References_link lastUpdate="2019" url="https://sigma-eye.com/2019/06/16/chokkouhyou-reason/" articleTitle="直交表はなぜ使われないのか？【ともかく使ってみるしかない！】" />
+    <References_link author="Fumikazu Fujiwara" lastUpdate="2020" url="https://qiita.com/freddiefujiwara/items/24b7bb07345d93982729" articleTitle="ペアワイズ テストのアルゴリズムを実装して学ぼう" />
+    <References_link author="Ryoma Maeda" lastUpdate="2022" url="https://qiita.com/RyomaMaeda/items/27456cd5f01cdb8f4598" articleTitle="組合せテストの技法: ペアワイズ法(オールペア法)を3分で理解する" />
+    <References_link author="SSAITS（サイツ）社" lastUpdate="2022" url="https://ssaits.jp/promapedia/method/oat_all-pair.html" articleTitle="直交表（OAT）とオールペア法（ペアワイズ法）の違いとは何か？２つのテストケース作成技法を解説" />
+    <References_link author="熊坂 治（ものづくりドットコム社）" lastUpdate="2022" url="https://www.monodukuri.com/gihou/article_list/47/%e7%9b%b4%e4%ba%a4%e8%a1%a8" articleTitle="「直交表」とは" />
+    <References_link author="菱祐一（株式会社NTTデータMSE）" lastUpdate="2022" url="https://jasst.jp/archives/jasst09s/pdf/S5-1.pdf#:~:text=%E7%9B%B4%E4%BA%A4%E8%A1%A8%E3%81%AE%E7%89%B9%E5%BE%B4%3D%E5%B0%91,%E5%90%88%E3%82%8F%E3%81%9B%E3%82%8B%E3%81%AE%E3%81%8C%E6%9C%89%E5%8A%B9" articleTitle="直交表の欠点と克服" />
     
     <SubTitle subTitle="おわりに" />
     <p>最後まで読んでくださり、ありがとうございました。</p>

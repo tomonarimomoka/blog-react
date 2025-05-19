@@ -1,9 +1,9 @@
 import { FC } from "react";
-import {HeaderNav , SubTitle , ReadBtn ,References , CustomTable , LastUpdate} from '../Parts';
+import {HeaderNav , SubTitle , ReadBtn , References_link , References_book, CustomTable , LastUpdate} from '../Parts';
 import '../style.css'
 
 export const WhatIsProtocol: FC = () => {
-  var ref:string[][] = [[] ,[] ,[] ] 
+  
   return(
     <>
       <HeaderNav />
@@ -19,10 +19,10 @@ export const WhatIsProtocol: FC = () => {
           <li>WebではHTTPというプロトコルを使う</li>
         </ul>
         <h4>参考</h4>
-        佐々木　真 , 2021 , <a href="https://wa3.i-3-i.info/word11.html">プロトコル（英：protocol）とは</a>
-        <br/>
-        
-        山本陽平. "第6章　HTTPの基本". Webを支える技術.技術評論社, 2010, 31
+        <References_link author="佐々木　真" lastUpdate="2021" url="https://wa3.i-3-i.info/word11.html" articleTitle="プロトコル（英：protocol）とは" />
+        <References_book author="Lee Copeland" chapter="第3章　同値クラステスト"　bookTitle="初めて学ぶソフトフェアテスト技法" lastUpdate="2021"/>
+        <References_book author="技術評論社．山本陽平" chapter="第6章　HTTPの基本"　bookTitle="Webを支える技術" lastUpdate="2010"/>
+
         <SubTitle subTitle="HTTPとは?" />
         <ul>      
           <li>ハイパーテキスト（HTMLやXML）だけでなくコンピュータが扱えるデータは何でも転送ができる<br/>
@@ -32,8 +32,7 @@ export const WhatIsProtocol: FC = () => {
           <li>URLは「http://~~」のようになる</li>
         </ul>
         <h4>参考</h4>
-        山本陽平. "第6章　HTTPの基本". Webを支える技術.技術評論社, 2010, 68
-        <br/>
+        <References_book author="技術評論社．山本陽平" chapter="第6章　HTTPの基本"　bookTitle="Webを支える技術" lastUpdate="2010"/>
 
         <SubTitle subTitle="HTTPS（TLS）とは？" />
         <ul>      
@@ -45,15 +44,11 @@ export const WhatIsProtocol: FC = () => {
           
         </ul>
         <h4>参考</h4>
-        佐々木　真 , 2022 , <a href="https://wa3.i-3-i.info/word16299.html">TLSとは</a>
-        <br/>
-        digicert社 , <a href="https://www.digicert.com/jp/faq/public-trust-and-certificates/what-is-ssl">SSL とは何ですか？</a>
-        <br/>
-        HIKE.Inc , 2018 , <a href="https://blog.qbist.co.jp/?p=1441">HTTPS と SSL と TLS：その違いを５分でわかりやすく解説！</a>
-        <br/>
-        (株)インセプト , 2020 , <a href="https://e-words.jp/w/TLS.html">TLSとは</a>
+        <References_link lastUpdate="2022" author="佐々木　真" url="https://wa3.i-3-i.info/word16299.html" articleTitle="TLSとは" />
+        <References_link author="digicert社" url="https://www.digicert.com/jp/faq/public-trust-and-certificates/what-is-ssl" articleTitle="SSL とは何ですか？" />
+        <References_link lastUpdate="2018" author="HIKE.Inc" url="https://blog.qbist.co.jp/?p=1441" articleTitle="HTTPS と SSL と TLS：その違いを５分でわかりやすく解説！" />
+        <References_link author="(株)インセプト" lastUpdate="2020" url="https://e-words.jp/w/TLS.html" articleTitle="TLSとは" />
       
-        
         <SubTitle subTitle="TCP/IPモデル" />
         <h3>■TCP/IPモデルとは</h3>
         <ul style={{margin: '0.2em'}}>
@@ -86,11 +81,9 @@ export const WhatIsProtocol: FC = () => {
           <li>データの到達を保証</li>
         </ul>
         <h4>参考</h4>
-        山本陽平. "第6章　HTTPの基本". Webを支える技術.技術評論社, 2010, 68-70
-        <br/>
-        佐々木　真 , 2022 , <a href="https://wa3.i-3-i.info/word11091.html">ネットワークインターフェイス層とは</a>
-        <br/>
-        佐々木　真 , 2022 , <a href="https://wa3.i-3-i.info/word11090.html">TCP/IPモデルとは</a>
+        <References_book author="技術評論社．山本陽平" chapter="第6章　HTTPの基本"　bookTitle="Webを支える技術" lastUpdate="2010"/>
+        <References_link author="佐々木　真" lastUpdate="2022" url="https://wa3.i-3-i.info/word11091.html" articleTitle="ネットワークインターフェイス層とは" />
+        <References_link lastUpdate="2022" author="佐々木　真" url="https://wa3.i-3-i.info/word11090.html" articleTitle="TCP/IPモデルとは" />
         
         <SubTitle subTitle="OSI参照モデル" />
         <ul>
@@ -110,12 +103,9 @@ export const WhatIsProtocol: FC = () => {
           <tr><td>第７層</td><td>物理層</td></tr>
         </CustomTable>
         <h4>参考</h4>
-        佐々木　真 , 2022 , <a href="https://wa3.i-3-i.info/word1783.html">OSI参照モデル（読：オーエスアイサンショウモデル　英：OSI model）とは</a>
-        <br/>
-        佐々木　真 , 2022 , <a href="https://wa3.i-3-i.info/diff322model.html">「OSI参照モデル」と「TCP/IPモデル」の違い</a>
-        <br/>
-        ビズドットオンライン , 2023 , <a href="https://it-biz.online/it-skills/osi-reference-model/">OSI参照モデルとは？</a>
-
+        <References_link author="佐々木　真" lastUpdate="2022" url="https://wa3.i-3-i.info/word1783.html" articleTitle="OSI参照モデル（読：オーエスアイサンショウモデル　英：OSI model）とは" />
+        <References_link author="佐々木　真" lastUpdate="2022"  url="https://wa3.i-3-i.info/diff322model.html" articleTitle="「OSI参照モデル」と「TCP/IPモデル」の違い" />
+        <References_link author="ビズドットオンライン" lastUpdate="2023" url="https://it-biz.online/it-skills/osi-reference-model/" articleTitle="OSI参照モデルとは？" />
 
         <SubTitle subTitle="URLスキームとは" />
         <ul>
@@ -123,7 +113,7 @@ export const WhatIsProtocol: FC = () => {
           <li>「https://～～～～～」の「https」の部分</li>
         </ul>
         <h4>参考</h4>
-          佐々木　真 , 2022 , <a href="https://wa3.i-3-i.info/word19663.html">URIスキーム（読：ユーアールアイスキーム　英：URI scheme）とは</a>
+        <References_link  author="佐々木　真" lastUpdate="2022" url="https://wa3.i-3-i.info/word19663.html" articleTitle="URIスキーム（読：ユーアールアイスキーム　英：URI scheme）とは" />
           <SubTitle subTitle="おわりに" />
           <p>
             最後まで読んでいただき、ありがとうございました。<br/>

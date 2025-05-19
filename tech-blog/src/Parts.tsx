@@ -85,17 +85,19 @@ export const SubTitle: FC<{ subTitle: string }> = ({ subTitle }) => {
   )
 }
 
-export const References: FC<{contens:string[][]}> = ({contens}) => {
+export const References_link: FC<{author?:string , lastUpdate?:string , url:string , articleTitle:string}> = ({author , lastUpdate , url , articleTitle}) => {
   return(
     <>
-      <h4>参考</h4>
-      {contens.map((content) => (
-          <>
-          {content[0]} , <a href={content[1]}>{content[2]}</a><br />
-          </>
-        ))
-      }
+      {author && author} {author && " , "} {lastUpdate && lastUpdate}  {lastUpdate && " , "} <a href={url}>{articleTitle}</a><br />
     </>
+  );
+}
+
+export const References_book: FC<{author:string , lastUpdate?:string , bookTitle:string , chapter?:string}> = ({author , lastUpdate , chapter , bookTitle}) => {
+  return(
+    <>
+      {author} , {bookTitle}{ chapter && "．"}{chapter && `${chapter}`} , {lastUpdate && `${lastUpdate}`}  <br />
+    </>   
   );
 }
 
