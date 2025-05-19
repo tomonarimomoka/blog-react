@@ -1,5 +1,5 @@
 import { FC } from "react";
-import {HeaderNav , SubTitle , ReadBtn , References_link , References_book , SourceCode ,LastUpdate} from '../Parts';
+import {HeaderNav , SubTitle , ReadBtn , References_link , SourceCode ,LastUpdate} from '../Parts';
 import '../style.css'
 
 export const GitForBeginner: FC = () => {

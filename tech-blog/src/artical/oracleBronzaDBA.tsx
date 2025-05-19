@@ -1,5 +1,5 @@
 import { FC } from "react";
-import {HeaderNav , SubTitle , ReadBtn , References_link , References_book, LastUpdate} from '../Parts';
+import {HeaderNav , SubTitle , ReadBtn , LastUpdate} from '../Parts';
 import '../style.css'
 
 export const OracleBronzaDBA: FC = () => {
