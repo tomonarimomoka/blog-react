@@ -13,7 +13,7 @@ export const Index: FC = () => {
       <SubTitle subTitle="test" />
       <p></p>
       <References_link url="" articleTitle=""/>
-
+      <ReadBtn url="" msg=""/>
     </>
   );
 }
