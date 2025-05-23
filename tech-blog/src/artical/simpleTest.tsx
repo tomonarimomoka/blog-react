@@ -1,5 +1,5 @@
 import { FC } from "react";
-import {ArticalPage , SubTitle , References_link , References_book, CustomTable} from '../Parts';
+import {ArticalPage , SubTitle , References_link , References_book, CustomTable , Img_60} from '../Parts';
 import '../style.css'
 
 export const SimpleTest: FC = () => {
@@ -76,7 +76,7 @@ export const SimpleTest: FC = () => {
       </cite>
     </blockquote>
     <p>例えば、60点以上で合格の試験があって、合格の時は「おめでとうございます！合格です。」と表示、不合格の時は再受験申込フォームに遷移させる処理を考えましょう。</p>
-    <img src="/assets/同値クラス.png" className="imgSize_60" alt="同値クラスイメージ" />
+    <Img_60 path="/assets/同値クラス.png" alt="同値クラスイメージ" />
     <p>60点でも、61点でも100点でも「おめでとうございます！合格です。」と表示し、58点でも3点でも10点でも、再受験申込フォームに遷移するのが正しい仕様です。</p>
     <code className="codeBlock">
       0 ≦ x ＜ 60 , 60 ≦ y ≦ 100
@@ -112,7 +112,7 @@ export const SimpleTest: FC = () => {
       プログラマーなら、境界値にはバグが潜んでいる確率が高いのは経験則でわかるでしょう。
     </p>
     <p>テストするのは<b>境界値のすぐ下、境界値、境界値のすぐ上</b>です。</p>
-    <img src="/assets/境界値テスト.png" className="imgSize_60" alt="境界値テストイメージ" />
+    <Img_60 path="/assets/境界値テスト.png" alt="境界値テストイメージ" />
     <p>再び、60点以上で合格の試験があって、合格の時は「おめでとうございます！合格です。」と表示、不合格の時は再受験申込フォームに遷移させる処理を考えましょう。</p>
     <p>境界値のすぐ下は59点、境界値は60点、境界値のすぐ上は61点ですね。</p>
     <p>■境界値テストと同値クラステスト<br/>

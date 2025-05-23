@@ -1,5 +1,5 @@
 import { FC } from "react";
-import {ArticalPage , SubTitle , ReadBtn , CustomTable} from './Parts';
+import {ArticalPage , SubTitle , ReadBtn , CustomTable , Img_30} from './Parts';
 import './style.css'
 
 export const Index: FC = () => {
@@ -75,9 +75,9 @@ export const Index: FC = () => {
         <li>生成AIパスポート試験</li>
         <li>東京大学 松尾・岩澤研究室 大規模言語モデル 2024 修了</li>
       </ul>
-      <img src="./assets/SILVSE11JPN.jpg" className="imgSize_30" alt="認定バッチ" />
-      <img src="./assets/BRZDBA19CJPN.jpg" className="imgSize_30" alt="認定バッチ" />
-      <img src="./assets/generative-ai-passport-logo.png" className="imgSize_20" alt="認定バッチ" />
+      <Img_30 path="./assets/SILVSE11JPN.jpg" alt="認定バッチ"/>
+      <Img_30 path="./assets/BRZDBA19CJPN.jpg" alt="認定バッチ" />
+      <Img_30 path="./assets/generative-ai-passport-logo.png" alt="認定バッチ" />
     </ArticalPage>
   );
 }

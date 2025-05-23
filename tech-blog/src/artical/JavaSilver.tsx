@@ -1,5 +1,5 @@
 import { FC } from "react";
-import {ArticalPage , SubTitle , ReadBtn , CustomTable } from '../Parts';
+import {ArticalPage , SubTitle , ReadBtn , CustomTable , Img_30} from '../Parts';
 import '../style.css'
 
 export const JavaSilver: FC = () => {
@@ -92,7 +92,7 @@ export const JavaSilver: FC = () => {
       受験結果は正答率76％でした✨<br/>
     </p>
     
-    <img src="/assets/SILVSE11JPN.jpg" className="imgSize_30" alt="認定バッチ" />
+    <Img_30 path="/assets/SILVSE11JPN.jpg" alt="認定バッチ" />
     <SubTitle subTitle="おわりに" />
     <p>
       最後まで読んでいただき、ありがとうございました。

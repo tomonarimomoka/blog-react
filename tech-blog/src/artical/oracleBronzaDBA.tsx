@@ -1,5 +1,5 @@
 import { FC } from "react";
-import {ArticalPage , SubTitle , ReadBtn} from '../Parts';
+import {ArticalPage , SubTitle , ReadBtn , Img_30} from '../Parts';
 import '../style.css'
 
 export const OracleBronzaDBA: FC = () => {
@@ -82,7 +82,7 @@ export const OracleBronzaDBA: FC = () => {
       合格(((o(*ﾟ▽ﾟ*)o)))<br/>
       65%が合格ラインで、正答率78%でした✨✨
     </p>
-    <img src="/assets/BRZDBA19CJPN.jpg" className="imgSize_30" alt="認定バッチ" />
+    <Img_30 path="/assets/BRZDBA19CJPN.jpg" alt="認定バッチ" />
     <SubTitle subTitle="おわりに" />
     <p>
       最後まで読んでいただき、ありがとうございました。<br/>

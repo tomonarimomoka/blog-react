@@ -1,5 +1,5 @@
 import { FC } from "react";
-import {ArticalPage , SubTitle , References_link , SourceCode} from '../Parts';
+import {ArticalPage , SubTitle , References_link , SourceCode , Img_90} from '../Parts';
 import '../style.css'
 
 export const VimForBeginner: FC = () => {
@@ -29,7 +29,7 @@ export const VimForBeginner: FC = () => {
       <b>insertモードに入るには「i」を入力する</b>だけです。
       insertモードのときは、ターミナルの下の方に「-- INSERT --」と表示されます。
     </p>
-    <img src="/assets/vim-insert.png" className="imgSize_90" alt="insertモード" />
+    <Img_90 path="/assets/vim-insert.png" alt="insertモード" />
 
     <SubTitle subTitle="ファイルを編集する" />
     <ol>

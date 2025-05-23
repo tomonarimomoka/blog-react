@@ -50,7 +50,7 @@ export const HeaderNav: FC = () => {
   );
 }
 
-export const ReadBtn: FC<{ url: string , msg:string }> = ({ url , msg }) => {
+export const ReadBtn: FC<{ url: string , msg?:string }> = ({ url , msg="読む" }) => {
   return(
     <a href={url} className="btnArticleLinkInText">{msg}↗</a>
   )
@@ -140,6 +140,86 @@ export const ArticalPage:FC<{title:string , children:ReactNode}> = ({title , chi
       <h1 id="articleTitle">{title}</h1>
       <LastUpdate/>
       {children}
+    </>
+  )
+}
+export const Img_10:FC<{path:string , alt?:string}> = ({path , alt}) => {
+
+  return(
+    <>
+      <img src={path} className="imgSize_10" alt={alt} />
+    </>
+  )
+}
+export const Img_20:FC<{path:string , alt?:string}> = ({path , alt}) => {
+
+  return(
+    <>
+      <img src={path} className="imgSize_20" alt={alt} />
+    </>
+  )
+}
+export const Img_30:FC<{path:string , alt?:string}> = ({path , alt}) => {
+
+  return(
+    <>
+      <img src={path} className="imgSize_30" alt={alt} />
+    </>
+  )
+}
+export const Img_40:FC<{path:string , alt?:string}> = ({path , alt}) => {
+
+  return(
+    <>
+      <img src={path} className="imgSize_40" alt={alt} />
+    </>
+  )
+}
+export const Img_50:FC<{path:string , alt?:string}> = ({path , alt}) => {
+
+  return(
+    <>
+      <img src={path} className="imgSize_50" alt={alt} />
+    </>
+  )
+}
+export const Img_60:FC<{path:string , alt?:string}> = ({path , alt}) => {
+
+  return(
+    <>
+      <img src={path} className="imgSize_60" alt={alt} />
+    </>
+  )
+}
+export const Img_70:FC<{path:string , alt?:string}> = ({path , alt}) => {
+
+  return(
+    <>
+      <img src={path} className="imgSize_70" alt={alt} />
+    </>
+  )
+}
+export const Img_80:FC<{path:string , alt?:string}> = ({path , alt}) => {
+
+  return(
+    <>
+      <img src={path} className="imgSize_80" alt={alt} />
+    </>
+  )
+}
+export const Img_90:FC<{path:string , alt?:string}> = ({path , alt}) => {
+
+  return(
+    <>
+      <img src={path} className="imgSize_90" alt={alt} />
+    </>
+  )
+}
+export const Img_100:FC<{path:string , alt?:string}> = ({path , alt}) => {
+
+  return(
+    <>
+      <img src={path} className="imgSize_100" alt={alt} />
     </>
   )
 }

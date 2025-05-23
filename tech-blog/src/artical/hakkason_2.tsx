@@ -1,10 +1,10 @@
 import { FC } from "react";
-import {ArticalPage , SubTitle , ReadBtn , SourceCode , CustomTable} from '../Parts';
+import {ArticalPage , SubTitle , ReadBtn , SourceCode , CustomTable , Img_100} from '../Parts';
 import '../style.css'
 
 export const Hakkason_2: FC = () => {
   return(
-    <ArticalPage title="カソン参加レポート vol.2">
+    <ArticalPage title="ハッカソン参加レポート vol.2">
     <SubTitle subTitle="筆者のスペック" />
     <ul>      
       <li>プログラミングはほぼ独学</li>
@@ -117,7 +117,7 @@ st.write("Hello world")</SourceCode>
     <p>
       テキストボックスやプルダウン、ボタンなども1行で実装できました！！渾身のプロンプトのおかげでちゃんとニュース記事がポジティブになっております✨
     </p>    
-    <img src="/assets/ポジティブニュース.jpeg" className="imgSize_100" alt="生成されたLP" />
+    <Img_100 path="/assets/ポジティブニュース.jpeg" alt="生成されたLP" />
    
     <SubTitle subTitle="おわりに" />
     <p>

@@ -1,5 +1,5 @@
 import { FC } from "react";
-import {ArticalPage , SubTitle} from '../Parts';
+import {ArticalPage , SubTitle , Img_60} from '../Parts';
 import '../style.css'
 
 export const Security: FC = () => {
@@ -68,9 +68,9 @@ export const Security: FC = () => {
       <li>アクセストークンの発行時、クライアントと認可サーバーの間のやり取りを標準化した仕様を「OAuth 2.0」と呼ぶ</li>
     </ul>
     <h4>▼OAuth認証の仕組み</h4>
-      <img src="/assets/OAuthの仕組み.png" className="imgSize_60" alt="OAuthの仕組み" />
+      <Img_60 path="/assets/OAuthの仕組み.png" alt="OAuthの仕組み" />
     <h4>▼OAuth 2.0とは？</h4>
-      <img src="/assets/OAuth20の仕組み.png" className="imgSize_60" alt="OAuthの仕組み" />
+      <Img_60 path="/assets/OAuth20の仕組み.png" alt="OAuthの仕組み" />
     <h4>参考リンク</h4>
     川崎貴彦さんの記事はどれもとても分かりやすいので、おすすめです。<br/>
     川崎 貴彦 , 2020 , <a href="https://qiita.com/TakahikoKawasaki/items/e37caf50776e00e733be">一番分かりやすい OAuth の説明</a>
@@ -85,9 +85,9 @@ export const Security: FC = () => {
       <li>OpenID Connect は OAuth 2.0 の拡張仕様</li>
     </ul>
     <h4>▼OpenID認証の仕組み</h4>
-      <img src="/assets/OpenID認証の仕組み.png" className="imgSize_60" alt="OAuthの仕組み" />
+      <Img_60 path="/assets/OpenID認証の仕組み.png" alt="OAuthの仕組み" />
     <h4>▼OpenID Connectとは？</h4>
-      <img src="/assets/OpenIDの仕組み.png" className="imgSize_60" alt="OAuthの仕組み" />
+      <Img_60 path="/assets/OpenIDの仕組み.png" alt="OAuthの仕組み" />
     <h4>参考リンク</h4>
     川崎貴彦さんの記事はどれもとても分かりやすいので、おすすめです。<br/>
     川崎 貴彦 , 2020 , <a href="https://qiita.com/TakahikoKawasaki/items/498ca08bbfcc341691fe">一番分かりやすい OpenID Connect の説明</a>

@@ -1,5 +1,5 @@
 import { FC } from "react";
-import {ArticalPage , SubTitle , ReadBtn , References_link , SourceCode } from '../Parts';
+import {ArticalPage , SubTitle , ReadBtn , References_link , SourceCode , Img_60} from '../Parts';
 import '../style.css'
 
 export const GitForBeginner: FC = () => {
@@ -29,7 +29,7 @@ export const GitForBeginner: FC = () => {
       このいくつかのファイル置き場をうまく使い分けて、Gitは動きます。
     </p>
     <p>クラウドにデータを置くとは、誰かの所有物で利用者はどこにあるか分からないサーバーにファイルを記憶させるということです。</p>
-    <img src="/assets/Gitの説明.jpeg" className="imgSize_60" />
+    <Img_60 path="/assets/Gitの説明.jpeg" />
     <p>まず、画像の一番下の「ローカル」とは皆さんのパソコンなどのことです。パソコンにファイルを保存しますよね？これのことです。</p>
     <p>
       次に下から二番目の「インデックス」はもう一つ上の「ローカルリポジトリ」に必要なファイルだけを置くための言わば踏み台です。
