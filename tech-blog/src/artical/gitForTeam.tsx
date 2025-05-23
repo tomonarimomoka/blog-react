@@ -12,7 +12,7 @@ export const GitForTeam: FC = () => {
     </ul>
     <p>
       gitを始めて使う方はぜひ初学者向けのGit記事をご覧ください。
-      <ReadBtn url="gitForBeginner" msg="読む"/>
+      <ReadBtn url="gitForBeginner" />
     </p>
     <SubTitle subTitle="クローン" />
     以下コマンドを実行すると、特定のブランチからソースコードを取得することができます

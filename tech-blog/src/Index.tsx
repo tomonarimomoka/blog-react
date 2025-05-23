@@ -17,10 +17,10 @@ export const Index: FC = () => {
       </p>
       <SubTitle subTitle="♥お勧めの記事" />
       <ul>
-        <li>ブラックボックステストのテスト技法<ReadBtn url="/SimpleTest" msg="読む" /></li>
-        <li>一浪日大でもホワイト企業に就職する方法<ReadBtn url="/JobHuntting" msg="読む" /></li>
-        <li>【生成AI】ハッカソン参加レポート vol.1<ReadBtn url="/Hakkason_1" msg="読む" /></li>
-        <li>【発表】LT会参加レポート<ReadBtn url="/FirstLTparty" msg="読む" /></li>
+        <li>ブラックボックステストのテスト技法<ReadBtn url="/SimpleTest" /></li>
+        <li>一浪日大でもホワイト企業に就職する方法<ReadBtn url="/JobHuntting" /></li>
+        <li>【生成AI】ハッカソン参加レポート vol.1<ReadBtn url="/Hakkason_1" /></li>
+        <li>【発表】LT会参加レポート<ReadBtn url="/FirstLTparty" /></li>
       </ul>
       <SubTitle subTitle="本サイト「かわいいテックももか」の歴史" />
       <CustomTable>

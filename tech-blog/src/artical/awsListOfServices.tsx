@@ -78,13 +78,13 @@ export const AwsListOfServices: FC = () => {
     <p>
       クライアントからサーバーにデータを取りに行くとき、クライアントが正しいか認証するための仕組み。
       詳しい解説はこちらの記事をご参照ください
-      <ReadBtn url="security" msg="読む"/>
+      <ReadBtn url="security" />
     </p>
     <h3>OpenID Connect</h3>
     <p>
       Oauth 2.0の拡張機能。
       詳しい解説はこちらの記事をご参照ください
-      <ReadBtn url="security" msg="読む"/>
+      <ReadBtn url="security" />
     </p>
 
     <h4>参考</h4>
