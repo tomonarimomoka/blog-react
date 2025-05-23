@@ -1,12 +1,10 @@
 import { FC } from "react";
-import {HeaderNav , SubTitle , ReadBtn , CustomTable} from './Parts';
+import {ArticalPage , SubTitle , ReadBtn , CustomTable} from './Parts';
 import './style.css'
 
 export const Index: FC = () => {
   return(
-    <>
-      <HeaderNav />
-      <main className="box">
+    <ArticalPage title="💗ようこそ！かわいいてっくももかへ💗">
       <SubTitle subTitle="♥このブログについて" />
       <p>
         このブログはエンジニア役に立つことを目指しています。
@@ -24,6 +22,14 @@ export const Index: FC = () => {
         <li>【生成AI】ハッカソン参加レポート vol.1<ReadBtn url="/Hakkason_1" msg="読む" /></li>
         <li>【発表】LT会参加レポート<ReadBtn url="/FirstLTparty" msg="読む" /></li>
       </ul>
+      <SubTitle subTitle="本サイト「かわいいテックももか」の歴史" />
+      <CustomTable>
+        <tr><th>いつ</th><th>どうした</th></tr>
+        <tr><td>2023.10</td><td>「かわいいテック　ももか」開設！</td></tr>
+        <tr><td>2024.7</td><td>10記事達成</td></tr>
+        <tr><td>2025.4</td><td>20記事達成</td></tr>
+        <tr><td>2025.5</td><td>TypeScrip×Reactにシステムリプレイス<ReadBtn url="/HowToMigrateBlog" msg=""></ReadBtn></td></tr>
+      </CustomTable>
       <SubTitle subTitle="♥筆者について" />
 
       <h3>■自己紹介</h3>
@@ -43,7 +49,7 @@ export const Index: FC = () => {
         <a href="/src/jobHuntting.html" >一浪日大でもホワイト企業に就職する方法</a>
         をご覧ください✨
       </p>
-      <CustomTable>
+      {/* <CustomTable>
         <tr><th>いつ</th><th>どうした</th></tr>
         <tr><td>2018年3月</td><td>高校卒業</td></tr>
         <tr><td>2018年4月~2019年2月</td><td>四谷学院で浪人</td></tr>
@@ -59,7 +65,7 @@ export const Index: FC = () => {
         <tr><td>2024年9月</td><td>製品開発チームので別製品を作り始める。TypeScript×React , AWSを学ぶ🔥</td></tr>
         <tr><td>2024年9月~2025年1月</td><td>東京大学 松尾・岩澤研究室 大規模言語モデル 2024 受講＆修了✨</td></tr>
         <tr><td>2025年4月</td><td>AI専門の企業にソフトウェアエンジニアとして転職する</td></tr>
-      </CustomTable>
+      </CustomTable> */}
       <h3>■保有資格・試験</h3>
       <ul>
         <li>ITパスポート試験</li>
@@ -72,7 +78,6 @@ export const Index: FC = () => {
       <img src="./assets/SILVSE11JPN.jpg" className="imgSize_30" alt="認定バッチ" />
       <img src="./assets/BRZDBA19CJPN.jpg" className="imgSize_30" alt="認定バッチ" />
       <img src="./assets/generative-ai-passport-logo.png" className="imgSize_20" alt="認定バッチ" />
-      </main>
-    </>
+    </ArticalPage>
   );
 }
