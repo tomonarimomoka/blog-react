@@ -1,16 +1,10 @@
 import { FC } from "react";
-import {HeaderNav , SubTitle , ReadBtn , CustomTable , LastUpdate} from '../Parts';
+import {ArticalPage , SubTitle , ReadBtn , CustomTable} from '../Parts';
 import '../style.css'
 
 export const FirstLTparty: FC = () => {
-  
-  return(
-    <>
-
-<HeaderNav />  
-  <main className="box">    
-    <h1 id="articleTitle">【発表】LT会参加レポート</h1>
-    <LastUpdate/>
+  return( 
+    <ArticalPage title="【発表】LT会参加レポート">
     <SubTitle subTitle="筆者のスペック" />
     <ul>      
       <li>プログラミングはほぼ独学</li>
@@ -114,7 +108,7 @@ export const FirstLTparty: FC = () => {
     <p>
       ここまで読んでくださった皆様は、LT会に参加したくなったのではないでしょうか？日本のエンジニア業界を盛り上げていきましょう！
     </p>
-  </main>
-    </>
+  
+    </ArticalPage>
   );
 }

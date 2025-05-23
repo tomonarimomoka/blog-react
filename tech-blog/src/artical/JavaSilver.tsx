@@ -1,17 +1,10 @@
 import { FC } from "react";
-import {HeaderNav , SubTitle , ReadBtn , CustomTable , LastUpdate} from '../Parts';
+import {ArticalPage , SubTitle , ReadBtn , CustomTable } from '../Parts';
 import '../style.css'
 
 export const JavaSilver: FC = () => {
-  
   return(
-    <>
-
-<HeaderNav />
-  <main className="box">    
-    <h1 id="articleTitle">Java Silver 合格体験記</h1>
-    <LastUpdate/>
-    
+    <ArticalPage title="Java Silver 合格体験記">
     <SubTitle subTitle="私のスペック" />
     <ul>
       <li>ぴよぴよ新卒🐤</li>
@@ -111,7 +104,7 @@ export const JavaSilver: FC = () => {
     Oracleのベンダー資格にご興味があれば、<ReadBtn url="/OracleBronzaDBA" msg="Oracle Master Bronze合格体験記" />
     もぜひご覧ください！
   </p>
-  </main>
-    </>
+  
+    </ArticalPage>
   );
 }

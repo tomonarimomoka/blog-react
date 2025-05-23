@@ -1,17 +1,10 @@
 import { FC } from "react";
-import {HeaderNav , SubTitle , LastUpdate} from '../Parts';
+import {ArticalPage , SubTitle} from '../Parts';
 import '../style.css'
 
 export const JobHuntting: FC = () => {
-  
-  return(
-    <>
-
-<HeaderNav />  
-  <main className="box">    
-    <h1 id="articleTitle">一浪日大でもホワイト企業に就職する方法</h1>
-    <LastUpdate/>
-    
+  return(      
+    <ArticalPage title="企業に就職する方法">    
     <SubTitle subTitle="就職した会社" />
     <ul>
       <li>月給30万円（20時間見込残業）</li>
@@ -114,7 +107,7 @@ export const JobHuntting: FC = () => {
       そして、就職できなくても今の時代生きていけます。<br/>
       就職活動で辛い人が一人でも減ることを心から願っています。
     </p>
- </main>
-    </>
+ 
+    </ArticalPage>
   );
 }

@@ -1,15 +1,10 @@
 import { FC } from "react";
-import {HeaderNav , SubTitle , References_link , References_book, CustomTable , LastUpdate} from '../Parts';
+import {ArticalPage , SubTitle , References_link , References_book, CustomTable} from '../Parts';
 import '../style.css'
 
 export const WhatIsProtocol: FC = () => {
-  
   return(
-    <>
-      <HeaderNav />
-      <main className="box">
-        <h1 id="articleTitle">プロトコルとは？</h1>
-        <LastUpdate/>
+        <ArticalPage title="プロトコルとは？">
         <SubTitle subTitle="そもそも「プロトコル」の意味は？" />
         <p>プロトコルとはルールのことです。</p>
 
@@ -119,7 +114,6 @@ export const WhatIsProtocol: FC = () => {
             最後まで読んでいただき、ありがとうございました。<br/>
             プロトコルについて理解できましたか？皆様のお役に立てていれば幸いです。
           </p>
-      </main>
-    </>
+    </ArticalPage>
   );
 }

@@ -1,15 +1,10 @@
 import { FC } from "react";
-import {HeaderNav , SubTitle , ReadBtn , CustomTable , LastUpdate , References_link , References_book} from '../Parts';
+import {ArticalPage , SubTitle , ReadBtn , CustomTable , References_link , References_book} from '../Parts';
 import '../style.css'
 
 export const AwsForBeginner: FC = () => {
   return(
-    <>
-
-<HeaderNav />
-  <main className="box">
-    <h1 id="articleTitle">初学者のためのAWS基本用語</h1>
-    <LastUpdate/>
+    <ArticalPage title="初学者のためのAWS基本用語">
     <SubTitle subTitle="本記事について" />
     <p>
       本記事ではAWS初心者に向けた用語の解説を行います。
@@ -146,7 +141,6 @@ export const AwsForBeginner: FC = () => {
       AWS関連の記事は他にもあるので、ぜひご覧ください。
       <ReadBtn url="awsListOfServices" msg="AWSサービス一覧"/>
     </p>
-  </main>
-    </>
+    </ArticalPage>
   );
 }

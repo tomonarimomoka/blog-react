@@ -1,20 +1,11 @@
 import { FC } from "react";
-import {HeaderNav , SubTitle , CustomTable , LastUpdate} from '../Parts';
+import {ArticalPage , SubTitle , CustomTable} from '../Parts';
 import '../style.css'
 
 export const GoogleColab: FC = () => {
-  
   return(
-    <>
-
-<HeaderNav />
-  
-  <main className="box">
-    
-    <h1 id="articleTitle">Google Colabで処理を永続化する方法🕓</h1>
-    <LastUpdate/>
+    <ArticalPage title="olabで処理を永続化する方法🕓">
     <SubTitle subTitle="はじめに" />
-    
     <p>
       ■想定読者<br/>
       LLMのpre-trainingやFine-Tuningなどで長時間Google colabを稼働させ続けたい人
@@ -72,7 +63,6 @@ export const GoogleColab: FC = () => {
     </p>
     <p>仕事が忙しい会社員でも長時間LLMに学習させて、賢いLLMを作りたい！がということで実現方法を見つけました！ぜひご活用ください💗</p>
 
-
     <SubTitle subTitle="長時間Google colabを稼働させ続ける方法" />  
     <p>
       <b>①スリープ時間を設定しないように変更する<br/></b>
@@ -126,8 +116,6 @@ export const GoogleColab: FC = () => {
       <b>⑧好きなことして待つ<br/></b>
       PC確認できるならした方がいいですが、仕事に行ったり寝たりしましょう！
     </p>
-    
-  
   <SubTitle subTitle="おわりに" />
     <p>
       最後までお読みいただき、ありがとうございます。
@@ -139,8 +127,6 @@ export const GoogleColab: FC = () => {
     Google , <a href="https://colab.research.google.com/signup?utm_source=resource_tab&utm_medium=link&utm_campaign=payg_learn_more">Colab Paid Services Pricing</a><br/>
     Google , <a href="https://research.google.com/colaboratory/faq.html#usage-limits">Colaboratory</a><br/>
     2020 , <a href="https://kenko-keep.com/12hour-90minit/">【簡単】GoogleColabの制限とは？９０分と１２時間ルール</a>
-  
-  </main>
-    </>
+    </ArticalPage>
   );
 }

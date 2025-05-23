@@ -1,16 +1,10 @@
 import { FC } from "react";
-import {HeaderNav , SubTitle , ReadBtn , References_link , SourceCode ,LastUpdate} from '../Parts';
+import {ArticalPage , SubTitle , ReadBtn , References_link , SourceCode } from '../Parts';
 import '../style.css'
 
 export const GitForBeginner: FC = () => {
-  
   return(
-    <>
-
-<HeaderNav />  
-  <main className="box">    
-    <h1 id="articleTitle">はじめてのGit</h1>
-    <LastUpdate/>
+    <ArticalPage title="はじめてのGit">
     <SubTitle subTitle="本記事の対象者" />
     <ul>      
       <li>はじめてのGitを使う人</li>
@@ -74,7 +68,6 @@ export const GitForBeginner: FC = () => {
       <p>■特定のブランチからソースコードを取得したいとき</p>
       <SourceCode>git clone ＜リポジトリのURL＞ -b ＜欲しいブランチの名前＞'</SourceCode>
 
-
       <h4>参考</h4>
       <References_link lastUpdate="=2014" url="https://qiita.com/FiNGAHOLiC/items/d68d19ff9fecc59084e2" articleTitle="git addの--allオプション" /><br/>
       <References_link lastUpdate="2019" url="https://kaleido01.com/git-commit-solution/" articleTitle="git commitしようとしたら終了できずに戸惑ったので抜け出す方法を書き留めておく" /><br/>
@@ -92,7 +85,6 @@ export const GitForBeginner: FC = () => {
         <ReadBtn url="gitForTeam" msg="読む"/>
         Gitを使いこなして、楽しい開発ライフを送りましょー！
       </p>
-  </main>
-    </>
+    </ArticalPage>
   );
 }

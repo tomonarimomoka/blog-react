@@ -1,18 +1,10 @@
 import { FC } from "react";
-import {HeaderNav , SubTitle , ReadBtn , SourceCode , LastUpdate} from '../Parts';
+import {ArticalPage , SubTitle , ReadBtn , SourceCode} from '../Parts';
 import '../style.css'
 
 export const HowToUseStreamlit: FC = () => {
-  
-  return(
-    <>
-
-<HeaderNav />
-  
-  <main className="box">
-    
-    <h1 id="articleTitle">はじめてのStreamlit</h1>
-    <LastUpdate/>
+  return(  
+    <ArticalPage title="mlit">
     <SubTitle subTitle="Streamlitとは？" />
     <p>StreamlitとはPythonで簡単にWebアプリケーションを作れるフレームワークです。</p>
     <p>簡単に作れるので、ハッカソンにおすすめです。
@@ -45,7 +37,7 @@ st.write("Hello world")</SourceCode>
     <a href="https://github.com/tomonarimomoka/GPT_makePlan">https://github.com/tomonarimomoka/GPT_makePlan</a>
     <br/>
     <a href="https://github.com/tomonarimomoka/makePositiveNews-public">https://github.com/tomonarimomoka/makePositiveNews-public</a>   
-  </main>
-    </>
+  
+    </ArticalPage>
   );
 }

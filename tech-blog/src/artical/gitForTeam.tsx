@@ -1,16 +1,10 @@
 import { FC } from "react";
-import {HeaderNav , SubTitle , ReadBtn , References_link , SourceCode , LastUpdate} from '../Parts';
+import {ArticalPage , SubTitle , ReadBtn , References_link , SourceCode} from '../Parts';
 import '../style.css'
 
 export const GitForTeam: FC = () => {
-  
   return(
-    <>
-
-<HeaderNav />  
-  <main className="box">    
-    <h1 id="articleTitle">仕事で使えるGitコマンド集</h1>
-    <LastUpdate/>
+    <ArticalPage title="Gitコマンド集">
     <SubTitle subTitle="本記事の対象者" />
     <ul>      
       <li>仕事でGitを使う人</li>
@@ -72,8 +66,6 @@ export const GitForTeam: FC = () => {
       <p>
         gitを使いこなして、楽しい開発ライフを送りましょー！
       </p>
-  </main>
-  
-    </>
+  </ArticalPage>
   );
 }

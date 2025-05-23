@@ -1,14 +1,10 @@
 import { FC } from "react";
-import {HeaderNav , SubTitle , References_link , References_book, CustomTable , LastUpdate} from '../Parts';
+import {ArticalPage , SubTitle , References_link , References_book, CustomTable} from '../Parts';
 import '../style.css'
 
 export const SimpleTest: FC = () => {
-  return(
-    <>
-      <HeaderNav />
-  <main className="box">
-    <h1 id="articleTitle">ブラックボックステストのテスト技法</h1>
-    <LastUpdate/>
+  return(      
+    <ArticalPage title="ブラックボックステストのテスト技法">
     <SubTitle subTitle="筆者のスペック" />
     <ul>
       <li>社会人２年生</li>
@@ -224,7 +220,7 @@ export const SimpleTest: FC = () => {
     <SubTitle subTitle="おわりに" />
     <p>最後まで読んでくださり、ありがとうございました。</p>
     <p>テストが好きなエンジニアは少ないと思いますが、品質を保証するためにとても大切なので、頑張ってテストしましょー！</p>
-  </main>
-    </>
+  
+    </ArticalPage>
   );
 }

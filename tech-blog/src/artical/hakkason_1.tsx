@@ -1,16 +1,10 @@
 import { FC } from "react";
-import {HeaderNav , SubTitle , ReadBtn , SourceCode , LastUpdate, CustomTable} from '../Parts';
+import {ArticalPage , SubTitle , ReadBtn , SourceCode , CustomTable} from '../Parts';
 import '../style.css'
 
 export const Hakkason_1: FC = () => {
-  
   return(
-    <>
-
-<HeaderNav />  
-  <main className="box">    
-    <h1 id="articleTitle">【生成AI】ハッカソン参加レポート vol.1</h1>
-    <LastUpdate/>
+    <ArticalPage title="加レポート vol.1">
     <SubTitle subTitle="筆者のスペック" />
     <ul>      
       <li>プログラミングはほぼ独学</li>
@@ -157,8 +151,8 @@ def makepromptForLP(referenceUrl,businessType,target,personasGender,age,imageCol
     <p>
       最後まで読んでくださり、ありがとうございました。
     </p>
-  </main>
   
-    </>
+  
+    </ArticalPage>
   );
 }

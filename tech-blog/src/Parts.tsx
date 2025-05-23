@@ -1,7 +1,6 @@
 import { FC , ReactNode } from "react"
 import Markdown from 'react-markdown'
-// import remarkGfm from 'remark-gfm'
-
+import { Helmet } from 'react-helmet';
 
 export const ArticalList: FC<{ title: string , fileName:string , explain:string }> = ({ title , fileName , explain }) => {
   let url = "/" + fileName
@@ -18,7 +17,7 @@ export const ArticalList: FC<{ title: string , fileName:string , explain:string 
   );
 }
 
-export const ArticalListBox: FC<{ title: string , fileName:string , explain:string }> = ({ title , fileName , explain }) => {
+export const ArticalListBox: FC<{ title: string , fileName:string , children:ReactNode }> = ({ title , fileName , children }) => {
   let url = "/" + fileName
   return (
     <>      
@@ -27,33 +26,12 @@ export const ArticalListBox: FC<{ title: string , fileName:string , explain:stri
           {title}
         </h3>
         <p>
-          {explain}
+          {children}
         </p>        
       </a>
     </>
   );
 }
-// export const Head : FC<{title:string}> = ({title}) => {
-//   return(
-//     <>
-//       <head>
-//         <title>{title}</title>    
-//         <script>
-//           window.dataLayer = window.dataLayer || [];
-//           function gtag(){dataLayer.push(arguments);}
-//           gtag('js', new Date());
-//           gtag('config', 'G-LG6VXEVGW8');
-//         </script>
-//         {/* <!-- Google tag (gtag.js) --> */}
-//         <script async src="https://www.googletagmanager.com/gtag/js?id=G-LG6VXEVGW8"></script>
-//         {/* <!-- Google AdSense --> */}
-//         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2761899560206236" crossorigin="anonymous"></script>
-//         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-//       </head>
-//     </>
-//   );
-// }
-
 export const HeaderNav: FC = () => {
   return(
     <>
@@ -145,6 +123,23 @@ export const CustomTable:FC<{children:ReactNode , cap?:string}> = ({children , c
           {children}
         </tbody>
       </table>
+    </>
+  )
+}
+
+export const ArticalPage:FC<{title:string , children:ReactNode}> = ({title , children}) => {
+  return(
+    <>
+      <Helmet>
+        <title>{title}</title>
+        {/* <!-- Google tag (gtag.js) --> */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-LG6VXEVGW8"></script>
+        {/* <!-- Google AdSense --> */}
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2761899560206236" crossOrigin="anonymous"></script>
+      </Helmet>
+      <h1 id="articleTitle">{title}</h1>
+      <LastUpdate/>
+      {children}
     </>
   )
 }

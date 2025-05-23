@@ -1,16 +1,10 @@
 import { FC } from "react";
-import {HeaderNav , SubTitle , LastUpdate} from '../Parts';
+import {ArticalPage , SubTitle} from '../Parts';
 import '../style.css'
 
 export const Security: FC = () => {
-  
   return(
-    <>
-
-<HeaderNav />
-  <main className="box">
-    <h1 id="articleTitle">ASVS用語集</h1>
-    <LastUpdate/>
+    <ArticalPage title="ASVS用語集">
     <SubTitle subTitle="本記事について" />
     <p>
       本記事ではセキュリティ標準として知られているASVSの中の認証に関する用語を解説します。<br/>
@@ -81,7 +75,6 @@ export const Security: FC = () => {
     川崎貴彦さんの記事はどれもとても分かりやすいので、おすすめです。<br/>
     川崎 貴彦 , 2020 , <a href="https://qiita.com/TakahikoKawasaki/items/e37caf50776e00e733be">一番分かりやすい OAuth の説明</a>
   
-
 
     <SubTitle subTitle="openId" />
     <ul>
@@ -194,7 +187,7 @@ export const Security: FC = () => {
       最後まで読んでいただき、ありがとうございました。<br/>
       今回の記事では沢山のセキュリティー用語を簡潔に解説しました。忘れた時のために、ぜひブックマークをしてみてください。
     </p>
-  </main>  
-    </>
+    
+    </ArticalPage>
   );
 }

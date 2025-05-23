@@ -1,18 +1,10 @@
 import { FC } from "react";
-import {HeaderNav , SubTitle , References_link , SourceCode , LastUpdate} from '../Parts';
+import {ArticalPage , SubTitle , References_link , SourceCode} from '../Parts';
 import '../style.css'
 
 export const VimForBeginner: FC = () => {
-  
   return(
-    <>
-
-<HeaderNav />
-  
-  <main className="box">
-    
-    <h1 id="articleTitle">はじめてのvim</h1>
-    <LastUpdate/>
+    <ArticalPage title="はじめてのvim">
     <SubTitle subTitle="vimとは" />
     <p>vimとは、CUIで使えるエディターのことです。</p>
     <p>
@@ -38,7 +30,6 @@ export const VimForBeginner: FC = () => {
       insertモードのときは、ターミナルの下の方に「-- INSERT --」と表示されます。
     </p>
     <img src="/assets/vim-insert.png" className="imgSize_90" alt="insertモード" />
-
 
     <SubTitle subTitle="ファイルを編集する" />
     <ol>
@@ -73,7 +64,7 @@ export const VimForBeginner: FC = () => {
     <References_link author="vimdoc-ja プロジェクト" lastUpdate="2024" url="https://vim-jp.org/vimdoc-ja/" articleTitle="Vim日本語ドキュメント" />
     <References_link url="https://howpon.com/21851" author="Howpon" lastUpdate="2020" articleTitle="Vim – モードの種類と切り替える方法【モード表示の変更も】" />
 
-  </main>
-    </>
+  
+    </ArticalPage>
   );
 }

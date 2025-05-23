@@ -3,6 +3,7 @@ import {
   Route,
   Routes
 } from "react-router-dom";
+import {HeaderNav } from './Parts';
 import {Index} from './Index.tsx'
 import { ListTech } from "./ListTech.tsx";
 import { PlivacyPolicy } from "./privacyPolicy.tsx";
@@ -26,6 +27,7 @@ import { SimpleTest } from "./artical/simpleTest.tsx";
 import { TSkaigiReport } from "./artical/TSkaigiReport.tsx";
 import { VimForBeginner } from "./artical/vimForBeginner.tsx";
 import { WhatIsProtocol } from "./artical/whatIsProtocol.tsx";
+import {HowToMigrateBlog} from "./artical/HowToMigrateBlog.tsx"
 import { Helmet } from 'react-helmet';
 function App() {
   return (
@@ -36,33 +38,38 @@ function App() {
         {/* <!-- Google AdSense --> */}
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2761899560206236" crossOrigin="anonymous"></script>
       </Helmet>
-      <BrowserRouter>
-        <Routes>
-          <Route path='/' element={<Index />} />
-          <Route path='/ListTech' element={<ListTech />} />
-          <Route path='/PlivacyPolicy' element={<PlivacyPolicy />} />
-          <Route path='/AwsForBeginner' element={<AwsForBeginner />} />
-          <Route path='/AwsListOfServices' element={<AwsListOfServices />} />
-          <Route path='/ElementOfComputer' element={<ElementOfComputer />} />
-          <Route path='/FirstLTparty' element={<FirstLTparty />} />
-          <Route path='/GitForBeginner' element={<GitForBeginner />} />
-          <Route path='/GitForTeam' element={<GitForTeam />} />
-          <Route path='/GoogleColab' element={<GoogleColab />} />
-          <Route path='/Hakkason_1' element={<Hakkason_1 />} />
-          <Route path='/Hakkason_2' element={<Hakkason_2 />} />
-          <Route path='/Hakkason_3' element={<Hakkason_3 />} />
-          <Route path='/HowToUseStreamlit' element={<HowToUseStreamlit />} />
-          <Route path='/HTTPmethod' element={<HTTPmethod />} />
-          <Route path='/JavaSilver' element={<JavaSilver />} />
-          <Route path='/JobHuntting' element={<JobHuntting />} />
-          <Route path='/OracleBronzaDBA' element={<OracleBronzaDBA />} />
-          <Route path='/Security' element={<Security />} />
-          <Route path='/SimpleTest' element={<SimpleTest />} />
-          <Route path='/TSkaigiReport' element={<TSkaigiReport />} />
-          <Route path='/VimForBeginner' element={<VimForBeginner />} />
-          <Route path='/WhatIsProtocol' element={<WhatIsProtocol />} />
-        </Routes>
-      </BrowserRouter>
+
+      <HeaderNav />
+      <main className="box">
+        <BrowserRouter>
+          <Routes>
+            <Route path='/' element={<Index />} />
+            <Route path='/ListTech' element={<ListTech />} />
+            <Route path='/PlivacyPolicy' element={<PlivacyPolicy />} />
+            <Route path='/AwsForBeginner' element={<AwsForBeginner />} />
+            <Route path='/AwsListOfServices' element={<AwsListOfServices />} />
+            <Route path='/ElementOfComputer' element={<ElementOfComputer />} />
+            <Route path='/FirstLTparty' element={<FirstLTparty />} />
+            <Route path='/GitForBeginner' element={<GitForBeginner />} />
+            <Route path='/GitForTeam' element={<GitForTeam />} />
+            <Route path='/GoogleColab' element={<GoogleColab />} />
+            <Route path='/Hakkason_1' element={<Hakkason_1 />} />
+            <Route path='/Hakkason_2' element={<Hakkason_2 />} />
+            <Route path='/Hakkason_3' element={<Hakkason_3 />} />
+            <Route path='/HowToUseStreamlit' element={<HowToUseStreamlit />} />
+            <Route path='/HTTPmethod' element={<HTTPmethod />} />
+            <Route path='/JavaSilver' element={<JavaSilver />} />
+            <Route path='/JobHuntting' element={<JobHuntting />} />
+            <Route path='/OracleBronzaDBA' element={<OracleBronzaDBA />} />
+            <Route path='/Security' element={<Security />} />
+            <Route path='/SimpleTest' element={<SimpleTest />} />
+            <Route path='/TSkaigiReport' element={<TSkaigiReport />} />
+            <Route path='/VimForBeginner' element={<VimForBeginner />} />
+            <Route path='/WhatIsProtocol' element={<WhatIsProtocol />} />
+            <Route path='/HowToMigrateBlog' element={<HowToMigrateBlog />} />
+          </Routes>
+        </BrowserRouter>  
+      </main>
     </>
   )
 }

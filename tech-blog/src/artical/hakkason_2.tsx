@@ -1,16 +1,10 @@
 import { FC } from "react";
-import {HeaderNav , SubTitle , ReadBtn , SourceCode , LastUpdate, CustomTable} from '../Parts';
+import {ArticalPage , SubTitle , ReadBtn , SourceCode , CustomTable} from '../Parts';
 import '../style.css'
 
 export const Hakkason_2: FC = () => {
-  
   return(
-    <>
-
-<HeaderNav />
-  <main className="box">    
-    <h1 id="articleTitle">【生成AI】ハッカソン参加レポート vol.2</h1>
-    <LastUpdate/>
+    <ArticalPage title="カソン参加レポート vol.2">
     <SubTitle subTitle="筆者のスペック" />
     <ul>      
       <li>プログラミングはほぼ独学</li>
@@ -140,8 +134,8 @@ st.write("Hello world")</SourceCode>
     <p>
       最後まで読んでくださり、ありがとうございました。
     </p>
-  </main>
   
-    </>
+  
+    </ArticalPage>
   );
 }

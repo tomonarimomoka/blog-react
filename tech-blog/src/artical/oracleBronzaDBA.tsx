@@ -1,20 +1,11 @@
 import { FC } from "react";
-import {HeaderNav , SubTitle , ReadBtn , LastUpdate} from '../Parts';
+import {ArticalPage , SubTitle , ReadBtn} from '../Parts';
 import '../style.css'
 
 export const OracleBronzaDBA: FC = () => {
-  
-  return(
-    <>
-
-<HeaderNav />
-  
-  <main className="box">    
-    <h1 id="articleTitle">ORACLE MASTER Bronze DBA 合格体験記</h1>
-    <LastUpdate/>
-    
+  return(      
+    <ArticalPage title="LE MASTER Bronze DBA 合格体験記">
     <SubTitle subTitle="私のスペック" />
-
     <ul>
       <li>ぴよぴよ新卒🐤</li>
       <li>SQLは使えるけど、データベース管理などは全く分からない</li>
@@ -101,8 +92,7 @@ export const OracleBronzaDBA: FC = () => {
   <p>
     Oracleのベンダー資格にご興味があれば、<ReadBtn url="JavaSilver" msg="Java Silver合格体験記" />
     もぜひご覧ください！
-  </p>
-  </main>
-    </>
+  </p> 
+  </ArticalPage>
   );
 }

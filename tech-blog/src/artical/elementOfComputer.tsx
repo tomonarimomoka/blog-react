@@ -1,17 +1,10 @@
 import { FC } from "react";
-import {HeaderNav , SubTitle , LastUpdate} from '../Parts';
+import {ArticalPage , SubTitle} from '../Parts';
 import '../style.css'
 
 export const ElementOfComputer: FC = () => {
-  
-  return(
-    <>
-
-<HeaderNav /> 
-  <main className="box">
-    <h1 id="articleTitle">コンピュータの3大構成要素とは？</h1>
-    <LastUpdate/>
-    
+  return( 
+    <ArticalPage title="コンピュータの3大構成要素とは？">
     <SubTitle subTitle="コンピュータの3大構成要素" />
     <p>コンピュータの3大構成要素とは以下の3つ</p>
     <ul>
@@ -102,7 +95,7 @@ export const ElementOfComputer: FC = () => {
       <br/>
       プログラマーは普段ハードウェアの仕組みを意識しませんが、エンジニアの常識として知っておきましょう！
     </p>
-  </main>
-    </>
+  
+    </ArticalPage>
   );
 }

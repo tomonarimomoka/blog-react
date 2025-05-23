@@ -1,17 +1,10 @@
 import { FC } from "react";
-import {HeaderNav , SubTitle , ReadBtn ,References_link , References_book , LastUpdate, CustomTable} from '../Parts';
+import {ArticalPage , SubTitle , ReadBtn ,References_link , References_book , CustomTable} from '../Parts';
 import '../style.css'
 
 export const AwsListOfServices: FC = () => {
   return(
-    <>
-
-<HeaderNav />
-  
-  <main className="box">
-    
-    <h1 id="articleTitle">AWS主要サービス一覧</h1>
-    <LastUpdate/>
+    <ArticalPage title="AWS主要サービス一覧">
     <SubTitle subTitle="筆者のスペック" />
     <ul>      
       <li>プログラミングはほぼ独学</li>
@@ -108,7 +101,7 @@ export const AwsListOfServices: FC = () => {
       AWS関連の記事は他にもあるので、ぜひご覧ください。
       <ReadBtn url="awsForBeginner" msg="初学者のためのAWS"/>
     </p>
-  </main>
-    </>
+  
+    </ArticalPage>
   );
 }

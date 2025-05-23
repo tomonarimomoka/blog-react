@@ -1,16 +1,10 @@
 import { FC } from "react";
-import {HeaderNav , SubTitle , ReadBtn , CustomTable , LastUpdate} from '../Parts';
+import {ArticalPage , SubTitle , ReadBtn , CustomTable} from '../Parts';
 import '../style.css'
 
 export const TSkaigiReport: FC = () => {
-  
   return(
-    <>
-
-<HeaderNav />  
-  <main className="box">    
-    <h1 id="articleTitle">【聞き専】TSkaigi参加レポート</h1>
-    <LastUpdate/>
+    <ArticalPage title="【聞き専】TSkaigi参加レポート">
     <SubTitle subTitle="筆者のスペック" />
     <ul>      
       <li>プログラミングはほぼ独学</li>
@@ -221,7 +215,6 @@ export const TSkaigiReport: FC = () => {
     2024 , <a href="https://zenn.dev/sprout2000/articles/9d026d3d9e0e8f">いちばんやさしい webpack 入門</a>
     2021 , <a href="https://e-words.jp/w/webpack.html">webpack</a>
 
-
   <SubTitle subTitle="LT会のすすめ" />
   <p>
     筆者はサーバーサイドエンジニアなので、フロントには詳しくなかったですが、意外と話についていくことができました。
@@ -243,7 +236,7 @@ export const TSkaigiReport: FC = () => {
       そして、本記事の公開を許可してくださった登壇者の皆様に心より感謝申し上げます。
     </p>
 
-  </main>
-    </>
+  
+    </ArticalPage>
   );
 }

@@ -1,5 +1,5 @@
 import { FC } from "react";
-import {HeaderNav , SubTitle , References_link , References_book, CustomTable , LastUpdate} from '../Parts';
+import {ArticalPage , SubTitle , References_link , References_book, CustomTable} from '../Parts';
 import '../style.css'
 
 export const HTTPmethod: FC = () => {
@@ -11,12 +11,7 @@ content_type = "text/html; charset=UTF-8"
   content:これはTESTです。
 }`
   return(
-    <>
-
-<HeaderNav />
-  <main className="box">    
-    <h1 id="articleTitle">HTTPメソッドとは？</h1>
-    <LastUpdate/>
+    <ArticalPage title="とは？">
     
     <SubTitle subTitle="８つのメソッド" />
     <p>HTTPには8つしかメソッドがありません。今回はよく使うGETとPOSTについて詳しく説明します。</p>
@@ -90,8 +85,8 @@ http://examole.jp/search?q=＜リクエストパラメータ＞
         最後まで読んでいただき、ありがとうございました。<br/>
         普段とりあえずPOSTを使っている人も、なぜPOSTを使うか理解できましたか？お役に立てていれば幸いです。
       </p>
-    </main>
     
-    </>
+    
+    </ArticalPage>
   );
 }
