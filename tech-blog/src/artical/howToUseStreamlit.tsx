@@ -4,7 +4,7 @@ import '../style.css'
 
 export const HowToUseStreamlit: FC = () => {
   return(  
-    <ArticalPage title="mlit">
+    <ArticalPage title="はじめてのStreamlit">
     <SubTitle subTitle="Streamlitとは？" />
     <p>StreamlitとはPythonで簡単にWebアプリケーションを作れるフレームワークです。</p>
     <p>簡単に作れるので、ハッカソンにおすすめです。

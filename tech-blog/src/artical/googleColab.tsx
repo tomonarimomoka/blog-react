@@ -4,7 +4,7 @@ import '../style.css'
 
 export const GoogleColab: FC = () => {
   return(
-    <ArticalPage title="olabで処理を永続化する方法🕓">
+    <ArticalPage title="Google Colabで処理を永続化する方法🕓">
     <SubTitle subTitle="はじめに" />
     <p>
       ■想定読者<br/>

@@ -4,7 +4,7 @@ import '../style.css'
 
 export const JobHuntting: FC = () => {
   return(      
-    <ArticalPage title="企業に就職する方法">    
+    <ArticalPage title="一浪日大でも企業に就職する方法">    
     <SubTitle subTitle="就職した会社" />
     <ul>
       <li>月給30万円（20時間見込残業）</li>

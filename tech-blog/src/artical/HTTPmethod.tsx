@@ -11,7 +11,7 @@ content_type = "text/html; charset=UTF-8"
   content:これはTESTです。
 }`
   return(
-    <ArticalPage title="とは？">
+    <ArticalPage title="HTTPメソッドとは？">
     
     <SubTitle subTitle="８つのメソッド" />
     <p>HTTPには8つしかメソッドがありません。今回はよく使うGETとPOSTについて詳しく説明します。</p>

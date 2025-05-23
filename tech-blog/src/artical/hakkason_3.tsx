@@ -4,7 +4,7 @@ import '../style.css'
 
 export const Hakkason_3: FC = () => {
   return(
-    <ArticalPage title="ト vol.3 ～敗因を考える～">
+    <ArticalPage title="ハッカソン参加レポート vol.3 ～敗因を考える～">
     <SubTitle subTitle="筆者のスペック" />
     <ul>      
       <li>プログラミングはほぼ独学</li>

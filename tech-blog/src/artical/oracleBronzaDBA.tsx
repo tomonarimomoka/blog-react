@@ -4,7 +4,7 @@ import '../style.css'
 
 export const OracleBronzaDBA: FC = () => {
   return(      
-    <ArticalPage title="LE MASTER Bronze DBA 合格体験記">
+    <ArticalPage title="ORACLE MASTER Bronze DBA 合格体験記">
     <SubTitle subTitle="私のスペック" />
     <ul>
       <li>ぴよぴよ新卒🐤</li>
