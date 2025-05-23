@@ -1,14 +1,9 @@
 import { FC } from "react";
-import {HeaderNav } from './Parts';
-import './style.css'
+import {ArticalPage } from './Parts';
 
 export const PlivacyPolicy: FC = () => {
-
     return(
-        <>
-            <HeaderNav/>
-            <main className="box">
-            <h2>当サイトが使用しているアクセス解析ツールについて</h2>
+        <ArticalPage title="当サイトが使用しているアクセス解析ツールについて">
             <p>
             当サイトでは、Googleによるアクセス解析ツール「Googleアナリティクス」を利用しています。
             </p>
@@ -23,9 +18,7 @@ export const PlivacyPolicy: FC = () => {
             </p>
             <p>
             詳しくは、<a href="https://marketingplatform.google.com/about/analytics/terms/jp/">Google アナリティクス利用規約</a>をご確認ください。
-            </p>
-            </main>
-        </>
-
+            </p> 
+        </ArticalPage>
     );
 }
