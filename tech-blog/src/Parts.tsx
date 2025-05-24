@@ -1,6 +1,7 @@
 import { FC , ReactNode } from "react"
 import Markdown from 'react-markdown'
 import { Helmet } from 'react-helmet';
+import "./style.css"
 
 export const ArticalList: FC<{ title: string , fileName:string , explain:string }> = ({ title , fileName , explain }) => {
   let url = "/" + fileName
@@ -141,6 +142,14 @@ export const ArticalPage:FC<{title:string , children:ReactNode}> = ({title , chi
       <LastUpdate/>
       {children}
     </>
+  )
+}
+export const FlexBox:FC<{children:ReactNode}> = ({children}) => {
+
+  return(
+    <div className="flexBox">
+      {children}
+    </div>
   )
 }
 export const Img_10:FC<{path:string , alt?:string}> = ({path , alt}) => {
