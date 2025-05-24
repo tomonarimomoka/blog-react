@@ -3,7 +3,7 @@ import Markdown from 'react-markdown'
 import { Helmet } from 'react-helmet';
 import "./style.css"
 
-export const ArticalListBox: FC<{ title: string , fileName:string , children:ReactNode }> = ({ title , fileName , children }) => {
+export const ArticleCard: FC<{ title: string , fileName:string , children:string }> = ({ title , fileName , children }) => {
   let url = "/" + fileName
   return (
     <>      
