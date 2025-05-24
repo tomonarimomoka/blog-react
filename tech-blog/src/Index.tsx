@@ -10,9 +10,10 @@ export const Index: FC = () => {
       </p>
       <p>
         まだまだ勉強中の身ですが、私が困った等身大のトピックで誰かの助けになることもあるかもしれない考えて、背伸びせずに私が欲しかった記事を作成します。
+        一人のエンジニアがどう成長していくかを見ることで、後輩エンジニアたちのモデルケースとして参考になればいいなと考えています。
       </p>
       <p>
-        一人のエンジニアがどう成長していくかを見ることで、後輩エンジニアたちのモデルケースとして参考になればいいなと考えています。
+        日本語の記事を増やすことで日本の技術力に貢献したいと考えています。
       </p>
       <SubTitle subTitle="♥お勧めの記事" />
       <ul>
@@ -27,7 +28,7 @@ export const Index: FC = () => {
         <tr><td>2023.10</td><td>「かわいいテック　ももか」開設！</td></tr>
         <tr><td>2024.7</td><td>10記事達成</td></tr>
         <tr><td>2025.4</td><td>20記事達成</td></tr>
-        <tr><td>2025.5</td><td>TypeScrip×Reactにシステムリプレイス<ReadBtn url="/HowToMigrateBlog" msg=""></ReadBtn></td></tr>
+        <tr><td>2025.5</td><td>TypeScrip×Reactにシステムリプレイス<ReadBtn url="/HowToMigrateBlog" /></td></tr>
       </CustomTable>
       <SubTitle subTitle="♥筆者について" />
 
@@ -48,23 +49,6 @@ export const Index: FC = () => {
         「一浪日大でもホワイト企業に就職する方法」<ReadBtn url="/jobHuntting" />
         をご覧ください✨
       </p>
-      {/* <CustomTable>
-        <tr><th>いつ</th><th>どうした</th></tr>
-        <tr><td>2018年3月</td><td>高校卒業</td></tr>
-        <tr><td>2018年4月~2019年2月</td><td>四谷学院で浪人</td></tr>
-        <tr><td>2019年4月</td><td>日本大学入学する。物理学を専攻</td></tr>
-        <tr><td>2021年3月~2023年3月</td><td>プログラマーの長期インターンでJava , C# , プログラミングの思考を学ぶ</td></tr>
-        <tr><td>2021年8月~2022年11月</td><td>プログラマーのバイトで C# を学ぶ</td></tr>
-        <tr><td>2022年2月~2023年3月</td><td>研究室で研究頑張る🔥python , Shell Script , 量子力学を学ぶ</td></tr>
-        <tr><td>2023年3月24日</td><td>物理学会で発表✨</td></tr>
-        <tr><td>2023年3月</td><td>日本大学を卒業</td></tr>
-        <tr><td>2023年4月</td><td>ソフトウェアエンジニアとして就職</td></tr>
-        <tr><td>2023年8月</td><td>念願の製品開発チームに配属され、Javaでゴリゴリ開発</td></tr>
-        <tr><td>2024年4月</td><td>昇格する✨</td></tr>
-        <tr><td>2024年9月</td><td>製品開発チームので別製品を作り始める。TypeScript×React , AWSを学ぶ🔥</td></tr>
-        <tr><td>2024年9月~2025年1月</td><td>東京大学 松尾・岩澤研究室 大規模言語モデル 2024 受講＆修了✨</td></tr>
-        <tr><td>2025年4月</td><td>AI専門の企業にソフトウェアエンジニアとして転職する</td></tr>
-      </CustomTable> */}
       <h3>■保有資格・試験</h3>
       <ul>
         <li>ITパスポート試験</li>

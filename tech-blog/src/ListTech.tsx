@@ -19,7 +19,7 @@ export const ListTech: FC = () => {
                 <ArticalListBox title="Google Colabで処理を永続化する方法"  fileName="googleColab" > Google Colabで処理を永続化する方法をまとめました！寝ている間にLLMの学習をさせたい人はぜひご覧ください</ArticalListBox> 
                 <ArticalListBox title="はじめてのStreamlit"  fileName="howToUseStreamlit" > PythonのフレームワークであるStreamlitを初めて使う人のための記事です</ArticalListBox> 
                 <ArticalListBox title="はじめてのvim"  fileName="vimForBeginner" > vimを初めて使う人のための記事です</ArticalListBox> 
-                <ArticalListBox title="React移植"  fileName="HowToMigrateBlog" > HTML・CSSで書かれた静的なサイトからTypeScrip×Reactにマイグレーションする方法を解説！</ArticalListBox>
+                <ArticalListBox title="HTMLからReactに移植する方法"  fileName="HowToMigrateBlog" > HTML・CSSで書かれた静的なサイトからTypeScrip×Reactにマイグレーションする方法を解説！</ArticalListBox>
             </FlexBox>
 
             <SubTitle subTitle="♥体験談系の記事一覧"/>
