@@ -1,6 +1,5 @@
 import { FC } from "react";
 import {ArticalPage , SubTitle , References_link , SourceCode , Img_90} from '../Parts';
-import '../style.css'
 
 export const VimForBeginner: FC = () => {
   return(

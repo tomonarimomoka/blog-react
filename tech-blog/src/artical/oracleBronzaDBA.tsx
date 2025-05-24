@@ -1,6 +1,5 @@
 import { FC } from "react";
 import {ArticalPage , SubTitle , ReadBtn , Img_30} from '../Parts';
-import '../style.css'
 
 export const OracleBronzaDBA: FC = () => {
   return(      

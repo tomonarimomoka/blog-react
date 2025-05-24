@@ -1,6 +1,5 @@
 import { FC } from "react";
 import {ArticalPage , SubTitle , ReadBtn , CustomTable} from '../Parts';
-import '../style.css'
 
 export const Hakkason_3: FC = () => {
   return(

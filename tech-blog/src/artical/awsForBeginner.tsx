@@ -1,6 +1,5 @@
 import { FC } from "react";
 import {ArticalPage , SubTitle , ReadBtn , CustomTable , References_link , References_book} from '../Parts';
-import '../style.css'
 
 export const AwsForBeginner: FC = () => {
   return(

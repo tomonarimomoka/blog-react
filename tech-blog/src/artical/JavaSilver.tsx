@@ -1,6 +1,5 @@
 import { FC } from "react";
 import {ArticalPage , SubTitle , ReadBtn , CustomTable , Img_30} from '../Parts';
-import '../style.css'
 
 export const JavaSilver: FC = () => {
   return(

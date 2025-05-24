@@ -1,6 +1,5 @@
 import { FC } from "react";
 import {ArticalPage , SubTitle , ReadBtn} from '../Parts';
-import '../style.css'
 
 export const HowToMigrateBlog: FC = () => {
   return(

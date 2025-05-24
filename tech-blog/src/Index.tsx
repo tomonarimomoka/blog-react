@@ -1,6 +1,5 @@
 import { FC } from "react";
 import {ArticalPage , SubTitle , ReadBtn , CustomTable , Img_30} from './Parts';
-import './style.css'
 
 export const Index: FC = () => {
   return(
@@ -46,7 +45,7 @@ export const Index: FC = () => {
       <h3>■経歴</h3>
       <p>
         私のエンジニアになるまでの軌跡は
-        <a href="/src/jobHuntting.html" >一浪日大でもホワイト企業に就職する方法</a>
+        「一浪日大でもホワイト企業に就職する方法」<ReadBtn url="/jobHuntting" />
         をご覧ください✨
       </p>
       {/* <CustomTable>

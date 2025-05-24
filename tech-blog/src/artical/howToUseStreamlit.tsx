@@ -1,6 +1,5 @@
 import { FC } from "react";
 import {ArticalPage , SubTitle , ReadBtn , SourceCode} from '../Parts';
-import '../style.css'
 
 export const HowToUseStreamlit: FC = () => {
   return(  

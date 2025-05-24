@@ -1,6 +1,5 @@
 import { FC } from "react";
 import {ArticalPage , SubTitle , Img_60} from '../Parts';
-import '../style.css'
 
 export const Security: FC = () => {
   return(

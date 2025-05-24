@@ -1,6 +1,5 @@
 import { FC } from "react";
 import {ArticalPage , SubTitle , ReadBtn ,References_link , References_book , CustomTable} from '../Parts';
-import '../style.css'
 
 export const AwsListOfServices: FC = () => {
   return(

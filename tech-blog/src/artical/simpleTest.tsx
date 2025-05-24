@@ -1,6 +1,5 @@
 import { FC } from "react";
 import {ArticalPage , SubTitle , References_link , References_book, CustomTable , Img_60} from '../Parts';
-import '../style.css'
 
 export const SimpleTest: FC = () => {
   return(      

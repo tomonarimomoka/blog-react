@@ -1,6 +1,5 @@
 import { FC } from "react";
 import {ArticalPage , SubTitle} from '../Parts';
-import '../style.css'
 
 export const JobHuntting: FC = () => {
   return(      

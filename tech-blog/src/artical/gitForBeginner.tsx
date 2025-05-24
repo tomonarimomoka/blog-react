@@ -1,6 +1,5 @@
 import { FC } from "react";
 import {ArticalPage , SubTitle , ReadBtn , References_link , SourceCode , Img_60} from '../Parts';
-import '../style.css'
 
 export const GitForBeginner: FC = () => {
   return(

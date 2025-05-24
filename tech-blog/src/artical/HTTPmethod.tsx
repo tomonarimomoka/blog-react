@@ -1,6 +1,5 @@
 import { FC } from "react";
 import {ArticalPage , SubTitle , References_link , References_book, CustomTable} from '../Parts';
-import '../style.css'
 
 export const HTTPmethod: FC = () => {
   
