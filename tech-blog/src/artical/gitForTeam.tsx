@@ -48,7 +48,7 @@ export const GitForTeam: FC = () => {
     <p>
       gitのマージとはブランチを統合してすることです。以下コマンド実行後はaddまでされるので、pushだけでOKです。
     </p>
-      <SourceCode>git merge ＜ブランチ名＞'</SourceCode>    
+      <SourceCode>git merge ＜ブランチ名＞</SourceCode>    
 ​
     <h4>参考</h4>
     <References_link author="株式会社ヌーラボ" url="https://backlog.com/ja/git-tutorial/" articleTitle="サル先生のGit入門" /><br/>

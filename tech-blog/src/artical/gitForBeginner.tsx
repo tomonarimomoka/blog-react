@@ -47,25 +47,25 @@ export const GitForBeginner: FC = () => {
       
       <SubTitle subTitle="便利なコマンド" />
       <p>■全ての変更をステージしたいとき</p>
-      <SourceCode>git add --all'</SourceCode>
+      <SourceCode>git add --all</SourceCode>
 
       <p>■特定のファイルの変更をステージしたいとき</p>
-      <SourceCode>git add ＜相対パス＞'</SourceCode>
+      <SourceCode>git add ＜相対パス＞</SourceCode>
       
       <p>■コメント付きでコミットするとき</p>
-      <SourceCode>"git commit -m '＜任意のコミットメッセージ＞'"</SourceCode>
+      <SourceCode>git commit -m '＜任意のコミットメッセージ＞'</SourceCode>
 
       <p>■gi commitをオプションなしで実行した後</p>
       <p>コメントオプションを付けずにcommitコマンドを実行すると、VIMに入ります。</p>
       <ol>
         <li>Eacキーを押す</li>
-        <li><SourceCode>:q'</SourceCode>を入力 </li>
+        <li><SourceCode>:q</SourceCode>を入力 </li>
         <li>Enterキーを押す</li>
       </ol>
       <p>vimの使い方はこちら ⇒ </p>
       
       <p>■特定のブランチからソースコードを取得したいとき</p>
-      <SourceCode>git clone ＜リポジトリのURL＞ -b ＜欲しいブランチの名前＞'</SourceCode>
+      <SourceCode>git clone ＜リポジトリのURL＞ -b ＜欲しいブランチの名前＞</SourceCode>
 
       <h4>参考</h4>
       <References_link lastUpdate="=2014" url="https://qiita.com/FiNGAHOLiC/items/d68d19ff9fecc59084e2" articleTitle="git addの--allオプション" /><br/>
