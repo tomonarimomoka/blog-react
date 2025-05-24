@@ -3,21 +3,6 @@ import Markdown from 'react-markdown'
 import { Helmet } from 'react-helmet';
 import "./style.css"
 
-export const ArticalList: FC<{ title: string , fileName:string , explain:string }> = ({ title , fileName , explain }) => {
-  let url = "/" + fileName
-  return (
-    <>
-      <h3 className="sectionTitleLineDashed">
-        {title}
-        <a href={url} className="btnArticleLink">読む↗</a>
-      </h3>
-      <p>
-        {explain}
-      </p>
-    </>
-  );
-}
-
 export const ArticalListBox: FC<{ title: string , fileName:string , children:ReactNode }> = ({ title , fileName , children }) => {
   let url = "/" + fileName
   return (
@@ -58,8 +43,7 @@ export const ReadBtn: FC<{ url: string , msg?:string }> = ({ url , msg="読む" 
 }
 
 export const SubTitle: FC<{ subTitle: string }> = ({ subTitle }) => {
-  return(
-    
+  return(   
     <h2 className="sectionTitleLine">{subTitle}</h2>
   )
 }
