@@ -3,6 +3,7 @@ import {
   Route,
   Routes
 } from "react-router-dom";
+// import "./style.css"
 import {HeaderNav } from './Parts';
 import {Index} from './Index.tsx'
 import { ListTech } from "./ListTech.tsx";
