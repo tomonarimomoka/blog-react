@@ -2,51 +2,6 @@ import { FC } from "react";
 import {ArticalPage , SubTitle , ReadBtn , SourceCode , CustomTable , Img_30 , Img_80} from '../Parts';
 
 export const Hakkason_1: FC = () => {
-   
-  const code_origin = 
-`def addCondition(prompt,conditonType,condition):
-  if(len(condition) != 0):
-      prompt += "\n" + "・"
-      if (len(conditonType) != 0):
-          prompt += str(conditonType) + "は" + str(condition)
-      else:
-          prompt += condition    
-  return prompt
-
-def makePromptForCatchcopy(businessType,target,personasGender,age,imageColor,detail):
-  prompt = "以下の特徴をもつビジネスのキャッチコピーを考えてください。"
-  addCondition(prompt,"業界",businessType)
-  prompt = addCondition(prompt,"ターゲット",target)
-  prompt = addCondition(prompt,"ペルソナの性別",personasGender)
-  prompt = addCondition(prompt,"ペルソナの年齢",age)
-  prompt = addCondition(prompt,"LPのイメージカラー",imageColor)
-  prompt = addCondition(prompt,"",detail)
-  
-  return prompt
-
-def makepromptForLP(referenceUrl,businessType,target,personasGender,age,imageColor,detail,catchcopy,sales_points):    
-  prompt = "以下の特徴をもつランディングページのHTMLを作成してください。\n"
-  addCondition(prompt,"業界",businessType)
-  prompt = addCondition(prompt,"ターゲット",target)
-  prompt = addCondition(prompt,"ペルソナの性別",personasGender)
-  prompt = addCondition(prompt,"ペルソナの年齢",age)
-  prompt = addCondition(prompt,"LPのイメージカラー",imageColor)
-  prompt = addCondition(prompt,"キャッチコピー",catchcopy)
-  prompt = addCondition(prompt,"サービス概要",detail)
-
-  for index, point in enumerate(sales_points):
-      prompt = addCondition(prompt, "セールスポイント" + str(index), point)
-
-  prompt += "・キャッチコピーはh1タグを使うこと\n"
-  prompt += "・セールスポイントの内容はページ内で必ず3つ記載し横並びのデザインにすること\n" 
-  prompt += "・背景色と文字の色が似すぎていると文字が見えなくなるので、文字が識別できる範囲でイメージに沿った色にすること\n"
-  prompt += "・背景色はグラデーションにすること\n"
-  prompt += "・レスポンシブデザインにすること\n"
-  prompt += "・回答はHTML部分を返答すること\n"
-  prompt += "・下記ページを参照すること\n"
-  prompt += referenceUrl
-  
-  return prompt`
   const edit_code = 
 `def addCondition(prompt,conditonType,condition):
   if(len(condition) != 0):
