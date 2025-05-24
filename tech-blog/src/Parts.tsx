@@ -98,14 +98,13 @@ export const LastUpdate: FC<{}> =() => {
   )
 }
 
-export const SourceCode:FC<{children:ReactNode ,language?: string}> =({children, language='python'}) => {
-  const markdown = `\`\`\`${language}
+export const SourceCode:FC<{children:string ,language?: string}> =({children, language='python'}) => {
+  const  markdown = `\`\`\`${language}
 ${children}
 \`\`\``;
   return(
     <>
     <div className="codeBlock">
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
       <Markdown >
 {markdown}
       </Markdown>
