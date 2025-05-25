@@ -32,30 +32,48 @@ export const GitForTeam: FC = () => {
       </p>
       <SourceCode>git push -u origin ＜ブランチ名＞</SourceCode>   　
 
-    <SubTitle subTitle="フェッチ" />
+    <SubTitle subTitle="直前のコミットメッセージを修正する" />
+      <SourceCode>git commit --amend -m '＜新しいコミットメッセージ＞'</SourceCode>
+
+    <SubTitle subTitle="リモートブランチの変更を取り込む" />
+      <h3>■pull</h3>
       <p>
-        fetchとは、リモートリポジトリに更新があった際にローカルブランチにその更新を反映させるための操作です。
+        git pullコマンドを実行すると直ぐにローカルブランチにリモートブランチの変更が反映されます。
+      </p>
+      <SourceCode>git pull</SourceCode>
+
+      <h3>■fetch</h3>
+      <p>
+        fetchとは、リモートブランチの変更を取得しますが、ローカルブランチに反映はしません。
       </p>
       <SourceCode>git fetch</SourceCode>
 
     <SubTitle subTitle="ブランチ移動" />
       <p>
-        ブランチを移動するときはswitchコマンドを使います。ローカルリポジトリがまだないときも自動でローカルリポジトリを作ってくれます。
+        ブランチを移動するときはswitchコマンドを使います。ローカルブランチがまだないときも自動でローカルリポジトリを作ってくれます。
       </p>
       <SourceCode>git switch ＜ブランチ名＞</SourceCode>
 
     <SubTitle subTitle="マージ" />
     <p>
-      gitのマージとはブランチを統合してすることです。以下コマンド実行後はaddまでされるので、pushだけでOKです。
+      マージというコマンド名のせいで分かりずらいのですが、git mergeでは、<b>今いるブランチにほかのブランチの修正を取り込み</b>ます。
+    </p>
+    <p>
+      また、<b>mergeコマンドはcommitが内包されるので、git commit は不要</b>です。
     </p>
       <SourceCode>git merge ＜ブランチ名＞</SourceCode>    
-​
-    <h4>参考</h4>
-    <References_link author="株式会社ヌーラボ" url="https://backlog.com/ja/git-tutorial/" articleTitle="サル先生のGit入門" /><br/>
-    <References_link author="OpenGroove" lastUpdate="2021" url="https://tracpath.com/docs/git-switch/" articleTitle="Git コマンドリファレンス（日本語版）" /><br/>
-    <References_link lastUpdate="2018" url="https://webbibouroku.com/Blog/Article/git-clone-branch" articleTitle="git clone で指定ブランチをクローンする方法" />
 
-    <SubTitle subTitle="おわりに" />
+    <SubTitle subTitle="変更を一時的に捨てる" />
+    <p>
+      git switchコマンドなどでブランチを移動するときに、今いるブランチにcommitされていない変更があるとブランチを移動できません。
+      そんな時に変更を一時的に捨てることができるのがgit stashコマンドです。
+    </p>
+    <h3>■退避</h3>
+    <SourceCode>git stash</SourceCode>  
+    <h3>■退避を戻す</h3>
+    <SourceCode>git stash pop</SourceCode> 
+    
+​   <SubTitle subTitle="おわりに" />
       <p>
         最後まで読んでいただき、ありがとうございました。        
       </p>
@@ -65,6 +83,13 @@ export const GitForTeam: FC = () => {
       <p>
         gitを使いこなして、楽しい開発ライフを送りましょー！
       </p>
+      
+    <h4>参考</h4>
+    <References_link author="株式会社ヌーラボ" url="https://backlog.com/ja/git-tutorial/" articleTitle="サル先生のGit入門" />
+    <References_link author="OpenGroove" lastUpdate="2021" url="https://tracpath.com/docs/git-switch/" articleTitle="Git コマンドリファレンス（日本語版）" />
+    <References_link lastUpdate="2018" url="https://webbibouroku.com/Blog/Article/git-clone-branch" articleTitle="git clone で指定ブランチをクローンする方法" />
+    <References_link url="https://qiita.com/ymp-a/items/0ed00353cdd5ca9e133c" articleTitle="間違ったgit commit（コミットメッセージ）を修正したい" lastUpdate="2022" />
+ 
   </ArticalPage>
   );
 }
