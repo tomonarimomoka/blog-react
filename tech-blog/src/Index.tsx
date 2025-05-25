@@ -49,6 +49,11 @@ export const Index: FC = () => {
         「一浪日大でもホワイト企業に就職する方法」<ReadBtn url="/jobHuntting" />
         をご覧ください✨
       </p>
+      <p>
+        最近転職をしました。
+        転職に関する詳細は「初めて転職」<ReadBtn url="/FirstCareerChange" />
+        をご覧ください。
+      </p>
       <h3>■保有資格・試験</h3>
       <ul>
         <li>ITパスポート試験</li>

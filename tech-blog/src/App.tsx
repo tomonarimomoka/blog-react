@@ -29,6 +29,7 @@ import { TSkaigiReport } from "./artical/TSkaigiReport.tsx";
 import { VimForBeginner } from "./artical/vimForBeginner.tsx";
 import { WhatIsProtocol } from "./artical/whatIsProtocol.tsx";
 import {HowToMigrateBlog} from "./artical/HowToMigrateBlog.tsx"
+import {FirstCareerChange} from "./artical/FirstCareerChange.tsx"
 import { Helmet } from 'react-helmet';
 function App() {
   return (
@@ -68,6 +69,7 @@ function App() {
             <Route path='/VimForBeginner' element={<VimForBeginner />} />
             <Route path='/WhatIsProtocol' element={<WhatIsProtocol />} />
             <Route path='/HowToMigrateBlog' element={<HowToMigrateBlog />} />
+            <Route path='/FirstCareerChange' element={<FirstCareerChange />} />
           </Routes>
         </BrowserRouter>  
       </main>
