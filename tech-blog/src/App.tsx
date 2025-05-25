@@ -30,6 +30,7 @@ import { VimForBeginner } from "./artical/vimForBeginner.tsx";
 import { WhatIsProtocol } from "./artical/whatIsProtocol.tsx";
 import {HowToMigrateBlog} from "./artical/HowToMigrateBlog.tsx"
 import {FirstCareerChange} from "./artical/FirstCareerChange.tsx"
+import {FirstLinux} from "./artical/FirstLinux.tsx"
 import { Helmet } from 'react-helmet';
 function App() {
   return (
@@ -70,6 +71,7 @@ function App() {
             <Route path='/WhatIsProtocol' element={<WhatIsProtocol />} />
             <Route path='/HowToMigrateBlog' element={<HowToMigrateBlog />} />
             <Route path='/FirstCareerChange' element={<FirstCareerChange />} />
+            <Route path='/FirstLinux' element={<FirstLinux />} />
           </Routes>
         </BrowserRouter>  
       </main>
