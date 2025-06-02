@@ -3,8 +3,8 @@ import {
   Route,
   Routes
 } from "react-router-dom";
-// import "./style.css"
-import {HeaderNav } from './Parts';
+import "./style.css"
+import {Header} from './Parts';
 import {Index} from './Index.tsx'
 import { ListTech } from "./ListTech.tsx";
 import { PlivacyPolicy } from "./privacyPolicy.tsx";
@@ -33,26 +33,8 @@ import {FirstCareerChange} from "./artical/FirstCareerChange.tsx"
 import { Helmet } from 'react-helmet';
 function App() {
   return (
-    <>
-      <Helmet>
-        {/* <!-- Google tag (gtag.js) --> */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-LG6VXEVGW8"></script>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-
-          gtag('config', 'G-LG6VXEVGW8');
-            `,
-          }}
-        />
-        {/* <!-- Google AdSense --> */}
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2761899560206236" crossOrigin="anonymous"></script>
-      </Helmet>
-
-      <HeaderNav />
+    <>   
+      <Header/>
       <main className="box">
         <BrowserRouter>
           <Routes>

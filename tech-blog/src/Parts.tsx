@@ -118,9 +118,20 @@ export const ArticalPage:FC<{title:string , children:ReactNode}> = ({title , chi
         <title>{title}</title>
         {/* <!-- Google tag (gtag.js) --> */}
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-LG6VXEVGW8"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-LG6VXEVGW8');
+            `,
+          }}
+        />
         {/* <!-- Google AdSense --> */}
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2761899560206236" crossOrigin="anonymous"></script>
-      </Helmet>
+      </Helmet> 
       <h1 id="articleTitle">{title}</h1>
       <LastUpdate/>
       {children}
@@ -215,3 +226,40 @@ export const Img_100:FC<{path:string , alt?:string}> = ({path , alt}) => {
     </>
   )
 }
+import React, { useState } from "react";
+export const Header: React.FC = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+
+  return (
+    <>
+    <div className="header-box"></div>
+    <header className="header">
+      <div className="header-inner">
+        <HomeLink />
+        <h1 className="site-title">かわいいてっくももか</h1>
+        <button className="menu-button" onClick={toggleMenu} aria-label="メニューを開く">
+          ☰
+        </button>
+      </div>
+      {isMenuOpen && (
+        <nav className="menu">
+          <a href="/" className="header-a">HOME</a>
+          <a href="/ListTech" className="header-a">ARTICLE</a>
+          <a href="/PlivacyPolicy" className="header-a">PRIVACY</a>
+        </nav>
+      )}
+    </header>
+    </>
+  );
+};
+export const HomeLink: React.FC = () => {
+  return (
+    <a href="/" >
+      <img
+        src="favicon.ico" 
+      />
+    </a>
+  );
+};
