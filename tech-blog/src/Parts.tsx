@@ -239,8 +239,12 @@ export const Header: React.FC = () => {
       <div className="header-inner">
         <HomeLink />
         <h1 className="site-title">かわいいてっくももか</h1>
-        <button className="menu-button" onClick={toggleMenu} aria-label="メニューを開く">
-          ☰
+        <button
+          className="menu-button"
+          onClick={toggleMenu}
+          aria-label={isMenuOpen ? "メニューを閉じる" : "メニューを開く"}
+          >
+          {isMenuOpen ? "✖" : "☰"}
         </button>
       </div>
       {isMenuOpen && (
