@@ -18,24 +18,6 @@ export const ArticleCard: FC<{ title: string , fileName:string , children:string
     </>
   );
 }
-export const HeaderNav: FC = () => {
-  return(
-    <>
-      {/* <!-- ヘッダー高さ分の余白   --> */}
-      <div className="header-box"></div>
-      <header>
-        <nav className="pc-menu">
-          <ul className="header-ul">
-            <li className="header-li"><a href="/" className="header-a">HOME</a></li>
-            <li className="header-li"><a href="/ListTech" className="header-a">ARTICLE</a></li>
-            <li className="header-li"><a href="/PlivacyPolicy" className="header-a">PRIVACY</a></li>
-          </ul>
-        </nav>
-      </header>
-    </>
-  );
-}
-
 export const ReadBtn: FC<{ url: string , msg?:string }> = ({ url , msg="読む" }) => {
   return(
     <a href={url} className="btnArticleLinkInText">{msg}↗</a>
@@ -226,8 +208,8 @@ export const Img_100:FC<{path:string , alt?:string}> = ({path , alt}) => {
     </>
   )
 }
-import React, { useState } from "react";
-export const Header: React.FC = () => {
+import React, { useState , useEffect } from "react";
+export const Header_sm: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
@@ -258,6 +240,29 @@ export const Header: React.FC = () => {
     </>
   );
 };
+
+export const Header_pc: FC = () => {
+  return(
+    <>
+      <div className="header-box"></div>
+      <header className="header">
+        <div className="header-inner">
+          <HomeLink />
+          <h1 className="site-title">かわいいてっくももか</h1>
+          <nav className="pc-menu">
+            <ul className="header-ul">
+              <li className="header-li"><a href="/" className="header-a">HOME</a></li>
+              <li className="header-li"><a href="/ListTech" className="header-a">ARTICLE</a></li>
+              <li className="header-li"><a href="/PlivacyPolicy" className="header-a">PRIVACY</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+    </>
+  );
+}
+
+
 export const HomeLink: React.FC = () => {
   return (
     <a href="/" >
@@ -265,5 +270,26 @@ export const HomeLink: React.FC = () => {
         src="favicon.ico" 
       />
     </a>
+  );
+};
+
+export const Header: React.FC = () => {
+  const [isSmartPhon, setIsSmartPhon] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsSmartPhon(window.innerWidth <= 600);
+    };
+
+    handleResize(); // 初期チェック
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  return (
+    <>
+      {isSmartPhon && <Header_sm />}
+      {!isSmartPhon && <Header_pc />}
+    </>
   );
 };

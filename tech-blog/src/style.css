@@ -273,3 +273,25 @@ blockquote cite{
 .header-box {
   height: 30px;
 }
+
+/* メニューリスト横並び */
+.header-ul {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* 各リンク */
+.header-li .header-a {
+  text-decoration: none;
+  font-weight: 600;
+  color: rgb(239, 177, 250);
+  font-size: 16px;
+}
+
+.header-a:hover {
+  text-decoration: underline;
+  background-color: #ffe6f0;
+}
