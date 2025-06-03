@@ -18,7 +18,7 @@ export const ArticleCard: FC<{ title: string , fileName:string , children:string
     </>
   );
 }
-export const ReadBtn: FC<{ url: string , msg?:string }> = ({ url , msg="読む" }) => {
+export const ReadBtn: FC<{ url: string , msg?:string }> = ({ url , msg="" }) => {
   return(
     <a href={url} className="btnArticleLinkInText">{msg}↗</a>
   )
@@ -211,9 +211,7 @@ export const Img_100:FC<{path:string , alt?:string}> = ({path , alt}) => {
 import React, { useState , useEffect } from "react";
 export const Header_sm: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
-
   return (
     <>
     <div className="header-box"></div>
@@ -261,7 +259,6 @@ export const Header_pc: FC = () => {
     </>
   );
 }
-
 
 export const HomeLink: React.FC = () => {
   return (
