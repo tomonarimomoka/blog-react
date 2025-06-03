@@ -28,8 +28,12 @@ import { SimpleTest } from "./artical/simpleTest.tsx";
 import { TSkaigiReport } from "./artical/TSkaigiReport.tsx";
 import { VimForBeginner } from "./artical/vimForBeginner.tsx";
 import { WhatIsProtocol } from "./artical/whatIsProtocol.tsx";
-import {HowToMigrateBlog} from "./artical/HowToMigrateBlog.tsx"
-import {FirstCareerChange} from "./artical/FirstCareerChange.tsx"
+import {HowToMigrateBlog} from "./artical/HowToMigrateBlog.tsx";
+import {FirstCareerChange} from "./artical/FirstCareerChange.tsx";
+import {ListAll} from "./list/ListAll.tsx";
+import {ListExperiences} from "./list/ListExperiences.tsx";
+import {ListExplanation} from "./list/ListExplanation.tsx";
+import {ListFistSeries} from "./list/ListFistSeries.tsx";
 function App() {
   return (
     <>   
@@ -39,6 +43,10 @@ function App() {
           <Routes>
             <Route path='/' element={<Index />} />
             <Route path='/ListTech' element={<ListTech />} />
+            <Route path='/ListAll' element={<ListAll />} />
+            <Route path='/ListExperiences' element={<ListExperiences />} />
+            <Route path='/ListExplanation' element={<ListExplanation />} />
+            <Route path='/ListFistSeries' element={<ListFistSeries />} />
             <Route path='/PlivacyPolicy' element={<PlivacyPolicy />} />
             <Route path='/AwsForBeginner' element={<AwsForBeginner />} />
             <Route path='/AwsListOfServices' element={<AwsListOfServices />} />
