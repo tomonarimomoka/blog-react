@@ -239,6 +239,8 @@ blockquote cite{
   font-weight: bold;
   color: rgb(239, 177, 250);
   white-space: nowrap;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 /* 右のハンバーガー */
@@ -293,6 +295,5 @@ blockquote cite{
 }
 
 .header-a:hover {
-  text-decoration: underline;
   background-color: #ffe6f0;
 }

@@ -218,7 +218,7 @@ export const Header_sm: React.FC = () => {
     <header className="header">
       <div className="header-inner">
         <HomeLink />
-        <h1 className="site-title">かわいいてっくももか</h1>
+        <a href="/" className="site-title">かわいいてっくももか</a>   
         <button
           className="menu-button"
           onClick={toggleMenu}
@@ -246,7 +246,7 @@ export const Header_pc: FC = () => {
       <header className="header">
         <div className="header-inner">
           <HomeLink />
-          <h1 className="site-title">かわいいてっくももか</h1>
+          <a href="/" className="site-title">かわいいてっくももか</a>   
           <nav className="pc-menu">
             <ul className="header-ul">
               <li className="header-li"><a href="/" className="header-a">HOME</a></li>
