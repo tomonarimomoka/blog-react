@@ -11,6 +11,7 @@ export const ListFistSeries: FC = () => {
                 <ArticleCard title="はじめてのStreamlit"  fileName="howToUseStreamlit" > PythonのフレームワークであるStreamlitを初めて使う人のための記事です</ArticleCard> 
                 <ArticleCard title="はじめてのvim"  fileName="vimForBeginner" > vimを初めて使う人のための記事です</ArticleCard> 
                 <ArticleCard title="はじめての転職"  fileName="FirstCareerChange" > はじめての転職についての記事です。具体的な転職時のすっぺくなども公開！</ArticleCard>
+                <ArticleCard title="はじめてのLinux" fileName="FirstLinux" >Linuxを使い始めるときに、初めに覚えるべきコマンドを紹介！用途別に紹介しているためコマンドを全く知らなくても、調べやすいはずです。</ArticleCard>
             </FlexBox>
         </>
     )

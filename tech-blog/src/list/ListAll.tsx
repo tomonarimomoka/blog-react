@@ -20,6 +20,7 @@ export const ListAll: FC = () => {
                 <ArticleCard title="はじめてのStreamlit"  fileName="howToUseStreamlit" > PythonのフレームワークであるStreamlitを初めて使う人のための記事です</ArticleCard> 
                 <ArticleCard title="はじめてのvim"  fileName="vimForBeginner" > vimを初めて使う人のための記事です</ArticleCard> 
                 <ArticleCard title="HTMLからReactに移植する方法"  fileName="HowToMigrateBlog" > HTML・CSSで書かれた静的なサイトからTypeScrip×Reactにマイグレーションする方法を解説！</ArticleCard>
+                <ArticleCard title="はじめてのLinux" fileName="FirstLinux" >Linuxを使い始めるときに、初めに覚えるべきコマンドを紹介！用途別に紹介しているためコマンドを全く知らなくても、調べやすいはずです。</ArticleCard>
                 <ArticleCard title="はじめての転職"  fileName="FirstCareerChange" > はじめての転職についての記事です。具体的な転職時のすっぺくなども公開！</ArticleCard>
                 <ArticleCard title="一浪日大でもホワイト企業に就職する方法"  fileName="jobHuntting" > 全くの０からソフトウェアエンジニアになるまでのリアルな体験記です。この記事は私の思いがこもっている特別な記事です</ArticleCard> 
                 <ArticleCard title="Java Silver合格体験記"  fileName="JavaSilver" > ベンダー資格の中で有名で名の通る資格であるJava Silverの合格体験記！</ArticleCard>
