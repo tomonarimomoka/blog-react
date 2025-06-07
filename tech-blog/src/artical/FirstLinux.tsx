@@ -1,9 +1,14 @@
 import { FC } from "react";
-import {ArticalPage , SubTitle , ReadBtn , References_link , SourceCode} from '../Parts';
+import {ArticalPage , SubTitle , ReadBtn , SourceCode} from '../Parts';
 
 export const FirstLinux: FC = () => {
   return(
     <ArticalPage title="はじめてのLinux">
+      
+    <SubTitle subTitle="本記事の対象者" />
+      <ul>      
+        <li>はじめてのLinuxを使う人</li>
+      </ul>
       <SubTitle subTitle="今いる場所を移動する　cd コマンド" />
       <p>基本中の基本、ディレクトリの移動です。</p>
       <h3>■任意の場所に移動する</h3>
@@ -43,7 +48,14 @@ export const FirstLinux: FC = () => {
       <p>vimの編集は別で記事を書いているのでご覧ください。<ReadBtn url="VimForBeginner" /></p>
       <SourceCode>vim ＜ファイル名＞</SourceCode>
       
-      <References_link url="" articleTitle=""/>
+    <SubTitle subTitle="おわりに" />
+      <p>
+        最後まで読んでいただき、ありがとうございました。        
+      </p>
+      <p>
+        筆者はdockerを使うためWSLでLinuxを使っているのですが、開発者にとってはやはり便利だなと感じます。
+        Linuxを使いこなして、より効率的に開発を進めましょう♪
+      </p>
     </ArticalPage>
   );
 }
