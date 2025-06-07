@@ -266,22 +266,21 @@ export const HomeLink: React.FC = () => {
 };
 
 export const Header: React.FC = () => {
-  const [isSmartPhon, setIsSmartPhon] = useState(false);
+  const [isSmartPhone, setIsSmartPhone] = useState(false);
 
   useEffect(() => {
-    const handleResize = () => {
-      setIsSmartPhon(window.innerWidth <= 600);
+    const mediaQuery = window.matchMedia("(max-width: 700px)");
+    setIsSmartPhone(mediaQuery.matches);
+    const handleChange = (event: MediaQueryListEvent) => {
+      setIsSmartPhone(event.matches);
     };
-
-    handleResize(); // 初期チェック
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
+    mediaQuery.addEventListener("change", handleChange);
+    return () => mediaQuery.removeEventListener("change", handleChange);
   }, []);
 
   return (
     <>
-      {isSmartPhon && <Header_sm />}
-      {!isSmartPhon && <Header_pc />}
+      {isSmartPhone ? <Header_sm /> : <Header_pc />}
     </>
   );
 };
