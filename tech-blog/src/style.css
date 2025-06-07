@@ -113,7 +113,6 @@ blockquote cite{
 
 /* PC用UI */
 @media only all and (min-width:600px) {   
-  .imgBigSize{width: 90%;}
   #articleTitle{ font-size: 32px; }
   table {
     th {
@@ -127,31 +126,37 @@ blockquote cite{
       padding: 5px 5px;
     }
   }
+  .imgBigSize{width: 90%;}
+  .header-sm {
+    display: none;
+  }
 }
 /* スマホ用UI */
 @media screen and (max-width: 600px){
 
-	/*　画面サイズが600px以下の場合ここの記述が適用される　*/
-    .box {
-        padding: 3% 5%;
-        margin: 2%;
-        padding:0px;
-        margin:0px;
-        opacity: 0.7;
-    }
-    #articleTitle{font-size: 30px;    }
-     
-    p{font-size: 18px;}
-    ul{font-size: 18px;}
-    ol{font-size: 18px;}
-    table {
-      border-collapse: collapse;
-      border: solid 2px rgb(239, 177, 250);/*表全体を線で囲う*/
-    }
-    table th, table td {
-      border: solid 1px rgb(239, 177, 250);
-      font-size: 18px;
-    }
+	/*　画面サイズが600px以下の場合ここの記述が適用される　*/   
+  p{font-size: 18px;}
+  ul{font-size: 18px;}
+  ol{font-size: 18px;}
+  table {
+    border-collapse: collapse;
+    border: solid 2px rgb(239, 177, 250);/*表全体を線で囲う*/
+  }
+  table th, table td {
+    border: solid 1px rgb(239, 177, 250);
+    font-size: 18px;
+  }
+  #articleTitle{font-size: 30px;}
+  .box {
+    padding: 3% 5%;
+    margin: 2%;
+    padding:0px;
+    margin:0px;
+    opacity: 0.7;
+  }
+  .header-pc {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 525px){
