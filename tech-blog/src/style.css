@@ -1,53 +1,26 @@
-
-   
   body{
     color: rgb(37, 37, 37);
-      background: #f9f0f5;
-  }
-   
-  .menu-item {
-    list-style: none;
-    display: inline-block;
-    padding: 10px;
-  }
-
-  .homeSubTitleFont{
-    color: rgb(241, 165, 254);
-    border-bottom: solid 3px rgb(240, 197, 247);
-  }
-
-  /* 全体 */
+    background: #f9f0f5;
+  }   
   h3{margin: 0;}
   h4{margin: 0;}
   p{font-size: 20px;}
   ul{font-size: 20px;}
   ol{font-size: 20px;}
   table{font-size: 20px;}
+
   .right {
     text-align: right;
   }
 
   .sectionTitleLine{
     border-bottom: solid 3px ;
-    /* color: rgb(241, 165, 254); */
     color: rgb(232, 139, 248);
-  }
-  .sectionTitleLineSmall{
-    border-bottom: solid 2px ;
-    color: rgb(162, 162, 162);
-    padding-bottom: 5px;
-  }
-  .sectionTitleLineDashed{
-    border-bottom: solid 2px ;
-    color: rgb(162, 162, 162);
-    padding-bottom: 5px;
-    border-bottom: dashed 2px;
   }
 
   .box {
     padding: 10px 5%;
     margin: 5px 10% 10% 10%;
-    /* background: #f9f0f5; */
     border-radius: 30px;
     opacity: 0.7;
   }
@@ -58,39 +31,17 @@
     margin: 15px;
     background: rgba(247, 130, 229, 0.203);
     border-radius: 30px;
-    /* opacity: 0.7; */
     text-decoration: none;
     color: inherit;
   }
 
-  .articalBox:hover {
-    background:rgb(255, 231, 253);
-    
+  .articalBox:hover {    
     background:rgb(240, 172, 252);
   }
 
   .flexBox{
-    /* display: flex; */
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  }
-
-  .btnArticleLink{
-    padding: 5px;
-    margin: 5px;
-    border-radius: 10px;
-    transition: .4s;
-
-    border: solid 2px #6d6d6d;
-    color: #6d6d6d;
-
-    display: inline-block;
-    text-decoration: none;
-  }
-
-  .btnArticleLink:hover {
-    background: #6d6d6d;
-    color: #ffffff;
   }
 
   /* 文中リンクボタン */
@@ -293,7 +244,6 @@ blockquote cite{
   color: rgb(239, 177, 250);
   font-size: 16px;
 }
-
 .header-a:hover {
   background-color: #ffe6f0;
 }
