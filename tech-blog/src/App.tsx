@@ -34,7 +34,11 @@ import {ListAll} from "./list/ListAll.tsx";
 import {ListExperiences} from "./list/ListExperiences.tsx";
 import {ListExplanation} from "./list/ListExplanation.tsx";
 import {ListFistSeries} from "./list/ListFistSeries.tsx";
+import ReactGA from 'react-ga4'
+
 function App() {
+
+  ReactGA.initialize('G-LG6VXEVGW8') 
   return (
     <>   
       <Header/>

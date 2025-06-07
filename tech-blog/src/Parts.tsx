@@ -93,24 +93,19 @@ export const CustomTable:FC<{children:ReactNode , cap?:string}> = ({children , c
   )
 }
 
+import ReactGA from 'react-ga4'
 export const ArticalPage:FC<{title:string , children:ReactNode}> = ({title , children}) => {
+  useEffect(() => {
+    ReactGA.send({
+      hitType: 'pageview',
+      page: window.location.pathname,
+      title: title,
+    })
+  }, [title])
   return(
     <>
       <Helmet>
         <title>{title}</title>
-        {/* <!-- Google tag (gtag.js) --> */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-LG6VXEVGW8"></script>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-
-          gtag('config', 'G-LG6VXEVGW8');
-            `,
-          }}
-        />
         {/* <!-- Google AdSense --> */}
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2761899560206236" crossOrigin="anonymous"></script>
       </Helmet> 
