@@ -3,8 +3,8 @@ import Markdown from 'react-markdown'
 import { Helmet } from 'react-helmet';
 import "./style.css"
 
-export const ArticleCard: FC<{ title: string , fileName:string , children:string }> = ({ title , fileName , children }) => {
-  let url = "/" + fileName
+export const ArticleCard: FC<{ title: string , component:string , children:string }> = ({ title , component , children }) => {
+  let url = "/" + component
   return (
     <>      
       <a href={url} className="articalBox">

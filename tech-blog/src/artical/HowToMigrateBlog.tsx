@@ -75,7 +75,7 @@ export const ReadBtn: FC<{ url: string , msg?:string }> = ({ url , msg="読む" 
       <h3>■記事紹介ボックス</h3>
       <p>記事紹介コンポーネントは、下記のように定義しました。</p>
       <FlexBox>
-        <ArticleCard title="【発表】LT会参加レポート"  fileName="firstLTparty" > 
+        <ArticleCard title="【発表】LT会参加レポート"  component="FirstLTparty" > 
           紹介文～～～～～～～～～～～～～～～～
         </ArticleCard> 
       </FlexBox>
