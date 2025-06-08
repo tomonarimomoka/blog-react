@@ -1,0 +1,34 @@
+# .htaccess
+RewriteEngine On
+RewriteBase /
+
+# システムリプレイスにつきURLが変わったためリンク切れ対策
+Redirect 301 /list-tech.html /ListTech
+Redirect 301 /src/security.html /Security
+Redirect 301 /src/awsForBeginner.html /AwsForBeginner
+Redirect 301 /src/awsListOfServices.html /AwsListOfServices
+Redirect 301 /src/elementOfComputer.html /ElementOfComputer
+Redirect 301 /src/firstLTparty.html /FirstLTparty
+Redirect 301 /src/gitForBeginner.html /GitForBeginner
+Redirect 301 /src/gitForTeam.html /GitForTeam
+Redirect 301 /src/googleColab.html /GoogleColab
+Redirect 301 /src/hakkason_1.html /Hakkason_1
+Redirect 301 /src/hakkason_2.html /Hakkason_2
+Redirect 301 /src/hakkason_3.html /Hakkason_3
+Redirect 301 /src/howToUseStreamlit.html /HowToUseStreamlit
+Redirect 301 /src/HTTPmethod.html /HTTPmethod
+Redirect 301 /src/JavaSilver.html /JavaSilver
+Redirect 301 /src/jobHuntting.html /JobHuntting
+Redirect 301 /src/oracleBronzaDBA.html /OracleBronzaDBA
+Redirect 301 /src/security.html /Security
+Redirect 301 /src/simpleTest.html /SimpleTest
+Redirect 301 /src/TSkaigiReport.html /TSkaigiReport
+Redirect 301 /src/vimForBeginner.html /VimForBeginner
+Redirect 301 /src/whatIsProtocol.html /WhatIsProtocol
+
+# ファイルまたはディレクトリが存在しない場合
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# すべて index.html にルーティング
+RewriteRule ^ index.html [L]
