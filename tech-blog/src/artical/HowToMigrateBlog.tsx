@@ -1,5 +1,5 @@
 import { FC } from "react";
-import {ArticalPage , SubTitle , ReadBtn, SourceCode , ArticleCard, FlexBox} from '../Parts';
+import {ArticalPage , SubTitle , ReadBtn, SourceCode , ArticleCard, FlexBox , References_link} from '../Parts';
 
 export const HowToMigrateBlog: FC = () => {
   const readBtnSource = `
@@ -100,6 +100,23 @@ export const ReadBtn: FC<{ url: string , msg?:string }> = ({ url , msg="読む" 
         どうしても自動で変換できない部分もあると思いますが、手で直すのは最後まで待つべきです。
         なぜならば、手で修正してしまうと、後から自動変換を再実行した際に、その修正内容が上書きされて失われる可能性があるためです。
       </p>
+      <SubTitle subTitle="URLが変わったらリダイレクトしよう" />
+      <p>
+        今回のシステムリプレイスに伴いURLが変わりました。
+      </p>
+      <p>
+        旧：<code>https://kawaii-tech-momoka.com/src/security.html</code>
+        <br/>
+        新：<code>https://kawaii-tech-momoka.com/Security</code></p>
+      <p>
+        しかし、検索エンジンはまだ古いURLを認識しているため、検索からアクセスして来てくれたエンドユーザーが記事を見ることができません。
+        そのため、URLが恒久的に移動したことを検索エンジンに伝える必要があります。
+        この命令をするには、.htaccessというファイルに以下のようにリダイレクトしたい内容を定義します。
+        ここで、<b>ステータスコード301は恒久的にURLが移動したことを意味</b>します。
+      </p>
+      <SourceCode>
+      Redirect 301 /src/security.html /Security
+      </SourceCode>
 
       <SubTitle subTitle="Reactにした感想" />
       <p>
@@ -113,6 +130,9 @@ export const ReadBtn: FC<{ url: string , msg?:string }> = ({ url , msg="読む" 
       <p>
         最後まで読んでくださりありがとうございます。システムリプレイスを経てより良くなった本サイト「かわいいてっくももか」をよろしくお願いいたします。
       </p>
+      <h4>参考</h4>
+      <References_link url="https://af-e.net/301-moved-permanently/" lastUpdate="2025" articleTitle="[HTTPステータスコード] 301 Moved Permanentlyの意味をわかりやすく解説"/>
+      <References_link url="https://e-words.jp/w/301_Moved_Permanently.html" lastUpdate="2023" articleTitle="IT用語辞典" />
     </ArticalPage>
   );
 }
