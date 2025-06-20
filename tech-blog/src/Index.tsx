@@ -4,6 +4,7 @@ import {ArticalPage , SubTitle , ReadBtn , CustomTable , Img_30} from './Parts';
 export const Index: FC = () => {
   return(
     <ArticalPage title="💗ようこそ！かわいいてっくももかへ💗">
+      <ReadBtn msg="English" url="/IndexEn" />
       <SubTitle subTitle="♥このブログについて" />
       <p>
         このブログはエンジニア役に立つことを目指しています。

@@ -6,6 +6,7 @@ import {
 import "./style.css"
 import {Header} from './Parts';
 import {Index} from './Index.tsx'
+import {IndexEn} from './IndexEn.tsx'
 import { ListTech } from "./ListTech.tsx";
 import { PlivacyPolicy } from "./privacyPolicy.tsx";
 import { AwsForBeginner } from "./artical/awsForBeginner.tsx";
@@ -47,6 +48,7 @@ function App() {
         <BrowserRouter>
           <Routes>
             <Route path='/' element={<Index />} />
+            <Route path='/IndexEn' element={<IndexEn />} />
             <Route path='/ListTech' element={<ListTech />} />
             <Route path='/ListAll' element={<ListAll />} />
             <Route path='/ListExperiences' element={<ListExperiences />} />
