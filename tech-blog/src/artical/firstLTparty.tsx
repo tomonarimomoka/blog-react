@@ -52,9 +52,19 @@ export const FirstLTparty: FC = () => {
       ■資料大公開！！<br/>
       今回は、仲間から好評だった発表資料を公開しちゃいます！（個人情報はマスクしてあります。）
     </p>
-    {/* <!-- <iframe src="../素材/生成AI　LT会（一般公開用）.pdf" width="560" height="315"></iframe> --> */}
-    <script defer className="speakerdeck-embed" data-id="35807980a9434f7e90aabeaa3102a314" data-ratio="1.7777777777777777" src="//speakerdeck.com/assets/embed.js"></script>
-    {/* <iframe className="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/35807980a9434f7e90aabeaa3102a314" title="生成AI（Generative AI）" allowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 100%; height: auto; aspect-ratio: 560 / 315;" data-ratio="1.7777777777777777"></iframe> */}
+    <iframe className="speakerdeck-iframe" frameBorder="0" src="https://speakerdeck.com/player/35807980a9434f7e90aabeaa3102a314" title="生成AI（Generative AI）" allowFullScreen
+    style={{
+      border: "0px",
+      background: "rgba(0, 0, 0, 0.1)",
+      margin: "0px",
+      padding: "0px",
+      borderRadius: "6px",
+      boxShadow: "rgba(0, 0, 0, 0.2) 0px 5px 40px",
+      width: "100%",
+      height: "auto",
+      aspectRatio: "560 / 315"
+    }}
+    data-ratio="1.7777777777777777"></iframe>
     <p>
       ■きれいな資料の作り方<br/>
       私が資料作りで大切にしているのはズバリ統一感です。具体的には以下のルールを守るとよいでしょう。
