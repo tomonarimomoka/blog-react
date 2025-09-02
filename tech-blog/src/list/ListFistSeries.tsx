@@ -12,6 +12,7 @@ export const ListFistSeries: FC = () => {
                 <ArticleCard title="はじめてのvim"  component="VimForBeginner" > vimを初めて使う人のための記事です</ArticleCard> 
                 <ArticleCard title="はじめての転職"  component="FirstCareerChange" > はじめての転職についての記事です。具体的な転職時のすっぺくなども公開！</ArticleCard>
                 <ArticleCard title="はじめてのLinux" component="FirstLinux" >Linuxを使い始めるときに、初めに覚えるべきコマンドを紹介！用途別に紹介しているためコマンドを全く知らなくても、調べやすいはずです。</ArticleCard>
+                <ArticleCard title="はじめてのPC交換"  component="FirstPcChange" > エンジニアがPCを交換するときにやるべきことをまとめました。私用PCの交換は面倒なことがたくさんありますが、この記事を読めば次交換するときには手間が減る工夫も分かります！！</ArticleCard>
             </FlexBox>
         </>
     )
