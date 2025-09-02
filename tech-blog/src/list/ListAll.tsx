@@ -22,6 +22,7 @@ export const ListAll: FC = () => {
                 <ArticleCard title="HTMLからReactに移植する方法"  component="HowToMigrateBlog" > HTML・CSSで書かれた静的なサイトからTypeScrip×Reactにマイグレーションする方法を解説！</ArticleCard>
                 <ArticleCard title="はじめてのLinux" component="FirstLinux" >Linuxを使い始めるときに、初めに覚えるべきコマンドを紹介！用途別に紹介しているためコマンドを全く知らなくても、調べやすいはずです。</ArticleCard>
                 <ArticleCard title="はじめての転職"  component="FirstCareerChange" > はじめての転職についての記事です。具体的な転職時のすっぺくなども公開！</ArticleCard>
+                <ArticleCard title="はじめてのPC交換"  component="FirstPcChange" > エンジニアがPCを交換するときにやるべきことをまとめました。私用PCの交換は面倒なことがたくさんありますが、この記事を読めば次交換するときには手間が減る工夫も分かります！！</ArticleCard>
                 <ArticleCard title="一浪日大でもホワイト企業に就職する方法"  component="JobHuntting" > 全くの０からソフトウェアエンジニアになるまでのリアルな体験記です。この記事は私の思いがこもっている特別な記事です</ArticleCard> 
                 <ArticleCard title="Java Silver合格体験記"  component="JavaSilver" > ベンダー資格の中で有名で名の通る資格であるJava Silverの合格体験記！</ArticleCard>
                 <ArticleCard title="Oracle Master Bronze合格体験記"  component="OracleBronzaDBA" > 思ったよりも難しかったOracle Master Bronzaの合格体験記です。何かの事情で取らないといけない人は読んでみて下さい</ArticleCard> 

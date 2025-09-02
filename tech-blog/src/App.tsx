@@ -32,6 +32,7 @@ import { WhatIsProtocol } from "./artical/whatIsProtocol.tsx";
 import {HowToMigrateBlog} from "./artical/HowToMigrateBlog.tsx";
 import {FirstCareerChange} from "./artical/FirstCareerChange.tsx";
 import {FirstLinux} from "./artical/FirstLinux.tsx";
+import {FirstPcChange} from "./artical/FirstPcChange.tsx";
 import {ListAll} from "./list/ListAll.tsx";
 import {ListExperiences} from "./list/ListExperiences.tsx";
 import {ListExplanation} from "./list/ListExplanation.tsx";
@@ -78,6 +79,7 @@ function App() {
             <Route path='/HowToMigrateBlog' element={<HowToMigrateBlog />} />
             <Route path='/FirstCareerChange' element={<FirstCareerChange />} />
             <Route path='/FirstLinux' element={<FirstLinux />} />
+            <Route path='/FirstPcChange' element={<FirstPcChange />} />
           </Routes>
         </BrowserRouter>  
       </main>
