@@ -21,6 +21,9 @@ export const ListExplanation: FC = () => {
                 <ArticleCard title="はじめてのvim"  component="VimForBeginner" > vimを初めて使う人のための記事です</ArticleCard> 
                 <ArticleCard title="HTMLからReactに移植する方法"  component="HowToMigrateBlog" > HTML・CSSで書かれた静的なサイトからTypeScrip×Reactにマイグレーションする方法を解説！</ArticleCard>
                 <ArticleCard title="はじめてのLinux" component="FirstLinux" >Linuxを使い始めるときに、初めに覚えるべきコマンドを紹介！用途別に紹介しているためコマンドを全く知らなくても、調べやすいはずです。</ArticleCard>
+                <ArticleCard title="【OS自作】SurfaceでUEFIアプリをUSB起動する方法/How to boot by USB in UEFI device" component="HowToBootSurfaceByUSB">
+                    Microsoft SurfaceでUSBドライブからUEFIアプリケーションを起動する方法をまとめました。OS自作などに役立つ記事です。
+                </ArticleCard>
             </FlexBox>
         </>
     )

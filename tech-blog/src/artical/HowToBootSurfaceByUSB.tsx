@@ -1,5 +1,5 @@
 import { FC } from "react";
-import {ArticalPage , SubTitle , References_link , Img_30 , Img_50, References_book , SourceCode} from '../Parts';
+import {ArticalPage , SubTitle , References_link , Img_50, References_book , SourceCode} from '../Parts';
 
 export const HowToBootSurfaceByUSB: FC = () => {
   const command_ex = `clean
@@ -7,7 +7,7 @@ create partition primary
 format fs=fat32 quick
 assign`
   return(
-    <ArticalPage title="【自作OS】SurfaceでUEFIアプリをUSB起動する方法/How to boot by USB in UEFI device">
+    <ArticalPage title="【OS自作】SurfaceでUEFIアプリをUSB起動する方法/How to boot by USB in UEFI device">
       <SubTitle subTitle="記事概要/Abstruct" />
       <p>
         Microsoft SurfaceでUSBドライブからUEFIアプリケーションを起動する方法をまとめました。
