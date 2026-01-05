@@ -1,5 +1,5 @@
 import { FC } from "react";
-import {ArticalPage , SubTitle , ReadBtn , CustomTable , Img_30} from './Parts';
+import {ArticalPage , SubTitle , ReadBtn , CustomTable , Img_10 , Img_20} from './Parts';
 
 export const IndexEn: FC = () => {
   return(
@@ -18,12 +18,9 @@ export const IndexEn: FC = () => {
          I hope to contribute to Japan's technological strength by increasing the number of technical articles in Japanese.
       </p>
       <SubTitle subTitle="My recommend" />
-      <p>There are currently only blog posts in Japanese😢 I would like to post English articles in the future💗</p>
+      <p>There are some english posts. I would like to post more English articles.</p>
       <ul>
-        <li>Black-box testing techniques<ReadBtn url="/SimpleTest" /></li>
-        <li>How even a one-year-delayed junior college student can land a job at a white company<ReadBtn url="/JobHuntting" /></li>
-        <li>【Generative AI】Hackathon participation report vol.1<ReadBtn url="/Hakkason_1" /></li>
-        <li>【Presentation】LT (Lightning Talk) participation report<ReadBtn url="/FirstLTparty" /></li>
+        <li>How to boot by USB in UEFI device<ReadBtn url="/HowToBootSurfaceByUSB" /></li>
       </ul>
       <SubTitle subTitle="History of this site 'kawaii tech momoka'" />
       <CustomTable>
@@ -64,10 +61,12 @@ export const IndexEn: FC = () => {
         <li>基本情報技術者試験</li>
         <li>生成AIパスポート試験</li>
         <li>University of Tokyo, Matsuo & Iwasawa Lab - Large Language Models Course (2024)</li>
+        <li>AWS Certified Cloud Practitioner</li>
       </ul>
-      <Img_30 path="./assets/SILVSE11JPN.jpg" alt="認定バッチ"/>
-      <Img_30 path="./assets/BRZDBA19CJPN.jpg" alt="認定バッチ" />
-      <Img_30 path="./assets/generative-ai-passport-logo.png" alt="認定バッチ" />
+      <Img_20 path="./assets/SILVSE11JPN.jpg" alt="認定バッチ"/>
+      <Img_20 path="./assets/BRZDBA19CJPN.jpg" alt="認定バッチ" />
+      <Img_10 path="./assets/generative-ai-passport-logo.png" alt="認定バッチ" />
+      <Img_10 path="./assets/AWS_exam_pass.png" alt="認定バッチ"/>
     </ArticalPage>
   );
 }
