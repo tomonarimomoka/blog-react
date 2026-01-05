@@ -1,5 +1,5 @@
 import { FC } from "react";
-import {ArticalPage , SubTitle , ReadBtn , CustomTable , Img_30} from './Parts';
+import {ArticalPage , SubTitle , ReadBtn , CustomTable , Img_10 , Img_20} from './Parts';
 
 export const Index: FC = () => {
   return(
@@ -64,13 +64,12 @@ export const Index: FC = () => {
         <li>基本情報技術者試験</li>
         <li>生成AIパスポート試験</li>
         <li>東京大学 松尾・岩澤研究室 大規模言語モデル 2024 修了</li>
-        <li>AWS（通称：AWS CLF）</li>
-        {/* FIXME：↑↑↑正式名称↑↑↑ */}
+        <li>AWS Certified Cloud Practitioner</li>
       </ul>
-      <Img_30 path="./assets/SILVSE11JPN.jpg" alt="認定バッチ"/>
-      <Img_30 path="./assets/BRZDBA19CJPN.jpg" alt="認定バッチ" />
-      <Img_30 path="./assets/generative-ai-passport-logo.png" alt="認定バッチ" />
-        {/* FIXME：認定バッチ */}
+      <Img_20 path="./assets/SILVSE11JPN.jpg" alt="認定バッチ"/>
+      <Img_20 path="./assets/BRZDBA19CJPN.jpg" alt="認定バッチ" />
+      <Img_10 path="./assets/generative-ai-passport-logo.png" alt="認定バッチ" />
+      <Img_10 path="./assets/AWS_exam_pass.png" alt="認定バッチ"/>
     </ArticalPage>
   );
 }
