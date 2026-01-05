@@ -1,5 +1,5 @@
 import { FC } from "react";
-import {ArticalPage , SubTitle , ReadBtn , References_link } from '../Parts';
+import {ArticalPage , SubTitle , ReadBtn } from '../Parts';
 
 export const FirstCareerChange: FC = () => {
   return(
