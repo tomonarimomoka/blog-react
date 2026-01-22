@@ -34,6 +34,7 @@ import {FirstCareerChange} from "./artical/FirstCareerChange.tsx";
 import {FirstLinux} from "./artical/FirstLinux.tsx";
 import {FirstPcChange} from "./artical/FirstPcChange.tsx";
 import {HowToBootSurfaceByUSB} from "./artical/HowToBootSurfaceByUSB.tsx";
+import {FirstCodeReview} from "./artical/FirstCodeReview .tsx"
 import {ListAll} from "./list/ListAll.tsx";
 import {ListExperiences} from "./list/ListExperiences.tsx";
 import {ListExplanation} from "./list/ListExplanation.tsx";
@@ -82,6 +83,7 @@ function App() {
             <Route path='/FirstLinux' element={<FirstLinux />} />
             <Route path='/FirstPcChange' element={<FirstPcChange />} />
             <Route path='/HowToBootSurfaceByUSB' element={<HowToBootSurfaceByUSB />} />
+            <Route path='/FirstCodeReview' element={<FirstCodeReview/>} />
           </Routes>
         </BrowserRouter>  
       </main>
