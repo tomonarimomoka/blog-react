@@ -1,5 +1,5 @@
 import { FC } from "react";
-import {ArticalPage , SubTitle , ReadBtn , CustomTable , Img_30} from './Parts';
+import {ArticalPage , SubTitle , ReadBtn , CustomTable , Img_10 , Img_20} from './Parts';
 
 export const Index: FC = () => {
   return(
@@ -38,8 +38,9 @@ export const Index: FC = () => {
         プログラミングが好きなソフトウェアエンジニアです。    
       </p>
       <p>
-        以前はプログラマーをやっていました。
-        ソフトウェアエンジニアになってから、プログラミング以外のITの知識が全然足りなくて、勉強中です。
+        就職して3年目のソフトウェアエンジニアです。学生時代からプログラミングに興味を持ち、独学やインターンで学びプログラマーとしてアルバイトもしていました。
+        その後就職してJavaやSVNを使うようなレガシーなシステムを開発しました。ソフトウェアエンジニアとして働きつつ東京大学松尾・岩澤研究室でLLMについて学びました。
+        現在はAIを活用したシステムを作る仕事をしています。バックエンドが専門ですがフロントエンドも時々やります。このWebサイトも自分で作りました。
       </p>
       <p>
         モットーは「行動せざる者、願うべからず」です。（そんなことわざないですが、私が作りました。）
@@ -63,10 +64,12 @@ export const Index: FC = () => {
         <li>基本情報技術者試験</li>
         <li>生成AIパスポート試験</li>
         <li>東京大学 松尾・岩澤研究室 大規模言語モデル 2024 修了</li>
+        <li>AWS Certified Cloud Practitioner</li>
       </ul>
-      <Img_30 path="./assets/SILVSE11JPN.jpg" alt="認定バッチ"/>
-      <Img_30 path="./assets/BRZDBA19CJPN.jpg" alt="認定バッチ" />
-      <Img_30 path="./assets/generative-ai-passport-logo.png" alt="認定バッチ" />
+      <Img_20 path="./assets/SILVSE11JPN.jpg" alt="認定バッチ"/>
+      <Img_20 path="./assets/BRZDBA19CJPN.jpg" alt="認定バッチ" />
+      <Img_10 path="./assets/generative-ai-passport-logo.png" alt="認定バッチ" />
+      <Img_10 path="./assets/AWS_exam_pass.png" alt="認定バッチ"/>
     </ArticalPage>
   );
 }

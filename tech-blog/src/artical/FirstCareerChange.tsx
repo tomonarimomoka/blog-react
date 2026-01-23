@@ -1,5 +1,5 @@
 import { FC } from "react";
-import {ArticalPage , SubTitle , ReadBtn , References_link } from '../Parts';
+import {ArticalPage , SubTitle , ReadBtn } from '../Parts';
 
 export const FirstCareerChange: FC = () => {
   return(
@@ -76,9 +76,7 @@ export const FirstCareerChange: FC = () => {
       <p>
         前職の会社に入社するまでの軌跡はこちらをご覧ください。
         <ReadBtn url="JobHuntting"/>
-      </p>
-      <References_link url="" articleTitle=""/>
-      
+      </p>      
     </ArticalPage>
   );
 }

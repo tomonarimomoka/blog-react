@@ -31,6 +31,10 @@ export const ListAll: FC = () => {
                 <ArticleCard title="【生成AI】ハッカソン参加レポート vol.3"  component="Hakkason_3" > ハッカソンでの敗因を探り、優勝するためには何が必要かを考えます。優勝目指す方の参考になれば！</ArticleCard>
                 <ArticleCard title="【発表】LT会参加レポート"  component="FirstLTparty" > はじめてのLT会に参加した体験記です。LT会でどんな発表をすれば良いのか、どんな資料を用意すればよいのかが分かります。ハードルが高いLT会ですが、面白さが伝わればいいなと思って書き綴りました</ArticleCard> 
                 <ArticleCard title="【聞き専】TSkaigi参加レポート"  component="TSkaigiReport"> TSkaigiのLT会に参加した体験記です。内容をまとめたので、参加できなかった方や、今後参加を迷っている方の参考になるはずです！！</ArticleCard>
+                <ArticleCard title="レビュー方法の提案【ABCG法】" component="FirstCodeReview">私はコードレビューにいくつかの課題を感じていました。そこで私が考えたレビュー方法を提案します！</ArticleCard>
+                <ArticleCard title="【OS自作】SurfaceでUEFIアプリをUSB起動する方法/How to boot by USB in UEFI device" component="HowToBootSurfaceByUSB">
+                    Microsoft SurfaceでUSBドライブからUEFIアプリケーションを起動する方法をまとめました。OS自作などに役立つ記事です。
+                </ArticleCard>
             </FlexBox>
         </>
     )
