@@ -144,14 +144,10 @@ assign`
       <SubTitle subTitle="おわりに/In conclusion" />
       <p>
         お役に立てたでしょうか？皆様の成功のお手伝いができていれば幸いです。
+        OSについて勉強したい方は<a href="https://osdev.jp/">osdev</a>というOS自作のコミュニティがお勧めです。一緒に自作OS界隈を盛り上げていきましょう😊
       </p>
       <p>
         Could I help you? I wish I could help your success.
-      </p>
-      <p>
-        <a href="https://osdev.jp/">osdev</a>という自作OSのコミュニティがあります。一緒に自作OS界隈を盛り上げていきましょう😊
-      </p>
-      <p>
         There are hobby-operation-system community, <a href="https://osdev.jp/">osdev</a>. If you want to join us, let's make it exciting😊
       </p>
       <h4>参考</h4>
